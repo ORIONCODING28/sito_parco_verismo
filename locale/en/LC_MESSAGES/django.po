@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parco Verismo 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-16 02:32+0100\n"
+"POT-Creation-Date: 2025-11-19 22:23+0100\n"
 "PO-Revision-Date: 2025-11-16 02:20+0100\n"
 "Last-Translator: OpenAI Assistant <noreply@example.com>\n"
 "Language-Team: English\n"
@@ -15,23 +15,129 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: parco_verismo/templates/parco_verismo/base.html:8
+msgid "Archivio Fotografico - Parco Letterario Verismo"
+msgstr "Photo Archive - Verismo Literary Park"
+
+msgid "Archivio Fotografico"
+msgstr "Photo Archive"
+
+msgid "Un viaggio visivo attraverso i luoghi e le storie del Verismo"
+msgstr "A visual journey through the places and stories of Verismo"
+
+msgid "Visualizza a schermo intero"
+msgstr "View fullscreen"
+
+msgid "Precedente"
+msgstr "Previous"
+
+msgid "Successivo"
+msgstr "Next"
+
+msgid "Tutte le foto"
+msgstr "All photos"
+
+msgid "Nessuna foto disponibile"
+msgstr "No photos available"
+
+msgid "L\\"
+msgstr ""
+
+msgid "Chiudi"
+msgstr "Close"
+
 msgid ""
 "Parco Letterario Verismo - Un viaggio nella letteratura verista siciliana"
 msgstr "Verismo Literary Park - A journey through Sicilian verist literature"
 
-#: parco_verismo/templates/parco_verismo/base.html:9
-#: parco_verismo/templates/parco_verismo/base.html:43
-#: parco_verismo/templates/parco_verismo/evento_detail.html:4
-#: parco_verismo/templates/parco_verismo/index.html:6
-#: parco_verismo/templates/parco_verismo/navbar.html:5
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:4
-#: parco_verismo/templates/parco_verismo/opera_detail.html:4
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:4
 msgid "Parco Letterario Verismo"
 msgstr "Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/base.html:44
+msgid "Biblioteca Digitale - Parco Letterario Verismo"
+msgstr "Digital Library - Verismo Literary Park"
+
+msgid "Biblioteca Digitale"
+msgstr "Digital Library"
+
+msgid ""
+"Cerca tra le opere di Verga e Capuana e accedi alla lettura integrale su "
+"Wikisource."
+msgstr ""
+"Browse the works of Verga and Capuana and read them in full on Wikisource."
+
+msgid "Nessuna opera trovata"
+msgstr "No works found"
+
+msgid "Non sono state trovate opere corrispondenti alla tua ricerca."
+msgstr "No works matching your search were found."
+
+msgid "Calendario Eventi - Parco Letterario Verismo"
+msgstr "Events Calendar - Verismo Literary Park"
+
+msgid "Calendario Eventi"
+msgstr "Events Calendar"
+
+msgid "Consulta il calendario completo degli eventi e salva i tuoi preferiti"
+msgstr "Browse the full event calendar and save your favourites"
+
+msgid "Vedi dettagli completi"
+msgstr "View full details"
+
+msgid "Oggi"
+msgstr "Today"
+
+msgid "Mese"
+msgstr "Month"
+
+msgid "Settimana"
+msgstr "Week"
+
+msgid "Lista"
+msgstr "List"
+
+msgid "Descrizione"
+msgstr "Description"
+
+#, fuzzy
+#| msgid "Vedi calendario"
+msgid "Aggiungi al calendario"
+msgstr "View calendar"
+
+msgid "Google Calendar"
+msgstr "Google Calendar"
+
+msgid "Outlook"
+msgstr "Outlook"
+
+msgid "Apple Calendar"
+msgstr "Apple Calendar"
+
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+msgid "Evento aperto in Google Calendar!"
+msgstr "Event opened in Google Calendar!"
+
+msgid "Evento aperto in Outlook!"
+msgstr "Event opened in Outlook!"
+
+msgid "File calendario scaricato! Aprilo per aggiungere l'evento."
+msgstr "Calendar file downloaded! Open it to add the event."
+
+msgid "alle"
+msgstr "at"
+
+msgid "Scopri di più sul sito del Parco Letterario del Verismo!"
+msgstr "Find out more on the Verismo Literary Park website!"
+
+msgid "Evento condiviso su WhatsApp!"
+msgstr "Event shared on WhatsApp!"
+
+msgid "Visualizza documento"
+msgstr "View document"
+
+msgid "Scopri di più"
+msgstr "Learn more"
+
 msgid ""
 "Un viaggio nella Sicilia di Verga e Capuana attraverso i luoghi che hanno "
 "ispirato i grandi capolavori del verismo italiano."
@@ -39,221 +145,60 @@ msgstr ""
 "A journey through Verga and Capuana's Sicily, discovering the places that "
 "inspired the great masterpieces of Italian verismo."
 
-#: parco_verismo/templates/parco_verismo/base.html:61
 msgid "Navigazione"
 msgstr "Navigation"
 
-#: parco_verismo/templates/parco_verismo/base.html:63
 msgid "Home"
 msgstr "Home"
 
-#: parco_verismo/templates/parco_verismo/base.html:64
 msgid "Biblioteca"
 msgstr "Library"
 
-#: parco_verismo/templates/parco_verismo/base.html:65
-#: parco_verismo/templates/parco_verismo/eventi.html:10
-#: parco_verismo/templates/parco_verismo/navbar.html:52
 msgid "Eventi"
 msgstr "Events"
 
-#: parco_verismo/templates/parco_verismo/base.html:66
 msgid "Notizie"
 msgstr "News"
 
-#: parco_verismo/templates/parco_verismo/base.html:70
-#: parco_verismo/templates/parco_verismo/navbar.html:75
+msgid "Documenti & Studi"
+msgstr "Documents & Studies"
+
 msgid "Contatti"
 msgstr "Contacts"
 
-#: parco_verismo/templates/parco_verismo/base.html:87
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: parco_verismo/templates/parco_verismo/base.html:88
 msgid "Ricevi aggiornamenti sugli eventi e le novità del Parco."
 msgstr "Receive updates about events and news from the Park."
 
-#: parco_verismo/templates/parco_verismo/base.html:90
 msgid "La tua email"
 msgstr "Your email"
 
-#: parco_verismo/templates/parco_verismo/base.html:90
 msgid "Email per newsletter"
 msgstr "Newsletter email"
 
-#: parco_verismo/templates/parco_verismo/base.html:91
 msgid "Iscriviti"
 msgstr "Subscribe"
 
-#: parco_verismo/templates/parco_verismo/base.html:98
 msgid "Parco Letterario Verismo. Tutti i diritti riservati."
 msgstr "Verismo Literary Park. All rights reserved."
 
-#: parco_verismo/templates/parco_verismo/base.html:101
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: parco_verismo/templates/parco_verismo/base.html:102
 msgid "Termini di Servizio"
 msgstr "Terms of Service"
 
-#: parco_verismo/templates/parco_verismo/biblioteca.html:4
-msgid "Biblioteca Digitale - Parco Letterario Verismo"
-msgstr "Digital Library - Verismo Literary Park"
-
-#: parco_verismo/templates/parco_verismo/biblioteca.html:10
-#: parco_verismo/templates/parco_verismo/navbar.html:68
-msgid "Biblioteca Digitale"
-msgstr "Digital Library"
-
-#: parco_verismo/templates/parco_verismo/biblioteca.html:11
-msgid ""
-"Cerca tra le opere di Verga e Capuana e accedi alla lettura integrale su "
-"Wikisource."
-msgstr ""
-"Browse the works of Verga and Capuana and read them in full on Wikisource."
-
-#: parco_verismo/templates/parco_verismo/biblioteca.html:19
-msgid "Nessuna opera trovata"
-msgstr "No works found"
-
-#: parco_verismo/templates/parco_verismo/biblioteca.html:19
-msgid "Non sono state trovate opere corrispondenti alla tua ricerca."
-msgstr "No works matching your search were found."
-
-#: parco_verismo/templates/parco_verismo/calendario.html:4
-msgid "Calendario Eventi - Parco Letterario Verismo"
-msgstr "Events Calendar - Verismo Literary Park"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:13
-msgid "Calendario Eventi"
-msgstr "Events Calendar"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:15
-msgid "Consulta il calendario completo degli eventi e salva i tuoi preferiti"
-msgstr "Browse the full event calendar and save your favourites"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:72
-msgid "Dettagli"
-msgstr "Details"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:76
-msgid "Salva"
-msgstr "Save"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:80
-msgid "Google Calendar"
-msgstr "Google Calendar"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:83
-msgid "Outlook"
-msgstr "Outlook"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:86
-msgid "Apple Calendar"
-msgstr "Apple Calendar"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:90
-msgid "Condividi su WhatsApp"
-msgstr "Share on WhatsApp"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:95
-msgid "Promemoria"
-msgstr "Reminder"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:111
-msgid "Nessun evento nel calendario"
-msgstr "No events in the calendar"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:112
-msgid ""
-"Il calendario eventi è attualmente vuoto. Torna presto per scoprire le "
-"nostre iniziative!"
-msgstr ""
-"The event calendar is currently empty. Check back soon to discover our "
-"initiatives!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:126
-msgid "Crea Promemoria"
-msgstr "Create Reminder"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:138
-msgid "Come salvare l'evento:"
-msgstr "How to save the event:"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:139
-msgid ""
-"1. Clicca sul pulsante \"Salva\" accanto all'evento<br>2. Scegli il tuo "
-"calendario preferito<br>3. L'evento verrà aggiunto automaticamente!"
-msgstr ""
-"1. Click the \"Save\" button next to the event<br>2. Choose your favourite "
-"calendar<br>3. The event will be added automatically!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:145
-msgid "Chiudi"
-msgstr "Close"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:448
-msgid "Data"
-msgstr "Date"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:463
-msgid "Ora"
-msgstr "Time"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:474
-#: parco_verismo/templates/parco_verismo/evento_detail.html:43
-msgid "Luogo"
-msgstr "Venue"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:484
-msgid "Clicca sui pulsanti \"Salva\" per aggiungere l\\"
-msgstr "Click the \"Save\" buttons to add the event directly to your calendar!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:545
-msgid "Evento aperto in Google Calendar!"
-msgstr "Event opened in Google Calendar!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:556
-msgid "Evento aperto in Outlook!"
-msgstr "Event opened in Outlook!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:587
-msgid "File calendario scaricato! Aprilo per aggiungere l'evento."
-msgstr "Calendar file downloaded! Open it to add the event."
-
-#: parco_verismo/templates/parco_verismo/calendario.html:592
-msgid "alle"
-msgstr "at"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:592
-msgid "Scopri di più sul sito del Parco Letterario del Verismo!"
-msgstr "Find out more on the Verismo Literary Park website!"
-
-#: parco_verismo/templates/parco_verismo/calendario.html:595
-msgid "Evento condiviso su WhatsApp!"
-msgstr "Event shared on WhatsApp!"
-
-#: parco_verismo/templates/parco_verismo/components/evento_card.html:32
-#: parco_verismo/templates/parco_verismo/components/opera_card.html:27
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:33
-msgid "Scopri di più"
-msgstr "Learn more"
-
-#: parco_verismo/templates/parco_verismo/components/no_results.html:12
 msgid "Nessun risultato"
 msgstr "No results"
 
-#: parco_verismo/templates/parco_verismo/components/no_results.html:13
 msgid "Non sono stati trovati elementi corrispondenti alla tua ricerca."
 msgstr "No items matching your search were found."
 
-#: parco_verismo/templates/parco_verismo/components/notizia_card.html:29
 msgid "Leggi di più"
 msgstr "Read more"
 
-#: parco_verismo/templates/parco_verismo/components/opera_card.html:19
 #, python-format
 msgid ""
 "\n"
@@ -264,31 +209,99 @@ msgstr ""
 "      <p class=\"card-text text-muted mb-2\">by %(autore)s</p>\n"
 "      "
 
-#: parco_verismo/templates/parco_verismo/components/opera_card.html:23
 msgid "Anno:"
 msgstr "Year:"
 
-#: parco_verismo/templates/parco_verismo/components/search_form.html:13
 msgid "Cerca..."
 msgstr "Search..."
 
-#: parco_verismo/templates/parco_verismo/components/search_form.html:16
 msgid "Cerca"
 msgstr "Search"
 
-#: parco_verismo/templates/parco_verismo/eventi.html:4
+msgid "Documenti e Studi - Parco Letterario Verismo"
+msgstr "Documents & Studies - Verismo Literary Park"
+
+msgid "Documenti e Studi"
+msgstr "Documents & Studies"
+
+msgid ""
+"Esplora i documenti e gli studi pubblicati dal Parco Letterario del Verismo"
+msgstr ""
+"Explore the documents and studies published by the Verismo Literary Park"
+
+msgid "Cerca per titolo, descrizione, autori..."
+msgstr "Search by title, description, authors..."
+
+msgid "Tutti i tipi"
+msgstr "All types"
+
+msgid "Documenti"
+msgstr "Documents"
+
+msgid "Studi"
+msgstr "Studies"
+
+msgid "Ricerche"
+msgstr "Research"
+
+msgid "Saggi"
+msgstr "Essays"
+
+msgid "Nessun documento disponibile"
+msgstr "No documents available"
+
+msgid ""
+"Al momento non ci sono documenti o studi pubblicati. Torna presto per "
+"consultare i nostri materiali!"
+msgstr ""
+"There are no documents or studies published at the moment. Check back soon "
+"to browse our materials!"
+
+msgid "Autori:"
+msgstr "Authors:"
+
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "        <div class=\"text-center text-secondary mb-5\">\n"
+#| "          <i class=\"bi bi-calendar me-2\"></i>Pubblicata il "
+#| "%(data_pub)s\n"
+#| "        </div>\n"
+#| "        "
+msgid ""
+"\n"
+"          <p class=\"mb-0\">\n"
+"            <i class=\"bi bi-calendar me-2\"></i>Pubblicato il %(data_pub)s\n"
+"          </p>\n"
+"          "
+msgstr ""
+"\n"
+"        <div class=\"text-center text-secondary mb-5\">\n"
+"          <i class=\"bi bi-calendar me-2\"></i>Published on %(data_pub)s\n"
+"        </div>\n"
+"        "
+
+msgid "Parole chiave:"
+msgstr "Keywords:"
+
+msgid "Scarica PDF"
+msgstr "Download PDF"
+
+msgid "Visualizza PDF"
+msgstr "View PDF"
+
+msgid "Torna ai documenti"
+msgstr "Back to documents"
+
 msgid "Eventi - Parco Letterario Verismo"
 msgstr "Events - Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/eventi.html:11
 msgid "Scopri tutti gli eventi organizzati dal Parco Letterario del Verismo"
 msgstr "Discover all the events organised by the Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/eventi.html:19
 msgid "Nessun evento programmato"
 msgstr "No scheduled events"
 
-#: parco_verismo/templates/parco_verismo/eventi.html:20
 msgid ""
 "Al momento non ci sono eventi in programma. Torna presto per scoprire le "
 "nostre iniziative!"
@@ -296,115 +309,398 @@ msgstr ""
 "There are no events scheduled right now. Come back soon to discover our "
 "initiatives!"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:26
 msgid "Data e Ora"
 msgstr "Date and Time"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:29
 msgid "Inizio:"
 msgstr "Start:"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:33
 msgid "Fine:"
 msgstr "End:"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:66
+msgid "Luogo"
+msgstr "Venue"
+
 msgid "Torna agli eventi"
 msgstr "Back to events"
 
-#: parco_verismo/templates/parco_verismo/evento_detail.html:69
 msgid "Vedi calendario"
 msgstr "View calendar"
 
-#: parco_verismo/templates/parco_verismo/index.html:12
 msgid "Parco Letterario del Verismo"
 msgstr "Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/index.html:13
 msgid "Un viaggio nella Sicilia di Verga e Capuana"
 msgstr "A journey through Verga and Capuana's Sicily"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:8
+msgid ""
+"Licodia Eubea - Storia, archeologia e tradizioni nel cuore degli Iblei. "
+"Scopri monumenti, musei, eventi e natura."
+msgstr ""
+"Licodia Eubea - History, archaeology and traditions in the heart of the "
+"Hyblean Mountains. Discover monuments, museums, events and nature."
+
+msgid "Parco Letterario Verismo - Licodia Eubea"
+msgstr "Verismo Literary Park - Licodia Eubea"
+
+msgid "Tra storia, natura e tradizione nel cuore degli Iblei"
+msgstr ""
+"Between history, nature and tradition in the heart of the Hyblean Mountains"
+
+msgid "Introduzione"
+msgstr "Introduction"
+
+msgid ""
+"\n"
+"            <p>A 600 metri sul livello del mare, sul versante nord "
+"occidentale degli Iblei, sorge Licodia Eubea. Il significato del toponimo è "
+"incerto, ma gli studi concordano nel riconoscere nel fondovalle la presenza "
+"di un'antica civiltà, documentata da una vasta rete di necropoli. In epoca "
+"moderna il luogo venne identificato con la <strong>subcolonia greca Lentini "
+"Subcensueta</strong> e successivamente con <strong>La Ciura</strong>, fino "
+"ad assumere nel <strong>1872</strong> il nome attuale. Le ricerche "
+"archeologiche di <strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</"
+"strong> hanno confermato l'esistenza di una rilevante borgata sicula, con "
+"una necropoli estesa e strutturata, databile all'<strong>VIII secolo a.C.</"
+"strong> Il Borgo rappresenta ancora oggi il nucleo più antico dell'abitato, "
+"sopravvissuto al terremoto del 1693.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Rising 600 meters above sea level, on the northwestern side of the Hyblean "
+"Mountains, stands Licodia Eubea. The meaning of the toponym is uncertain, but "
+"studies agree in recognizing in the valley floor the presence of an ancient "
+"civilization, documented by an extensive network of necropolises. In modern "
+"times the place was identified with the <strong>Greek subcolony Lentini "
+"Subcensueta</strong> and later with <strong>La Ciura</strong>, until assuming "
+"in <strong>1872</strong> the current name. The archaeological research of "
+"<strong>Paolo Orsi</strong> and <strong>Vincenzo Cazzaniga</strong> confirmed "
+"the existence of a significant Sicilian settlement, with an extensive and "
+"structured necropolis, dating to the <strong>8th century BC</strong>. The "
+"Borgo still represents the oldest nucleus of the settlement, having survived "
+"the earthquake of 1693.</p>\n"
+"            "
+
+msgid "Bosco Vaito"
+msgstr "Vaito Forest"
+
+msgid ""
+"\n"
+"            <p>Bosco sporadico di circa <strong>84 ettari</strong>, "
+"caratterizzato dalla presenza della <em>sughera (Quercus suber)</em>, specie "
+"arborea tipica della macchia mediterranea e particolarmente rara in questa "
+"zona degli Iblei. Rappresenta una continuità naturale con il più esteso "
+"<strong>Bosco di Santo Pietro</strong>, situato verso sud, formando un "
+"corridoio ecologico di notevole interesse botanico e faunistico. L'area è "
+"ideale per escursioni naturalistiche, birdwatching e fotografia "
+"paesaggistica, offrendo ai visitatori sentieri immersi nella vegetazione "
+"spontanea e panorami suggestivi sul territorio circostante. Il bosco "
+"conserva un ecosistema prezioso che testimonia l'antico rapporto tra l'uomo "
+"e l'ambiente ibleo.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Sporadic forest of approximately <strong>84 hectares</strong>, "
+"characterized by the presence of <em>cork oak (Quercus suber)</em>, a tree "
+"species typical of the Mediterranean scrub and particularly rare in this area "
+"of the Hyblean Mountains. It represents a natural continuity with the more "
+"extensive <strong>Santo Pietro Forest</strong>, located to the south, forming "
+"an ecological corridor of considerable botanical and faunistic interest. The "
+"area is ideal for nature excursions, birdwatching and landscape photography, "
+"offering visitors paths immersed in spontaneous vegetation and suggestive "
+"panoramas over the surrounding territory. The forest preserves a precious "
+"ecosystem that testifies to the ancient relationship between man and the "
+"Hyblean environment.</p>\n"
+"            "
+
+msgid "Lago Dirillo"
+msgstr "Dirillo Lake"
+
+msgid ""
+"\n"
+"            <p>Bacino artificiale originato dalla <strong>diga Ragoleto "
+"(1961)</strong>, alimentato dal fiume Dirillo, uno dei principali corsi "
+"d'acqua del territorio ibleo. L'invaso, nato per scopi irrigui e di "
+"approvvigionamento idrico, ha trasformato il paesaggio creando un ambiente "
+"lacustre di grande suggestione. Nelle aree circostanti sono stati "
+"individuati <strong>sepolcreti e strutture di epoca tardo romana</strong> "
+"(IV secolo d.C.), testimonianza dell'antica presenza umana lungo le sponde "
+"del fiume. Il lago offre un paesaggio ideale per passeggiate rilassanti, "
+"birdwatching e fotografia naturalistica, attirando numerose specie di "
+"avifauna stanziale e migratoria. Le sue acque tranquille e il contesto "
+"naturale incontaminato lo rendono meta privilegiata per gli amanti della "
+"natura e della storia.</p>\n"
+"            "
+msgstr ""
+"\n"
+"            <p>Artificial basin created by the <strong>Ragoleto Dam "
+"(1961)</strong>, fed by the Dirillo River, one of the main watercourses in "
+"the Hyblean territory. The reservoir, created for irrigation and water supply "
+"purposes, has transformed the landscape creating a highly suggestive lake "
+"environment. In the surrounding areas <strong>burial grounds and structures "
+"from the late Roman period</strong> (4th century AD) have been identified, "
+"evidence of ancient human presence along the river banks. The lake offers an "
+"ideal landscape for relaxing walks, birdwatching and nature photography, "
+"attracting numerous species of resident and migratory birds. Its tranquil "
+"waters and pristine natural setting make it a privileged destination for "
+"nature and history lovers.</p>\n"
+"            "
+
+msgid "Tradizioni e Feste"
+msgstr "Traditions and Festivals"
+
+msgid "Settimana Santa"
+msgstr "Holy Week"
+
+msgid "Marzo/Aprile"
+msgstr "March/April"
+
+msgid ""
+"\n"
+"                  <p class=\"card-text\">L'evento religioso più sentito "
+"dalla comunità. Le celebrazioni si aprono con il <strong>Settenario "
+"dell'Addolorata</strong> e culminano nel <strong>Venerdì Santo</strong> con "
+"la <em>Via Giunta</em>, la Crocifissione e la deposizione del Cristo "
+"nell'urna. La Domenica di Pasqua è dedicata alla tradizionale "
+"<em>\"Giunta\"</em>.</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"card-text\">The most deeply felt religious event "
+"by the community. The celebrations open with the <strong>Seven Days of Our "
+"Lady of Sorrows</strong> and culminate on <strong>Good Friday</strong> with "
+"the <em>Via Giunta</em>, the Crucifixion and the deposition of Christ in the "
+"urn. Easter Sunday is dedicated to the traditional <em>\"Giunta\"</em>.</p>\n"
+"                  "
+
+msgid "Festa dell'Uva"
+msgstr "Grape Festival"
+
+msgid "Prima domenica di settembre"
+msgstr "First Sunday of September"
+
+msgid ""
+"\n"
+"                  <p class=\"card-text\">Antica ricorrenza agricola ripresa "
+"nel Novecento, divenuta una manifestazione comunitaria molto partecipata, "
+"con degustazioni, iniziative culturali e la tradizionale <strong>pigiatura "
+"dell'uva nel tino</strong>.</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"card-text\">Ancient agricultural celebration "
+"revived in the twentieth century, becoming a highly participatory community "
+"event, with tastings, cultural initiatives and the traditional "
+"<strong>grape stomping in the vat</strong>.</p>\n"
+"                  "
+
+msgid "Rassegna del Documentario Archeologico"
+msgstr "Archaeological Documentary Review"
+
+msgid "Ottobre"
+msgstr "October"
+
+msgid ""
+"\n"
+"                  <p class=\"card-text\">Festival cinematografico avviato "
+"nel <strong>2011</strong>, oggi tra i principali eventi italiani dedicati "
+"alla <strong>divulgazione archeologica</strong>. Organizzato "
+"dall'<em>Associazione ArcheoVisiva</em>.</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"card-text\">Cinema festival launched in "
+"<strong>2011</strong>, today among the main Italian events dedicated to "
+"<strong>archaeological dissemination</strong>. Organized by the "
+"<em>ArcheoVisiva Association</em>.</p>\n"
+"                  "
+
+msgid "Sagra della Patacò"
+msgstr "Patacò Festival"
+
+msgid "Dicembre"
+msgstr "December"
+
+msgid ""
+"\n"
+"                  <p class=\"card-text\">Evento dedicato alla <strong>farina "
+"di fave secche</strong>, pietanza tradizionale licodiana, nato per "
+"valorizzare un prodotto storico poco conosciuto.</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"card-text\">Event dedicated to <strong>dried "
+"fava bean flour</strong>, a traditional Licodiana dish, created to promote a "
+"little-known historical product.</p>\n"
+"                  "
+
+msgid "Galleria Fotografica"
+msgstr "Photo Gallery"
+
+msgid "Monumenti e Luoghi di Interesse"
+msgstr "Monuments and Places of Interest"
+
+msgid ""
+"\n"
+"                  <p class=\"citation-text\">«In queste strade di pietra la "
+"memoria si posa lieve, e ogni eco del passato dalla necropoli sicula al "
+"grappolo d'uva diventa canto di tempo e terra.»</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"citation-text\">«In these stone streets memory "
+"rests lightly, and every echo of the past from the Sicilian necropolis to "
+"the bunch of grapes becomes a song of time and earth.»</p>\n"
+"                  "
+
+msgid "(citazione libera)"
+msgstr "(free quote)"
+
+msgid ""
+"\n"
+"                  <p class=\"citation-text\">«Quando il vento accarezza le "
+"vigne del colle e l'ombra del castello scende sul borgo antico, Licodia "
+"Eubea non racconta solo storia: offre un dialogo silenzioso fra pietra, "
+"vigna e cielo siciliano.»</p>\n"
+"                  "
+msgstr ""
+"\n"
+"                  <p class=\"citation-text\">«When the wind caresses the "
+"vines of the hill and the shadow of the castle falls on the ancient village, "
+"Licodia Eubea does not just tell history: it offers a silent dialogue between "
+"stone, vine and Sicilian sky.»</p>\n"
+"                  "
+
+msgid "Mappa di Licodia Eubea"
+msgstr "Map of Licodia Eubea"
+
+msgid "Cerca un luogo..."
+msgstr "Search for a place..."
+
+msgid "Filtri"
+msgstr "Filters"
+
+msgid "Icona Servizi Pubblici"
+msgstr "Public Services Icon"
+
+msgid "Servizi Pubblici"
+msgstr "Public Services"
+
+msgid "Icona Servizi Culturali"
+msgstr "Cultural Services Icon"
+
+msgid "Servizi Culturali"
+msgstr "Cultural Services"
+
+msgid "Icona Prodotti Tipici"
+msgstr "Typical Products Icon"
+
+msgid "Prodotti Tipici"
+msgstr "Typical Products"
+
+msgid "Icona Ospitalità"
+msgstr "Hospitality Icon"
+
+msgid "Ospitalità"
+msgstr "Hospitality"
+
+msgid "Icona Luoghi Verghiani"
+msgstr "Verga Places Icon"
+
+msgid "Luoghi Verghiani"
+msgstr "Verga Places"
+
+msgid "Icona Ristorazione"
+msgstr "Restaurant Icon"
+
+msgid "Ristorazione"
+msgstr "Restaurants"
+
+msgid "Icona Tutti"
+msgstr "All Icon"
+
+msgid "Tutti"
+msgstr "All"
+
+msgid ""
+"Mineo - Città natale di Luigi Capuana, tra storia, archeologia e tradizioni "
+"siciliane. Scopri il Parco Letterario del Verismo."
+msgstr ""
+"Mineo - Birthplace of Luigi Capuana, between history, archaeology and "
+"Sicilian traditions. Discover the Verismo Literary Park."
+
+msgid "Parco Letterario Verismo - Mineo"
+msgstr "Verismo Literary Park - Mineo"
+
+msgid "Patria di Luigi Capuana, culla del Verismo siciliano"
+msgstr "Homeland of Luigi Capuana, cradle of Sicilian Verismo"
+
+msgid "Mappa di Mineo"
+msgstr "Map of Mineo"
+
+msgid "Icona Luoghi Capuaniani"
+msgstr "Capuana Places Icon"
+
+msgid "Luoghi Capuaniani"
+msgstr "Capuana Places"
+
 msgid "Apri navigazione"
 msgstr "Open navigation"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:18
 msgid "Il Parco"
 msgstr "The Park"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:21
 msgid "Missioni e visione"
 msgstr "Mission & Vision"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:22
 msgid "Comitato tecnico"
 msgstr "Technical Committee"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:23
 msgid "Regolamenti & documenti"
 msgstr "Regulations & documents"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:24
 msgid "Partner e rete territoriale"
 msgstr "Partners & local network"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:25
 msgid "Accrediti e finanziamenti"
 msgstr "Accreditations & funding"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:32
 msgid "Luoghi & Percorsi"
 msgstr "Places & Routes"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:49
 msgid "Eventi & News"
 msgstr "Events & News"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:53
 msgid "Calendario"
 msgstr "Calendar"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:54
 msgid "News"
 msgstr "News"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:61
 msgid "Opere & Letteratura"
 msgstr "Works & Literature"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:64
 msgid "Opere di Verga"
 msgstr "Works by Verga"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:65
 msgid "Opere di Capuana"
 msgstr "Works by Capuana"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:66
 msgid "Personaggi & Lessico del Verismo"
 msgstr "Characters & Vocabulary of Verismo"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:67
 msgid "Luoghi delle Opere"
 msgstr "Places of the Works"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:69
 msgid "Archivio fotografico"
 msgstr "Photo archive"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:70
-msgid "Documenti & Studi"
-msgstr "Documents & Studies"
-
-#: parco_verismo/templates/parco_verismo/navbar.html:79
 msgid "Prenota"
 msgstr "Book"
 
-#: parco_verismo/templates/parco_verismo/navbar.html:94
 msgid "Cambia lingua"
 msgstr "Change language"
 
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:15
 #, python-format
 msgid ""
 "\n"
@@ -419,27 +715,21 @@ msgstr ""
 "        </div>\n"
 "        "
 
-#: parco_verismo/templates/parco_verismo/notizia_detail.html:37
 msgid "Torna alle news"
 msgstr "Back to news"
 
-#: parco_verismo/templates/parco_verismo/notizie.html:4
 msgid "Notizie - Parco Letterario Verismo"
 msgstr "News - Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/notizie.html:10
 msgid "News & Novità"
 msgstr "News & Updates"
 
-#: parco_verismo/templates/parco_verismo/notizie.html:11
 msgid "Rimani aggiornato sulle ultime novità del Parco Letterario del Verismo"
 msgstr "Stay up to date with the latest news from the Verismo Literary Park"
 
-#: parco_verismo/templates/parco_verismo/notizie.html:19
 msgid "Nessuna notizia disponibile"
 msgstr "No news available"
 
-#: parco_verismo/templates/parco_verismo/notizie.html:20
 msgid ""
 "Al momento non ci sono notizie pubblicate. Torna presto per leggere le "
 "nostre novità!"
@@ -447,24 +737,19 @@ msgstr ""
 "There are no news items published at the moment. Check back soon to read our "
 "updates!"
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:13
 #, python-format
 msgid "di %(autore)s"
 msgstr "by %(autore)s"
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:20
 msgid "Trama"
 msgstr "Plot"
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:24
 msgid "Analisi e Contesto"
 msgstr "Analysis and Context"
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:31
 msgid "Leggi l'opera completa su Wikisource"
 msgstr "Read the full work on Wikisource"
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:34
 msgid ""
 "Il link ti porterà alla pagina di Wikisource dove potrai leggere l'opera "
 "integrale gratuitamente."
@@ -472,17 +757,14 @@ msgstr ""
 "The link will take you to Wikisource, where you can read the full work for "
 "free."
 
-#: parco_verismo/templates/parco_verismo/opera_detail.html:39
 #, python-format
 msgid "← Torna alle opere di %(autore)s"
 msgstr "← Back to %(autore)s' works"
 
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:4
 #, python-format
 msgid "Opere di %(autore)s"
 msgstr "%(autore)s' Works"
 
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:10
 #, python-format
 msgid ""
 "\n"
@@ -493,122 +775,79 @@ msgstr ""
 "  <h1 class=\"text-center mb-4\">Works by %(autore)s</h1>\n"
 "  "
 
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:30
 msgid "Anno di pubblicazione:"
 msgstr "Year of publication:"
 
-#: parco_verismo/templates/parco_verismo/opere_per_autore.html:41
 msgid "Nessuna opera disponibile per questo autore."
 msgstr "No works available for this author."
 
-#: parco_verismo/templates/parco_verismo/documenti.html:4
-msgid "Documenti e Studi - Parco Letterario Verismo"
-msgstr "Documents & Studies - Verismo Literary Park"
+msgid ""
+"Vizzini - Città natale di Giovanni Verga, tra storia, tradizioni siciliane e "
+"letteratura verista. Scopri il borgo e il Parco Letterario Verghiano."
+msgstr ""
+"Vizzini - Birthplace of Giovanni Verga, between history, Sicilian traditions "
+"and verist literature. Discover the village and the Verga Literary Park."
 
-#: parco_verismo/templates/parco_verismo/documenti.html:10
-msgid "Documenti e Studi"
-msgstr "Documents & Studies"
+msgid "Parco Letterario Verismo - Vizzini"
+msgstr "Verismo Literary Park - Vizzini"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:11
-msgid "Esplora i documenti e gli studi pubblicati dal Parco Letterario del Verismo"
-msgstr "Explore the documents and studies published by the Verismo Literary Park"
+msgid "Patria di Giovanni Verga, cuore del Verismo siciliano"
+msgstr "Homeland of Giovanni Verga, heart of Sicilian Verismo"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:20
-msgid "Cerca per titolo, descrizione, autori..."
-msgstr "Search by title, description, authors..."
+msgid "Mappa di Vizzini"
+msgstr "Map of Vizzini"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:33
-msgid "Tutti i tipi"
-msgstr "All types"
+#~ msgid "Dettagli"
+#~ msgstr "Details"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:34
-msgid "Documenti"
-msgstr "Documents"
+#~ msgid "Salva"
+#~ msgstr "Save"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:35
-msgid "Studi"
-msgstr "Studies"
+#~ msgid "Condividi su WhatsApp"
+#~ msgstr "Share on WhatsApp"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:36
-msgid "Ricerche"
-msgstr "Research"
+#~ msgid "Promemoria"
+#~ msgstr "Reminder"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:37
-msgid "Saggi"
-msgstr "Essays"
+#~ msgid "Nessun evento nel calendario"
+#~ msgstr "No events in the calendar"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:50
-msgid "Nessun documento disponibile"
-msgstr "No documents available"
+#~ msgid ""
+#~ "Il calendario eventi è attualmente vuoto. Torna presto per scoprire le "
+#~ "nostre iniziative!"
+#~ msgstr ""
+#~ "The event calendar is currently empty. Check back soon to discover our "
+#~ "initiatives!"
 
-#: parco_verismo/templates/parco_verismo/documenti.html:51
-msgid "Al momento non ci sono documenti o studi pubblicati. Torna presto per consultare i nostri materiali!"
-msgstr "There are no documents or studies published at the moment. Check back soon to browse our materials!"
+#~ msgid "Crea Promemoria"
+#~ msgstr "Create Reminder"
 
-#: parco_verismo/templates/parco_verismo/documento_detail.html:27
-msgid "Autori:"
-msgstr "Authors:"
+#~ msgid "Come salvare l'evento:"
+#~ msgstr "How to save the event:"
 
-#: parco_verismo/templates/parco_verismo/documento_detail.html:32
+#~ msgid ""
+#~ "1. Clicca sul pulsante \"Salva\" accanto all'evento<br>2. Scegli il tuo "
+#~ "calendario preferito<br>3. L'evento verrà aggiunto automaticamente!"
+#~ msgstr ""
+#~ "1. Click the \"Save\" button next to the event<br>2. Choose your "
+#~ "favourite calendar<br>3. The event will be added automatically!"
+
+#~ msgid "Data"
+#~ msgstr "Date"
+
+#~ msgid "Ora"
+#~ msgstr "Time"
+
+#~ msgid "Clicca sui pulsanti \"Salva\" per aggiungere l\\"
+#~ msgstr ""
+#~ "Click the \"Save\" buttons to add the event directly to your calendar!"
+
 #, python-format
-msgid "Pubblicato il %(data_pub)s"
-msgstr "Published on %(data_pub)s"
+#~ msgid "Pubblicato il %(data_pub)s"
+#~ msgstr "Published on %(data_pub)s"
 
-#: parco_verismo/templates/parco_verismo/documento_detail.html:59
-msgid "Parole chiave:"
-msgstr "Keywords:"
-
-#: parco_verismo/templates/parco_verismo/documento_detail.html:70
-msgid "Scarica PDF"
-msgstr "Download PDF"
-
-#: parco_verismo/templates/parco_verismo/documento_detail.html:75
-msgid "Visualizza PDF"
-msgstr "View PDF"
-
-#: parco_verismo/templates/parco_verismo/documento_detail.html:82
-msgid "Torna ai documenti"
-msgstr "Back to documents"
-
-#: parco_verismo/templates/parco_verismo/components/documento_card.html:44
-msgid "Visualizza documento"
-msgstr "View document"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:4
-msgid "Archivio Fotografico - Parco Letterario Verismo"
-msgstr "Photo Archive - Verismo Literary Park"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:17
-msgid "Archivio Fotografico"
-msgstr "Photo Archive"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:18
-msgid "Un viaggio visivo attraverso i luoghi e le storie del Verismo"
-msgstr "A visual journey through the places and stories of Verismo"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:58
-msgid "Visualizza a schermo intero"
-msgstr "View fullscreen"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:84
-msgid "Precedente"
-msgstr "Previous"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:88
-msgid "Successivo"
-msgstr "Next"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:97
-msgid "Tutte le foto"
-msgstr "All photos"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:128
-msgid "Nessuna foto disponibile"
-msgstr "No photos available"
-
-#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:129
-msgid "L'archivio fotografico sarà presto disponibile."
-msgstr "The photo archive will be available soon."
+#~ msgid "L'archivio fotografico sarà presto disponibile."
+#~ msgstr "The photo archive will be available soon."
 
 #, python-format
 #~ msgid "di %(opera.autore.nome)s"

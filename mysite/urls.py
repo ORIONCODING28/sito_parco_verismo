@@ -24,9 +24,15 @@ urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
 ]
 
+# URL con prefisso lingua (it/en)
+urlpatterns += i18n_patterns(
+    path('', include('parco_verismo.urls')),
+    prefix_default_language=False,
+)
+
+# Admin senza prefisso lingua
 urlpatterns += [
     path('admin/', admin.site.urls),
-    path('', include('parco_verismo.urls')),
 ]
 
 # Serve media files in development

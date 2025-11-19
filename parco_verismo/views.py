@@ -65,9 +65,11 @@ def calendario_view(request):
     Mostra il calendario degli eventi.
     """
     from django.utils import timezone
+    from django.utils import translation
     eventi = Evento.objects.filter(is_active=True).order_by('data_inizio')
     context = {
         'eventi': eventi,
+        'LANGUAGE_CODE': translation.get_language(),
     }
     return render(request, 'parco_verismo/calendario.html', context)
 

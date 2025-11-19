@@ -1,12 +1,13 @@
-{% load static %}
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
-<html lang="it" data-theme="verismo">
+<html lang="{{ LANGUAGE_CODE }}" data-theme="verismo">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mineo - Città natale di Luigi Capuana, tra storia, archeologia e tradizioni siciliane. Scopri il Parco Letterario del Verismo." />
+    <meta name="description" content="{% trans 'Mineo - Città natale di Luigi Capuana, tra storia, archeologia e tradizioni siciliane. Scopri il Parco Letterario del Verismo.' %}" />
     <meta name="keywords" content="Mineo, Luigi Capuana, Verismo, Sicilia, Iblei, Palagonia, archeologia, Castello" />
-    <title>Parco Letterario Verismo - Mineo</title>
+    <title>{% trans 'Parco Letterario Verismo - Mineo' %}</title>
 
     <!-- Bootstrap CSS locale -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
@@ -36,14 +37,14 @@
         <section class="hero-mineo d-flex align-items-center justify-content-center text-center mb-5">
           <div class="hero-content px-3" data-aos="fade-up">
             <h1 class="display-3 fw-bold text-white" data-aos="fade-down" data-aos-delay="200">Mineo</h1>
-            <p class="lead text-light mt-3" data-aos="fade-up" data-aos-delay="400">Patria di Luigi Capuana, culla del Verismo siciliano</p>
+            <p class="lead text-light mt-3" data-aos="fade-up" data-aos-delay="400">{% trans 'Patria di Luigi Capuana, culla del Verismo siciliano' %}</p>
           </div>
         </section>
 
         <!-- Introduzione -->
         <section class="row align-items-center mb-5">
           <div class="col-md-7 mb-3 mb-md-0" data-aos="fade-right">
-            <h2 class="text-primary mb-3">Introduzione</h2>
+            <h2 class="text-primary mb-3">{% trans 'Introduzione' %}</h2>
             <p>
               Mineo sorge a 500 metri sul livello del mare, nel cuore degli Iblei, dominando la piana di Catania con il suo profilo inconfondibile. Città di antichissime origini, identificata con l'antica <strong>Menai</strong> o <strong>Menaion</strong> citata dalle fonti classiche, conserva tracce di insediamenti che risalgono all'età del bronzo. Nel corso dei secoli Mineo è stata teatro di dominazioni greche, romane, bizantine, arabe e normanne, ognuna delle quali ha lasciato un'impronta indelebile nel tessuto urbano e nella memoria collettiva. Tra Medioevo e Rinascimento, la città conobbe un periodo di particolare splendore sotto il dominio feudale, arricchendosi di chiese, palazzi e monumenti. Mineo è universalmente nota per aver dato i natali a <strong>Luigi Capuana</strong> (1839-1915), uno dei padri fondatori del <strong>Verismo italiano</strong>, narratore e teorico della letteratura che ha immortalato nei suoi racconti la vita e le tradizioni del popolo siciliano. Oggi Mineo è un borgo che unisce fascino storico e bellezza paesaggistica, meta ideale per chi desidera scoprire l'anima più autentica della Sicilia.
             </p>
@@ -81,7 +82,7 @@
 
         <!-- Eventi / Tradizioni -->
         <section class="mb-5">
-          <h2 class="text-primary mb-4" data-aos="fade-up">Tradizioni e Feste</h2>
+          <h2 class="text-primary mb-4" data-aos="fade-up">{% trans 'Tradizioni e Feste' %}</h2>
           <div class="row g-4">
             <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
               <div class="card h-100 border shadow-sm">
@@ -144,7 +145,7 @@
 
         <!-- Galleria Fotografica -->
         <section class="mb-5">
-          <h2 class="text-primary mb-4 text-center" data-aos="fade-up">Galleria Fotografica</h2>
+          <h2 class="text-primary mb-4 text-center" data-aos="fade-up">{% trans 'Galleria Fotografica' %}</h2>
           <div class="row g-3">
             <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="0">
               <img src="/static/assets/img/mineo/piazza-mineo.jpg" class="img-fluid rounded shadow" alt="Piazza del Municipio" />
@@ -163,7 +164,7 @@
 
         <!-- Monumenti e Luoghi di Interesse (Accordion) -->
         <section class="mb-5">
-          <h2 class="text-primary mb-3" data-aos="fade-up">Monumenti e Luoghi di Interesse</h2>
+          <h2 class="text-primary mb-3" data-aos="fade-up">{% trans 'Monumenti e Luoghi di Interesse' %}</h2>
 
           <div class="accordion accordion-flush" id="monumentiAccordion">
             <!-- Chiesa Madre -->
@@ -289,47 +290,49 @@
         </section>
 
         <!-- Titolo separato dalla mappa -->
-        <h2 class="text-primary text-center mb-4" data-aos="fade-down">Mappa di Mineo</h2>
+        <h2 class="text-primary text-center mb-4" data-aos="fade-down">{% trans 'Mappa di Mineo' %}</h2>
 
         <section id="map-section" class="map-section mb-5" data-aos="zoom-in">
           <div id="map" class="container-fluid map-container rounded shadow"></div>
 
           <!-- Barra di ricerca -->
           <div class="search-container">
-            <input type="text" class="form-control search-box" placeholder="Cerca un luogo..." />
+            <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
             <div class="search-results"></div>
           </div>
 
           <!-- Filtri dropdown -->
           <div class="filters-container dropdown">
-            <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2 filter-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="{% static 'assets/icons/filtri.svg' %}" width="20" height="20" alt="Filtri" /> Filtri</button>
+            <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2 filter-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="{% static 'assets/icons/filtri.svg' %}" width="20" height="20" alt="{% trans 'Filtri' %}" /> {% trans 'Filtri' %}</button>
             <ul class="dropdown-menu dropdown-menu-end">
               <li data-type="Servizi Pubblici" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/servizi_pubblici.svg' %}" width="20" height="20" /> Servizi Pubblici
+                <img src="{% static 'assets/icons/servizi_pubblici.svg' %}" width="20" height="20" alt="{% trans 'Icona Servizi Pubblici' %}" /> {% trans 'Servizi Pubblici' %}
               </li>
               <li data-type="Servizi Culturali" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/servizi_culturali.svg' %}" width="20" height="20" /> Servizi Culturali
+                <img src="{% static 'assets/icons/servizi_culturali.svg' %}" width="20" height="20" alt="{% trans 'Icona Servizi Culturali' %}" /> {% trans 'Servizi Culturali' %}
               </li>
               <li data-type="Prodotti Tipici" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/prodotti_tipici.svg' %}" width="20" height="20" /> Prodotti Tipici
+                <img src="{% static 'assets/icons/prodotti_tipici.svg' %}" width="20" height="20" alt="{% trans 'Icona Prodotti Tipici' %}" /> {% trans 'Prodotti Tipici' %}
               </li>
               <li data-type="Ospitalità" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/ospitalita.svg' %}" width="20" height="20" /> Ospitalità
+                <img src="{% static 'assets/icons/ospitalita.svg' %}" width="20" height="20" alt="{% trans 'Icona Ospitalità' %}" /> {% trans 'Ospitalità' %}
               </li>
               <li data-type="Luoghi Verghiani" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/luoghi_verghiani.svg' %}" width="20" height="20" /> Luoghi Capuaniani
+                <img src="{% static 'assets/icons/luoghi_verghiani.svg' %}" width="20" height="20" alt="{% trans 'Icona Luoghi Capuaniani' %}" /> {% trans 'Luoghi Capuaniani' %}
               </li>
               <li data-type="Ristorazione" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/ristorazione.svg' %}" width="20" height="20" /> Ristorazione
+                <img src="{% static 'assets/icons/ristorazione.svg' %}" width="20" height="20" alt="{% trans 'Icona Ristorazione' %}" /> {% trans 'Ristorazione' %}
               </li>
               <li data-type="all" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/arrow-rotate.svg' %}" width="20" height="20" /> Tutti
+                <img src="{% static 'assets/icons/arrow-rotate.svg' %}" width="20" height="20" alt="{% trans 'Icona Tutti' %}" /> {% trans 'Tutti' %}
               </li>
             </ul>
           </div>
         </section>
       </div>
     {% endblock %}
+
+    {% include 'parco_verismo/components/footer.html' %}
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

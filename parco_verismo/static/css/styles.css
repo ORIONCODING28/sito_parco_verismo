@@ -208,12 +208,19 @@ body {
 
 .detail-page {
     padding-top: var(--space-xl);
-    padding-bottom: calc(var(--space-xl) * 2);
+    padding-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+
+/* Evita che le card nelle pagine detail si estendano troppo */
+.detail-page .site-card {
+    height: auto;
+    max-height: none;
 }
 
 .detail-page .return-actions {
     margin-top: var(--space-xl);
-    margin-bottom: calc(var(--space-xl) * 1.5);
+    margin-bottom: 0;
 }
 
 .detail-page .return-actions .btn {
@@ -222,7 +229,7 @@ body {
 
 .page-content {
     padding-top: var(--space-xl);
-    padding-bottom: calc(var(--space-xl) * 3);
+    padding-bottom: calc(var(--space-xl) * 2);
     min-height: 60vh;
     background-image: var(--gradient-surface);
     border-top: 1px solid var(--color-neutral-200);
@@ -230,7 +237,7 @@ body {
 
 body:not(.has-hero) .page-content {
     padding-top: calc(var(--space-xl) * 1.5 + 4rem);
-    padding-bottom: calc(var(--space-xl) * 3.5);
+    padding-bottom: calc(var(--space-xl) * 2.5);
 }
 
 @media (max-width: 768px) {
@@ -246,12 +253,13 @@ body:not(.has-hero) .page-content {
 
     .detail-page {
         padding-top: var(--space-lg);
-        padding-bottom: var(--space-xl);
+        padding-bottom: var(--space-lg);
+        margin-bottom: var(--space-md);
     }
 
     .detail-page .return-actions {
         margin-top: var(--space-lg);
-        margin-bottom: var(--space-xl);
+        margin-bottom: 0;
     }
 
     .detail-page .return-actions .btn {
