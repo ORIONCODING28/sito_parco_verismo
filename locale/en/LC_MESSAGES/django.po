@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parco Verismo 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-19 22:23+0100\n"
-"PO-Revision-Date: 2025-11-16 02:20+0100\n"
+"POT-Creation-Date: 2025-12-02 16:43+0100\n"
+"PO-Revision-Date: 2025-12-02 10:00+0100\n"
 "Last-Translator: OpenAI Assistant <noreply@example.com>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -15,129 +15,986 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+# ===== ACCREDITI E FINANZIAMENTI =====
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:4
+msgid "Accrediti e Finanziamenti"
+msgstr "Accreditations & Funding"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:4
+#: parco_verismo/templates/parco_verismo/base.html:9
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:4
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:4
+#: parco_verismo/templates/parco_verismo/components/footer.html:7
+#: parco_verismo/templates/parco_verismo/documento_detail.html:4
+#: parco_verismo/templates/parco_verismo/evento_detail.html:4
+#: parco_verismo/templates/parco_verismo/index.html:6
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:4
+#: parco_verismo/templates/parco_verismo/licodia.html:4
+#: parco_verismo/templates/parco_verismo/mineo.html:4
+#: parco_verismo/templates/parco_verismo/missione_visione.html:4
+#: parco_verismo/templates/parco_verismo/navbar.html:12
+#: parco_verismo/templates/parco_verismo/navbar.html:18
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:4
+#: parco_verismo/templates/parco_verismo/opera_detail.html:4
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:4
+#: parco_verismo/templates/parco_verismo/vizzini.html:4
+msgid "Parco Letterario Verismo"
+msgstr "Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:20
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:21
+msgid "Trasparenza"
+msgstr "Transparency"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:22
+msgid "Accrediti & Finanziamenti"
+msgstr "Accreditations & Funding"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:25
+msgid ""
+"Trasparenza nella gestione delle risorse finanziarie e degli investimenti "
+"nel territorio siciliano"
+msgstr ""
+"Transparency in the management of financial resources and investments in the "
+"Sicilian territory"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:116
+msgid ""
+"Il Parco Letterario del Verismo è ufficialmente riconosciuto da enti "
+"nazionali e internazionali, garantendo qualità, trasparenza e valore "
+"culturale alle nostre attività."
+msgstr ""
+"The Verismo Literary Park is officially recognized by national and "
+"international bodies, guaranteeing quality, transparency and cultural value "
+"to our activities."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:126
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:87
+msgid "Regione Siciliana"
+msgstr "Sicilian Region"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:127
+msgid ""
+"Riconoscimento ufficiale come polo culturale di valorizzazione del "
+"patrimonio letterario siciliano con finanziamenti dedicati."
+msgstr ""
+"Official recognition as a cultural hub for enhancing Sicilian literary "
+"heritage with dedicated funding."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:136
+msgid "Associazione Parchi Letterari"
+msgstr "Literary Parks Association"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:137
+
+msgid ""
+"Certificazione di qualità nei servizi culturali come membro "
+"dell'Associazione Nazionale dei Parchi Letterari Italiani."
+msgstr ""
+"Quality certification in cultural services as a member of the National "
+"Association of Italian Literary Parks."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:146
+msgid "Rete Internazionale UNESCO"
+msgstr "UNESCO International Network"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:147
+msgid ""
+"Partecipazione attiva alle reti internazionali dedicate alla preservazione "
+"del patrimonio letterario mondiale."
+msgstr ""
+"Active participation in international networks dedicated to the preservation "
+"of world literary heritage."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:206
+msgid ""
+"Le risorse economiche che sostengono le attività del Parco provengono da "
+"fonti pubbliche e private, garantendo sostenibilità e crescita continua."
+msgstr ""
+"The economic resources supporting the Park's activities come from public and "
+"private sources, guaranteeing sustainability and continuous growth."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:211
+msgid "Principali Finanziatori"
+msgstr "Main Funders"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:215
+#, python-format
+msgid ""
+"Fondi Pubblici Regionali (45%%) - POR, PSR e finanziamenti Regione Siciliana"
+msgstr "Regional Public Funds (45%%) - POR, PSR and Sicilian Region funding"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:219
+#, python-format
+msgid ""
+"Sponsorizzazioni Aziendali (25%%) - Partner privati impegnati nella cultura"
+msgstr "Corporate Sponsorships (25%%) - Private partners committed to culture"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:223
+#, python-format
+msgid ""
+"Proventi da Servizi (20%%) - Visite guidate, laboratori ed eventi culturali"
+msgstr "Service Revenue (20%%) - Guided tours, workshops and cultural events"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:227
+#, python-format
+msgid "Contributi Benefici (10%%) - Donazioni e supporto filantropico"
+msgstr "Charitable Contributions (10%%) - Donations and philanthropic support"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:251
+msgid "Allocazione Trasparente delle Risorse"
+msgstr "Transparent Resource Allocation"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:254
+#, python-format
+msgid ""
+"Le risorse finanziarie sono distribuite strategicamente per massimizzare "
+"l'impatto culturale e sociale del Parco: Attività Culturali (35%%), Ricerca "
+"e Conservazione (25%%), Infrastrutture e Manutenzione (20%%), "
+"Amministrazione e Gestione (15%%), Riserva (5%%)."
+msgstr ""
+"Financial resources are strategically distributed to maximize the cultural "
+"and social impact of the Park: Cultural Activities (35%%), Research and "
+"Conservation (25%%), Infrastructure and Maintenance (20%%), Administration "
+"and Management (15%%), Reserve (5%%)."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:276
+msgid "Progetti Finanziati"
+msgstr "Funded Projects"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:279
+msgid ""
+"Principali iniziative e progetti realizzati grazie ai finanziamenti ottenuti."
+msgstr ""
+"Main initiatives and projects carried out thanks to the funding obtained."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:289
+msgid "Digitalizzazione Archivi"
+msgstr "Archive Digitization"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:290
+msgid ""
+"Scansione e catalogazione digitale di oltre 500 documenti e fotografie "
+"storiche. Progetto completato nel 2024."
+msgstr ""
+"Digital scanning and cataloguing of over 500 historical documents and "
+"photographs. Project completed in 2024."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:299
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:206
+#: parco_verismo/templates/parco_verismo/vizzini.html:286
+msgid "Centro Studi"
+msgstr "Study Centre"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:300
+msgid ""
+"Ristrutturazione e realizzazione della nuova Sala di Lettura Interattiva con "
+"tecnologie innovative."
+msgstr ""
+"Renovation and creation of the new Interactive Reading Room with innovative "
+"technologies."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:309
+msgid "Laboratori Didattici"
+msgstr "Educational Workshops"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:310
+msgid ""
+"Programma triennale di laboratori per scuole e comunità sulla letteratura "
+"verista e il territorio."
+msgstr ""
+"Three-year programme of workshops for schools and communities on verist "
+"literature and the territory."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:319
+#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:33
+msgid "Itinerari Verghiani"
+msgstr "Verga Itineraries"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:320
+msgid ""
+"Creazione di percorsi culturali digitali e fisici nei luoghi letterari del "
+"Verismo siciliano."
+msgstr ""
+"Creation of digital and physical cultural routes in the literary places of "
+"Sicilian Verismo."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:335
+msgid "Supporta il Parco Letterario"
+msgstr "Support the Literary Park"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:338
+msgid ""
+"Contribuisci con una donazione o diventa partner per supportare la "
+"preservazione e lo sviluppo della cultura letteraria siciliana."
+msgstr ""
+"Contribute with a donation or become a partner to support the preservation "
+"and development of Sicilian literary culture."
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:342
+msgid "Dona Ora"
+msgstr "Donate Now"
+
+#: parco_verismo/templates/parco_verismo/accrediti_finanziamenti.html:345
+msgid "Diventa Partner"
+msgstr "Become a Partner"
+
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:4
 msgid "Archivio Fotografico - Parco Letterario Verismo"
 msgstr "Photo Archive - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:17
+#: parco_verismo/templates/parco_verismo/index.html:263
 msgid "Archivio Fotografico"
 msgstr "Photo Archive"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:18
 msgid "Un viaggio visivo attraverso i luoghi e le storie del Verismo"
 msgstr "A visual journey through the places and stories of Verismo"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:58
 msgid "Visualizza a schermo intero"
 msgstr "View fullscreen"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:84
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:146
 msgid "Precedente"
 msgstr "Previous"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:88
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:150
 msgid "Successivo"
 msgstr "Next"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:97
 msgid "Tutte le foto"
 msgstr "All photos"
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:128
 msgid "Nessuna foto disponibile"
 msgstr "No photos available"
 
-msgid "L\\"
-msgstr ""
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:129
+msgid "L'archivio fotografico sarà presto disponibile."
+msgstr "The photo archive will be available soon."
 
+#: parco_verismo/templates/parco_verismo/archivio_fotografico.html:143
+#: parco_verismo/templates/parco_verismo/calendario.html:39
 msgid "Chiudi"
 msgstr "Close"
 
+#: parco_verismo/templates/parco_verismo/base.html:8
 msgid ""
 "Parco Letterario Verismo - Un viaggio nella letteratura verista siciliana"
 msgstr "Verismo Literary Park - A journey through Sicilian verist literature"
 
-msgid "Parco Letterario Verismo"
-msgstr "Verismo Literary Park"
-
+#: parco_verismo/templates/parco_verismo/biblioteca.html:4
 msgid "Biblioteca Digitale - Parco Letterario Verismo"
 msgstr "Digital Library - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/biblioteca.html:10
+#: parco_verismo/templates/parco_verismo/navbar.html:137
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:221
 msgid "Biblioteca Digitale"
 msgstr "Digital Library"
 
+#: parco_verismo/templates/parco_verismo/biblioteca.html:11
 msgid ""
 "Cerca tra le opere di Verga e Capuana e accedi alla lettura integrale su "
 "Wikisource."
 msgstr ""
 "Browse the works of Verga and Capuana and read them in full on Wikisource."
 
+#: parco_verismo/templates/parco_verismo/biblioteca.html:19
 msgid "Nessuna opera trovata"
 msgstr "No works found"
 
+#: parco_verismo/templates/parco_verismo/biblioteca.html:19
 msgid "Non sono state trovate opere corrispondenti alla tua ricerca."
 msgstr "No works matching your search were found."
 
+#: parco_verismo/templates/parco_verismo/calendario.html:3
 msgid "Calendario Eventi - Parco Letterario Verismo"
 msgstr "Events Calendar - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:13
 msgid "Calendario Eventi"
 msgstr "Events Calendar"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:16
 msgid "Consulta il calendario completo degli eventi e salva i tuoi preferiti"
 msgstr "Browse the full event calendar and save your favourites"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:41
 msgid "Vedi dettagli completi"
 msgstr "View full details"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:69
+#: parco_verismo/templates/parco_verismo/eventi.html:49
+#: parco_verismo/templates/parco_verismo/notizie.html:49
 msgid "Oggi"
 msgstr "Today"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:70
 msgid "Mese"
 msgstr "Month"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:71
 msgid "Settimana"
 msgstr "Week"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:72
 msgid "Lista"
 msgstr "List"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:118
 msgid "Descrizione"
 msgstr "Description"
 
-#, fuzzy
-#| msgid "Vedi calendario"
+#: parco_verismo/templates/parco_verismo/calendario.html:137
 msgid "Aggiungi al calendario"
-msgstr "View calendar"
+msgstr "Add to calendar"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:139
 msgid "Google Calendar"
 msgstr "Google Calendar"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:142
 msgid "Outlook"
 msgstr "Outlook"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:145
 msgid "Apple Calendar"
 msgstr "Apple Calendar"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:148
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:270
 msgid "Evento aperto in Google Calendar!"
 msgstr "Event opened in Google Calendar!"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:292
 msgid "Evento aperto in Outlook!"
 msgstr "Event opened in Outlook!"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:331
 msgid "File calendario scaricato! Aprilo per aggiungere l'evento."
 msgstr "Calendar file downloaded! Open it to add the event."
 
+#: parco_verismo/templates/parco_verismo/calendario.html:344
 msgid "alle"
 msgstr "at"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:344
 msgid "Scopri di più sul sito del Parco Letterario del Verismo!"
 msgstr "Find out more on the Verismo Literary Park website!"
 
+#: parco_verismo/templates/parco_verismo/calendario.html:346
 msgid "Evento condiviso su WhatsApp!"
 msgstr "Event shared on WhatsApp!"
 
+# ===== REGOLAMENTO COMITATO =====
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:4
+msgid "Regolamento Comitato Tecnico-Scientifico"
+msgstr "Technical-Scientific Committee Regulations"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:20
+msgid "Normativa"
+msgstr "Regulations"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:22
+msgid "Regolamento del Comitato Tecnico-Scientifico"
+msgstr "Technical-Scientific Committee Regulations"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:25
+#: parco_verismo/templates/parco_verismo/index.html:17
+#: parco_verismo/templates/parco_verismo/index.html:32
+msgid "Parco Letterario del Verismo"
+msgstr "Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:41
+msgid "REGOLAMENTO DEL COMITATO TECNICO-SCIENTIFICO"
+msgstr "TECHNICAL-SCIENTIFIC COMMITTEE REGULATIONS"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:42
+msgid "del Progetto \"Il Parco Letterario del Verismo\""
+msgstr "of the Project \"The Verismo Literary Park\""
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:47
+msgid "Art. 1 – Istituzione e finalità"
+msgstr "Art. 1 – Establishment and purposes"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:49
+msgid ""
+"È istituito il Comitato Tecnico-Scientifico (CTS) del Progetto &ldquo;Il "
+"Parco Letterario del Verismo&rdquo; nell&rsquo;ambito del finanziamento "
+"D.D.G. n. 1159 del 6 marzo 2025 della Regione Siciliana. Il CTS è organo "
+"consultivo e di indirizzo strategico, con il compito di garantire la qualità "
+"scientifica, culturale e metodologica delle attività del progetto, nonché di "
+"favorirne la sostenibilità, la valorizzazione, il radicamento territoriale e "
+"la continuità temporale."
+msgstr ""
+"The Technical-Scientific Committee (TSC) of the Project \"The Verismo "
+"Literary Park\" is established within the framework of funding D.D.G. n. "
+"1159 of 6 March 2025 of the Sicilian Region. The TSC is an advisory and "
+"strategic guidance body, with the task of ensuring the scientific, cultural "
+"and methodological quality of the project's activities, as well as promoting "
+"its sustainability, enhancement, territorial rooting and temporal continuity."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:55
+msgid "Art. 2 – Composizione"
+msgstr "Art. 2 – Composition"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:57
+msgid ""
+"Il CTS, il cui insediamento è deliberato dal Comune capofila di Vizzini, è "
+"composto da un numero variabile di membri compreso tra 7 e 11. Ne fanno "
+"parte esperti nei settori letterario, storico, culturale, turistico, "
+"accademico e artistico, nonché rappresentanti dell&rsquo;Ente del Terzo "
+"Settore (ETS) attuatore del progetto. I membri del CTS sono scelti tra "
+"studiosi, ricercatori ed esperti che abbiano dato contributi significativi "
+"nell&rsquo;ambito della letteratura verista, delle discipline storico-"
+"artistiche, antropologiche, filologiche, turistiche e culturali, con "
+"comprovata esperienza nella valorizzazione del patrimonio culturale e "
+"territoriale."
+msgstr ""
+"The TSC, whose establishment is resolved by the lead Municipality of "
+"Vizzini, is composed of a variable number of members between 7 and 11. It "
+"includes experts in the literary, historical, cultural, tourist, academic "
+"and artistic sectors, as well as representatives of the Third Sector Entity "
+"(TSE) implementing the project. TSC members are chosen from among scholars, "
+"researchers and experts who have made significant contributions in the field "
+"of verist literature, historical-artistic, anthropological, philological, "
+"tourist and cultural disciplines, with proven experience in the enhancement "
+"of cultural and territorial heritage."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:59
+msgid ""
+"Fanno parte del Comitato, in rappresentanza istituzionale, i seguenti enti e "
+"soggetti:"
+msgstr ""
+"The following bodies and subjects are part of the Committee, in "
+"institutional representation:"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:61
+msgid "Comune di Vizzini – Comune capofila del progetto"
+msgstr "Municipality of Vizzini – Lead municipality of the project"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:62
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:172
+msgid "Comune di Mineo"
+msgstr "Municipality of Mineo"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:63
+msgid "Comune di Licodia Eubea"
+msgstr "Municipality of Licodia Eubea"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:64
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:254
+msgid "Università degli Studi di Catania"
+msgstr "University of Catania"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:65
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:220
+msgid "Fondazione Verga"
+msgstr "Verga Foundation"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:66
+msgid "Centro Studi C.E.S.T.A. (attuatore del progetto)"
+msgstr "C.E.S.T.A. Study Centre (project implementer)"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:67
+msgid "ITS Academy Turismo Sicilia"
+msgstr "ITS Academy Tourism Sicily"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:68
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:247
+msgid "ITS Steve Jobs di Caltagirone"
+msgstr "ITS Steve Jobs of Caltagirone"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:69
+msgid "Discendenza di Giovanni Verga"
+msgstr "Giovanni Verga's descendants"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:70
+msgid "Discendenza di Luigi Capuana"
+msgstr "Luigi Capuana's descendants"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:73
+msgid ""
+"Possono essere invitati alle sedute, senza diritto di voto, rappresentanti "
+"di università, istituti culturali, ITS, enti di ricerca e altri soggetti "
+"interessati."
+msgstr ""
+"Representatives of universities, cultural institutes, ITS, research bodies "
+"and other interested parties may be invited to meetings, without voting "
+"rights."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:79
+msgid "Art. 3 – Nomina e durata"
+msgstr "Art. 3 – Appointment and duration"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:81
+msgid ""
+"I componenti del CTS sono nominati con provvedimento del Comune capofila di "
+"Vizzini. Il CTS rimane in carica per tutta la durata del progetto, sino alla "
+"conclusione delle attività previste dal medesimo. L&rsquo;incarico è "
+"gratuito."
+msgstr ""
+"TSC members are appointed by provision of the lead Municipality of Vizzini. "
+"The TSC remains in office for the entire duration of the project, until the "
+"completion of the activities provided for therein. The position is unpaid."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:87
+msgid "Art. 4 – Compiti e funzioni"
+msgstr "Art. 4 – Tasks and functions"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:88
+msgid "Il CTS:"
+msgstr "The TSC:"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:90
+msgid ""
+"definisce linee di indirizzo metodologico e culturale per la realizzazione "
+"del progetto"
+msgstr ""
+"defines methodological and cultural guidelines for the implementation of the "
+"project"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:91
+msgid ""
+"supporta la progettazione e la valutazione di itinerari culturali e percorsi "
+"tematici"
+msgstr ""
+"supports the design and evaluation of cultural itineraries and thematic "
+"routes"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:92
+msgid ""
+"fornisce pareri e orientamenti sulle attività formative, digitali, "
+"artistiche e partecipative"
+msgstr ""
+"provides opinions and guidance on training, digital, artistic and "
+"participatory activities"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:93
+msgid ""
+"promuove relazioni con università, ITS, centri di ricerca e istituzioni "
+"culturali"
+msgstr ""
+"promotes relations with universities, ITS, research centres and cultural "
+"institutions"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:94
+msgid ""
+"contribuisce alla definizione di protocolli e disciplinari per prodotti "
+"culturali innovativi"
+msgstr ""
+"contributes to the definition of protocols and specifications for innovative "
+"cultural products"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:95
+msgid ""
+"collabora alla progettazione del Premio Verga-Capuana e della Giornata di "
+"Studi sul Verismo"
+msgstr ""
+"collaborates in the design of the Verga-Capuana Award and the Verismo Study "
+"Day"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:96
+msgid ""
+"valuta gli esiti delle attività e formula raccomandazioni per il "
+"miglioramento"
+msgstr ""
+"evaluates the outcomes of activities and formulates recommendations for "
+"improvement"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:97
+msgid ""
+"partecipa in modo collegiale alla pianificazione delle attività e alla "
+"definizione delle priorità operative"
+msgstr ""
+"participates collegially in the planning of activities and the definition of "
+"operational priorities"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:103
+msgid "Art. 4-bis – Coordinatore del Comitato Tecnico-Scientifico"
+msgstr "Art. 4-bis – Coordinator of the Technical-Scientific Committee"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:105
+msgid ""
+"Il CTS individua al proprio interno, nella seduta di insediamento, un "
+"Coordinatore scelto tra i componenti. Il Coordinatore ha funzioni di "
+"raccordo tra il CTS, il Comune capofila e l&rsquo;ETS attuatore del "
+"progetto. Coordina le attività del Comitato, presiede le riunioni, assicura "
+"la corretta esecuzione delle deliberazioni e rappresenta il CTS nelle "
+"relazioni esterne di carattere tecnico-scientifico."
+msgstr ""
+"The TSC identifies, within its inaugural meeting, a Coordinator chosen from "
+"among its members. The Coordinator has liaison functions between the TSC, "
+"the lead Municipality and the TSE implementing the project. The Coordinator "
+"coordinates the Committee's activities, chairs meetings, ensures the correct "
+"execution of resolutions and represents the TSC in external relations of a "
+"technical-scientific nature."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:111
+msgid "Art. 5 – Modalità di funzionamento"
+msgstr "Art. 5 – Operating procedures"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:113
+msgid ""
+"Il CTS si riunisce ogniqualvolta se ne ravvisi la necessità, su iniziativa "
+"dell&rsquo;ETS attuatore o su richiesta di almeno un terzo dei componenti. "
+"La convocazione è effettuata dalla segreteria tecnico-organizzativa, anche "
+"in forma telematica, con un preavviso minimo di 3 giorni. Le riunioni "
+"possono svolgersi in presenza o da remoto, mediante strumenti digitali "
+"idonei. Le sedute sono valide con la presenza della maggioranza dei "
+"componenti."
+msgstr ""
+"The TSC meets whenever necessary, on the initiative of the implementing TSE "
+"or at the request of at least one third of the members. The convocation is "
+"made by the technical-organizational secretariat, including electronically, "
+"with a minimum notice of 3 days. Meetings may be held in person or remotely, "
+"using suitable digital tools. Sessions are valid with the presence of the "
+"majority of members."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:116
+msgid ""
+"Le decisioni sono assunte a maggioranza dei presenti. In caso di parità di "
+"voti si applica il seguente sistema di voto ponderato:"
+msgstr ""
+"Decisions are taken by majority of those present. In the event of a tie, the "
+"following weighted voting system applies:"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:119
+msgid "Il Comune capofila di Vizzini dispone di due voti"
+msgstr "The lead Municipality of Vizzini has two votes"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:120
+msgid ""
+"I discendenti di Luigi Capuana dispongono congiuntamente di un voto unico"
+msgstr "Luigi Capuana's descendants jointly have a single vote"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:121
+msgid "Tutti gli altri componenti del CTS dispongono di un voto ciascuno"
+msgstr "All other TSC members have one vote each"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:127
+msgid "Art. 6 – Segreteria tecnico-organizzativa"
+msgstr "Art. 6 – Technical-organizational secretariat"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:129
+msgid ""
+"Le funzioni di segreteria del CTS sono svolte dall&rsquo;ETS attuatore del "
+"progetto. La segreteria cura la convocazione delle riunioni, la redazione e "
+"conservazione dei verbali, il supporto organizzativo e amministrativo, "
+"nonché la trasmissione delle deliberazioni ai Comuni partner."
+msgstr ""
+"The secretariat functions of the TSC are performed by the implementing TSE "
+"of the project. The secretariat handles the convocation of meetings, the "
+"drafting and preservation of minutes, organizational and administrative "
+"support, as well as the transmission of resolutions to partner "
+"Municipalities."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:135
+msgid "Art. 7 – Decadenza e sostituzione dei componenti"
+msgstr "Art. 7 – Forfeiture and replacement of members"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:137
+msgid ""
+"I componenti decadono dall&rsquo;incarico per: dimissioni volontarie; "
+"assenza ingiustificata a tre riunioni consecutive; sopravvenuta "
+"incompatibilità con le finalità del progetto. In caso di decadenza o "
+"dimissioni, il Comune capofila provvede alla eventuale sostituzione con "
+"nuova nomina."
+msgstr ""
+"Members forfeit their position due to: voluntary resignation; unjustified "
+"absence from three consecutive meetings; supervening incompatibility with "
+"the project's purposes. In the event of forfeiture or resignation, the lead "
+"Municipality provides for any replacement by new appointment."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:143
+msgid "Art. 8 – Disposizioni finali"
+msgstr "Art. 8 – Final provisions"
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:145
+msgid ""
+"Per quanto non espressamente previsto dal presente Regolamento si fa rinvio "
+"alla normativa vigente in materia di organi collegiali. Il presente "
+"Regolamento resterà in vigore fino alla conclusione delle attività "
+"progettuali."
+msgstr ""
+"For matters not expressly provided for by this Regulation, reference is made "
+"to current legislation on collegial bodies. This Regulation shall remain in "
+"force until the completion of project activities."
+
+#: parco_verismo/templates/parco_verismo/comitato_regolamento.html:153
+msgid "Torna al Comitato"
+msgstr "Back to Committee"
+
+# ===== COMITATO TECNICO-SCIENTIFICO =====
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:4
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:22
+msgid "Comitato Tecnico-Scientifico"
+msgstr "Technical-Scientific Committee"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:21
+msgid "Organi Direttivi"
+msgstr "Governing Bodies"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:23
+msgid "Presidio culturale e scientifico del Parco Letterario del Verismo"
+msgstr "Cultural and scientific hub of the Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:118
+msgid ""
+"Il Comitato Tecnico-Scientifico è stato istituito con Determinazione "
+"Sindacale n. 50 del 20 ottobre 2025..."
+msgstr ""
+"The Technical-Scientific Committee was established by Mayoral Determination "
+"No. 50 of 20 October 2025..."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:121
+msgid "Funzione del Comitato"
+msgstr "Committee Function"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:122
+msgid ""
+"Il Comitato ha funzione consultiva e di orientamento strategico: supporta "
+"gli Enti locali e i partner culturali..."
+msgstr ""
+"The Committee has an advisory and strategic guidance function: it supports "
+"local authorities and cultural partners..."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:126
+msgid "Principali Compiti"
+msgstr "Main Tasks"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:128
+msgid ""
+"Valutare e fornire pareri scientifici su progetti culturali, iniziative "
+"editoriali e mostre."
+msgstr ""
+"Evaluate and provide scientific opinions on cultural projects, editorial "
+"initiatives and exhibitions."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:129
+msgid ""
+"Proporre linee guida per la tutela e la valorizzazione del patrimonio "
+"verghiano e capuaniano."
+msgstr ""
+"Propose guidelines for the protection and enhancement of the Verga and "
+"Capuana heritage."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:130
+msgid ""
+"Favorire collaborazioni con università, centri studi e istituti di ricerca."
+msgstr ""
+"Foster collaborations with universities, study centres and research "
+"institutes."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133
+msgid "Frequenza incontri:"
+msgstr "Meeting frequency:"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:133
+msgid ""
+"Il Comitato si riunisce con cadenza trimestrale e può essere convocato in "
+"sedute straordinarie."
+msgstr ""
+"The Committee meets quarterly and may be convened in extraordinary sessions."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134
+msgid "Durata incarico:"
+msgstr "Term of office:"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:134
+msgid ""
+"I membri sono nominati per un mandato triennale, rinnovabile secondo le "
+"disposizioni del regolamento."
+msgstr ""
+"Members are appointed for a three-year term, renewable according to the "
+"regulations."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:136
+msgid ""
+"Per il testo integrale del regolamento e i verbali delle sedute consulta la "
+"pagina"
+msgstr ""
+"For the full text of the regulations and meeting minutes, please consult the "
+"page"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:148
+msgid "Composizione del Comitato"
+msgstr "Committee Composition"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:149
+msgid ""
+"Una rete di esperti e istituzioni dedicati alla valorizzazione del "
+"patrimonio verghiano e capuaniano"
+msgstr ""
+"A network of experts and institutions dedicated to enhancing the Verga and "
+"Capuana heritage"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:157
+msgid "Rappresentanti Enti Pubblici"
+msgstr "Public Body Representatives"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:164
+msgid "Dott. Pietro La Rocca"
+msgstr "Dr. Pietro La Rocca"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:165
+msgid "Comune di Vizzini"
+msgstr "Municipality of Vizzini"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:171
+msgid "Dott. Mario Luca Sebastiano Testa"
+msgstr "Dr. Mario Luca Sebastiano Testa"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:184
+msgid "Centri Studi e Famiglie Depositarie del Patrimonio"
+msgstr "Study Centres and Heritage Custodian Families"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:191
+msgid "Dott. Raffaele Assunta Brunelli"
+msgstr "Dr. Raffaele Assunta Brunelli"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:192
+msgid "Centro Studi C.E.S.T.A."
+msgstr "C.E.S.T.A. Study Centre"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:198
+msgid "Dott. Tommaso Domenico Cilia"
+msgstr "Dr. Tommaso Domenico Cilia"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:199
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:213
+msgid "Famiglia Capuana"
+msgstr "Capuana Family"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:205
+msgid "Dott.ssa Carla Verga"
+msgstr "Dr. Carla Verga"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:206
+msgid "Famiglia Verga"
+msgstr "Verga Family"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:212
+msgid "Dott. Carlo Capuana"
+msgstr "Dr. Carlo Capuana"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:219
+msgid "Prof. Antonio Di Silvestro"
+msgstr "Prof. Antonio Di Silvestro"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:232
+msgid "Istituti Superiori e Università"
+msgstr "Higher Institutes and Universities"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:239
+msgid "Dott.ssa Anna Raudino"
+msgstr "Dr. Anna Raudino"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:240
+msgid "ITS Academy di Siracusa"
+msgstr "ITS Academy of Syracuse"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:246
+msgid "Prof. Francesco Pignataro"
+msgstr "Prof. Francesco Pignataro"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:253
+msgid "Prof. Luigi Ingaliso"
+msgstr "Prof. Luigi Ingaliso"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:266
+msgid "Coordinamento"
+msgstr "Coordination"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:273
+msgid "Dott.ssa Delia Francesca Di Pasquale"
+msgstr "Dr. Delia Francesca Di Pasquale"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:274
+msgid "Coordinatrice del Comitato Tecnico-Scientifico"
+msgstr "Coordinator of the Technical-Scientific Committee"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:327
+msgid "Coerenza Scientifica"
+msgstr "Scientific Coherence"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:328
+msgid "Garantire coerenza scientifica e culturale alle azioni del progetto"
+msgstr "Ensure scientific and cultural coherence of project actions"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:335
+msgid "Progettazione Strategica"
+msgstr "Strategic Planning"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:336
+msgid ""
+"Orientare la progettazione di eventi, percorsi, accordi istituzionali e "
+"produzioni culturali"
+msgstr ""
+"Guide the design of events, routes, institutional agreements and cultural "
+"productions"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:343
+msgid "Monitoraggio e Valutazione"
+msgstr "Monitoring and Evaluation"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:344
+msgid ""
+"Valutare l'impatto e il raggiungimento degli obiettivi culturali e sociali "
+"del Parco"
+msgstr ""
+"Evaluate the impact and achievement of the Park's cultural and social "
+"objectives"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:351
+msgid "Coordinamento Istituzionale"
+msgstr "Institutional Coordination"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:352
+msgid ""
+"Favorire il dialogo tra enti locali, istituzioni regionali e partner "
+"culturali per la realizzazione condivisa del progetto"
+msgstr ""
+"Foster dialogue between local authorities, regional institutions and "
+"cultural partners for the shared implementation of the project"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:367
+msgid "Presidio Culturale e Scientifico"
+msgstr "Cultural and Scientific Hub"
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:368
+msgid ""
+"Il Comitato rappresenta il presidio culturale e scientifico del progetto, "
+"assicurandone continuità e radicamento territoriale."
+msgstr ""
+"The Committee represents the cultural and scientific hub of the project, "
+"ensuring its continuity and territorial rooting."
+
+#: parco_verismo/templates/parco_verismo/comitato_tecnico_scientifico.html:370
+msgid "Leggi il Regolamento"
+msgstr "Read the Regulations"
+
+#: parco_verismo/templates/parco_verismo/components/documento_card.html:44
 msgid "Visualizza documento"
 msgstr "View document"
 
+#: parco_verismo/templates/parco_verismo/components/evento_card.html:39
+#: parco_verismo/templates/parco_verismo/components/itinerario_card.html:35
+#: parco_verismo/templates/parco_verismo/components/opera_card.html:27
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:33
 msgid "Scopri di più"
 msgstr "Learn more"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:8
 msgid ""
 "Un viaggio nella Sicilia di Verga e Capuana attraverso i luoghi che hanno "
 "ispirato i grandi capolavori del verismo italiano."
@@ -145,60 +1002,84 @@ msgstr ""
 "A journey through Verga and Capuana's Sicily, discovering the places that "
 "inspired the great masterpieces of Italian verismo."
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:25
 msgid "Navigazione"
 msgstr "Navigation"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:27
 msgid "Home"
 msgstr "Home"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:28
+#: parco_verismo/templates/parco_verismo/mineo.html:307
 msgid "Biblioteca"
 msgstr "Library"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:29
+#: parco_verismo/templates/parco_verismo/eventi.html:59
+#: parco_verismo/templates/parco_verismo/navbar.html:83
 msgid "Eventi"
 msgstr "Events"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:30
 msgid "Notizie"
 msgstr "News"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:31
+#: parco_verismo/templates/parco_verismo/navbar.html:147
 msgid "Documenti & Studi"
 msgstr "Documents & Studies"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:35
+#: parco_verismo/templates/parco_verismo/navbar.html:154
 msgid "Contatti"
 msgstr "Contacts"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:52
 msgid "Newsletter"
 msgstr "Newsletter"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:53
 msgid "Ricevi aggiornamenti sugli eventi e le novità del Parco."
 msgstr "Receive updates about events and news from the Park."
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:55
 msgid "La tua email"
 msgstr "Your email"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:55
 msgid "Email per newsletter"
 msgstr "Newsletter email"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:56
 msgid "Iscriviti"
 msgstr "Subscribe"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:63
 msgid "Parco Letterario Verismo. Tutti i diritti riservati."
 msgstr "Verismo Literary Park. All rights reserved."
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:76
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
+#: parco_verismo/templates/parco_verismo/components/footer.html:77
 msgid "Termini di Servizio"
 msgstr "Terms of Service"
 
+#: parco_verismo/templates/parco_verismo/components/no_results.html:12
 msgid "Nessun risultato"
 msgstr "No results"
 
+#: parco_verismo/templates/parco_verismo/components/no_results.html:13
 msgid "Non sono stati trovati elementi corrispondenti alla tua ricerca."
 msgstr "No items matching your search were found."
 
+#: parco_verismo/templates/parco_verismo/components/notizia_card.html:35
 msgid "Leggi di più"
 msgstr "Read more"
 
+#: parco_verismo/templates/parco_verismo/components/opera_card.html:19
 #, python-format
 msgid ""
 "\n"
@@ -209,47 +1090,63 @@ msgstr ""
 "      <p class=\"card-text text-muted mb-2\">by %(autore)s</p>\n"
 "      "
 
+#: parco_verismo/templates/parco_verismo/components/opera_card.html:23
 msgid "Anno:"
 msgstr "Year:"
 
+#: parco_verismo/templates/parco_verismo/components/search_form.html:13
 msgid "Cerca..."
 msgstr "Search..."
 
+#: parco_verismo/templates/parco_verismo/components/search_form.html:16
+#: parco_verismo/templates/parco_verismo/documenti.html:23
 msgid "Cerca"
 msgstr "Search"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:4
 msgid "Documenti e Studi - Parco Letterario Verismo"
 msgstr "Documents & Studies - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:10
 msgid "Documenti e Studi"
 msgstr "Documents & Studies"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:11
 msgid ""
 "Esplora i documenti e gli studi pubblicati dal Parco Letterario del Verismo"
 msgstr ""
 "Explore the documents and studies published by the Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:20
 msgid "Cerca per titolo, descrizione, autori..."
 msgstr "Search by title, description, authors..."
 
+#: parco_verismo/templates/parco_verismo/documenti.html:33
 msgid "Tutti i tipi"
 msgstr "All types"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:34
+#: parco_verismo/templates/parco_verismo/index.html:266
 msgid "Documenti"
 msgstr "Documents"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:35
 msgid "Studi"
 msgstr "Studies"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:36
 msgid "Ricerche"
 msgstr "Research"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:37
 msgid "Saggi"
 msgstr "Essays"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:50
 msgid "Nessun documento disponibile"
 msgstr "No documents available"
 
+#: parco_verismo/templates/parco_verismo/documenti.html:51
 msgid ""
 "Al momento non ci sono documenti o studi pubblicati. Torna presto per "
 "consultare i nostri materiali!"
@@ -257,17 +1154,12 @@ msgstr ""
 "There are no documents or studies published at the moment. Check back soon "
 "to browse our materials!"
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:27
 msgid "Autori:"
 msgstr "Authors:"
 
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "        <div class=\"text-center text-secondary mb-5\">\n"
-#| "          <i class=\"bi bi-calendar me-2\"></i>Pubblicata il "
-#| "%(data_pub)s\n"
-#| "        </div>\n"
-#| "        "
+#: parco_verismo/templates/parco_verismo/documento_detail.html:30
+#, python-format
 msgid ""
 "\n"
 "          <p class=\"mb-0\">\n"
@@ -276,32 +1168,99 @@ msgid ""
 "          "
 msgstr ""
 "\n"
-"        <div class=\"text-center text-secondary mb-5\">\n"
-"          <i class=\"bi bi-calendar me-2\"></i>Published on %(data_pub)s\n"
-"        </div>\n"
-"        "
+"          <p class=\"mb-0\">\n"
+"            <i class=\"bi bi-calendar me-2\"></i>Published on %(data_pub)s\n"
+"          </p>\n"
+"          "
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:59
 msgid "Parole chiave:"
 msgstr "Keywords:"
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:70
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:69
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:79
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:89
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:99
 msgid "Scarica PDF"
 msgstr "Download PDF"
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:75
 msgid "Visualizza PDF"
 msgstr "View PDF"
 
+#: parco_verismo/templates/parco_verismo/documento_detail.html:82
 msgid "Torna ai documenti"
 msgstr "Back to documents"
 
+#: parco_verismo/templates/parco_verismo/eventi.html:4
 msgid "Eventi - Parco Letterario Verismo"
 msgstr "Events - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/eventi.html:14
+#: parco_verismo/templates/parco_verismo/notizie.html:14
+
+msgid "Apri calendario"
+msgstr "View calendar"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:28
+#: parco_verismo/templates/parco_verismo/notizie.html:28
+msgid "Lun"
+msgstr "Mon"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:29
+#: parco_verismo/templates/parco_verismo/notizie.html:29
+msgid "Mar"
+msgstr "Tue"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:30
+#: parco_verismo/templates/parco_verismo/notizie.html:30
+msgid "Mer"
+msgstr "Wed"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:31
+#: parco_verismo/templates/parco_verismo/notizie.html:31
+msgid "Gio"
+msgstr "Thu"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:32
+#: parco_verismo/templates/parco_verismo/notizie.html:32
+msgid "Ven"
+msgstr "Fri"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:33
+#: parco_verismo/templates/parco_verismo/notizie.html:33
+msgid "Sab"
+msgstr "Sat"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:34
+#: parco_verismo/templates/parco_verismo/notizie.html:34
+msgid "Dom"
+msgstr "Sun"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:47
+#: parco_verismo/templates/parco_verismo/notizie.html:47
+msgid "Evento"
+msgstr "Event"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:48
+#: parco_verismo/templates/parco_verismo/notizie.html:48
+msgid "Notizia"
+msgstr "News item"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:58
+msgid "Agenda"
+msgstr "Agenda"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:60
 msgid "Scopri tutti gli eventi organizzati dal Parco Letterario del Verismo"
 msgstr "Discover all the events organised by the Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/eventi.html:72
 msgid "Nessun evento programmato"
 msgstr "No scheduled events"
 
+#: parco_verismo/templates/parco_verismo/eventi.html:73
 msgid ""
 "Al momento non ci sono eventi in programma. Torna presto per scoprire le "
 "nostre iniziative!"
@@ -309,133 +1268,585 @@ msgstr ""
 "There are no events scheduled right now. Come back soon to discover our "
 "initiatives!"
 
+#: parco_verismo/templates/parco_verismo/eventi.html:131
+#: parco_verismo/templates/parco_verismo/notizie.html:129
+msgid "Gennaio"
+msgstr "January"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:131
+#: parco_verismo/templates/parco_verismo/notizie.html:129
+msgid "Febbraio"
+msgstr "February"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:131
+#: parco_verismo/templates/parco_verismo/notizie.html:129
+msgid "Marzo"
+msgstr "March"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:132
+#: parco_verismo/templates/parco_verismo/notizie.html:130
+#: parco_verismo/templates/parco_verismo/vizzini.html:105
+msgid "Aprile"
+msgstr "April"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:132
+#: parco_verismo/templates/parco_verismo/notizie.html:130
+msgid "Maggio"
+msgstr "May"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:132
+#: parco_verismo/templates/parco_verismo/notizie.html:130
+msgid "Giugno"
+msgstr "June"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:133
+#: parco_verismo/templates/parco_verismo/notizie.html:131
+msgid "Luglio"
+msgstr "July"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:133
+#: parco_verismo/templates/parco_verismo/mineo.html:116
+#: parco_verismo/templates/parco_verismo/notizie.html:131
+msgid "Agosto"
+msgstr "August"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:133
+#: parco_verismo/templates/parco_verismo/notizie.html:131
+#: parco_verismo/templates/parco_verismo/vizzini.html:127
+msgid "Settembre"
+msgstr "September"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:134
+#: parco_verismo/templates/parco_verismo/licodia.html:127
+#: parco_verismo/templates/parco_verismo/mineo.html:127
+#: parco_verismo/templates/parco_verismo/notizie.html:132
+msgid "Ottobre"
+msgstr "October"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:134
+#: parco_verismo/templates/parco_verismo/notizie.html:132
+msgid "Novembre"
+msgstr "November"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:134
+#: parco_verismo/templates/parco_verismo/licodia.html:138
+#: parco_verismo/templates/parco_verismo/notizie.html:132
+msgid "Dicembre"
+msgstr "December"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:138
+#: parco_verismo/templates/parco_verismo/notizie.html:136
+msgid "Domenica"
+msgstr "Sunday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:138
+#: parco_verismo/templates/parco_verismo/notizie.html:136
+msgid "Lunedì"
+msgstr "Monday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:138
+#: parco_verismo/templates/parco_verismo/notizie.html:136
+msgid "Martedì"
+msgstr "Tuesday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:139
+#: parco_verismo/templates/parco_verismo/notizie.html:137
+msgid "Mercoledì"
+msgstr "Wednesday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:139
+#: parco_verismo/templates/parco_verismo/notizie.html:137
+msgid "Giovedì"
+msgstr "Thursday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:139
+#: parco_verismo/templates/parco_verismo/notizie.html:137
+msgid "Venerdì"
+msgstr "Friday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:139
+#: parco_verismo/templates/parco_verismo/notizie.html:137
+msgid "Sabato"
+msgstr "Saturday"
+
+#: parco_verismo/templates/parco_verismo/eventi.html:161
+msgid "Nessun evento in questa data"
+msgstr "No events on this date"
+
+#: parco_verismo/templates/parco_verismo/evento_detail.html:26
 msgid "Data e Ora"
 msgstr "Date and Time"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:29
 msgid "Inizio:"
 msgstr "Start:"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:33
 msgid "Fine:"
 msgstr "End:"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:43
+#: parco_verismo/templates/parco_verismo/index.html:356
 msgid "Luogo"
 msgstr "Venue"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:66
 msgid "Torna agli eventi"
 msgstr "Back to events"
 
+#: parco_verismo/templates/parco_verismo/evento_detail.html:69
 msgid "Vedi calendario"
 msgstr "View calendar"
 
-msgid "Parco Letterario del Verismo"
-msgstr "Verismo Literary Park"
-
+#: parco_verismo/templates/parco_verismo/index.html:18
 msgid "Un viaggio nella Sicilia di Verga e Capuana"
 msgstr "A journey through Verga and Capuana's Sicily"
 
+# ===== INDEX PAGE =====
+#: parco_verismo/templates/parco_verismo/index.html:32
+msgid "Il"
+msgstr "The"
+
+#: parco_verismo/templates/parco_verismo/index.html:39
+msgid "Scopri il Parco"
+msgstr "Discover the Park"
+
+#: parco_verismo/templates/parco_verismo/index.html:40
+msgid "Comitato Tecnico"
+msgstr "Technical Committee"
+
+#: parco_verismo/templates/parco_verismo/index.html:53
+msgid "Località"
+msgstr "Locations"
+
+#: parco_verismo/templates/parco_verismo/index.html:56
 msgid ""
-"Licodia Eubea - Storia, archeologia e tradizioni nel cuore degli Iblei. "
-"Scopri monumenti, musei, eventi e natura."
+"Scopri i tre comuni del Verismo e gli itinerari tematici dedicati a Verga e "
+"Capuana"
 msgstr ""
-"Licodia Eubea - History, archaeology and traditions in the heart of the "
-"Hyblean Mountains. Discover monuments, museums, events and nature."
+"Discover the three municipalities of Verismo and the thematic itineraries "
+"dedicated to Verga and Capuana"
 
-msgid "Parco Letterario Verismo - Licodia Eubea"
-msgstr "Verismo Literary Park - Licodia Eubea"
+#: parco_verismo/templates/parco_verismo/index.html:67
+msgid "La patria di Giovanni Verga, dove la letteratura dialoga con i luoghi."
+msgstr ""
+"The homeland of Giovanni Verga, where literature dialogues with places."
 
+#: parco_verismo/templates/parco_verismo/index.html:68
+msgid "Scopri Vizzini"
+msgstr "Discover Vizzini"
+
+#: parco_verismo/templates/parco_verismo/index.html:78
+msgid "Uno dei luoghi più importanti della narrativa capuaniana e del Verismo."
+msgstr "One of the most important places in Capuana's narrative and Verismo."
+
+#: parco_verismo/templates/parco_verismo/index.html:79
+msgid "Scopri Mineo"
+msgstr "Discover Mineo"
+
+#: parco_verismo/templates/parco_verismo/index.html:89
+msgid ""
+"Un territorio ricco di storia e di legami con la grande letteratura "
+"siciliana."
+msgstr "A territory rich in history and ties to great Sicilian literature."
+
+#: parco_verismo/templates/parco_verismo/index.html:90
+msgid "Scopri Licodia"
+msgstr "Discover Licodia"
+
+#: parco_verismo/templates/parco_verismo/index.html:102
+msgid "Eventi & Notizie"
+msgstr "Events & News"
+
+#: parco_verismo/templates/parco_verismo/index.html:103
+msgid "Ultimi eventi e aggiornamenti dal Parco"
+msgstr "Latest events and updates from the Park"
+
+#: parco_verismo/templates/parco_verismo/index.html:109
+msgid "Eventi recenti"
+msgstr "Recent events"
+
+#: parco_verismo/templates/parco_verismo/index.html:121
+msgid "Nessun evento recente"
+msgstr "No recent events"
+
+#: parco_verismo/templates/parco_verismo/index.html:125
+msgid "Vedi tutti gli eventi"
+msgstr "View all events"
+
+#: parco_verismo/templates/parco_verismo/index.html:132
+msgid "Notizie recenti"
+msgstr "Recent news"
+
+#: parco_verismo/templates/parco_verismo/index.html:144
+msgid "Nessuna notizia recente"
+msgstr "No recent news"
+
+#: parco_verismo/templates/parco_verismo/index.html:148
+msgid "Leggi tutte le notizie"
+msgstr "Read all news"
+
+#: parco_verismo/templates/parco_verismo/index.html:189
+msgid "Patrimonio Letterario"
+msgstr "Literary Heritage"
+
+#: parco_verismo/templates/parco_verismo/index.html:196
+msgid "Biblioteca Letteraria"
+msgstr "Literary Library"
+
+#: parco_verismo/templates/parco_verismo/index.html:199
+msgid ""
+"Esplora le opere di Giovanni Verga e Luigi Capuana, i pilastri della "
+"letteratura siciliana e italiana."
+msgstr ""
+"Explore the works of Giovanni Verga and Luigi Capuana, the pillars of "
+"Sicilian and Italian literature."
+
+#: parco_verismo/templates/parco_verismo/index.html:202
+msgid "Catalogo completo delle opere"
+msgstr "Complete catalogue of works"
+
+#: parco_verismo/templates/parco_verismo/index.html:203
+msgid "Biografie dettagliate degli autori"
+msgstr "Detailed author biographies"
+
+#: parco_verismo/templates/parco_verismo/index.html:204
+msgid "Analisi letterarie e studi critici"
+msgstr "Literary analyses and critical studies"
+
+#: parco_verismo/templates/parco_verismo/index.html:205
+msgid "Contenuti multimediali e interattivi"
+msgstr "Multimedia and interactive content"
+
+#: parco_verismo/templates/parco_verismo/index.html:208
+msgid "Accedi alla Biblioteca"
+msgstr "Access the Library"
+
+#: parco_verismo/templates/parco_verismo/index.html:243
+msgid "Risorse Documentali"
+msgstr "Documentary Resources"
+
+#: parco_verismo/templates/parco_verismo/index.html:250
+msgid "Archivi & Documenti"
+msgstr "Archives & Documents"
+
+#: parco_verismo/templates/parco_verismo/index.html:253
+msgid ""
+"Accedi agli archivi fotografici, agli studi critici e ai documenti storici "
+"sul patrimonio verista."
+msgstr ""
+"Access the photo archives, critical studies and historical documents on the "
+"verist heritage."
+
+#: parco_verismo/templates/parco_verismo/index.html:256
+msgid "Archivio fotografico del territorio"
+msgstr "Territorial photo archive"
+
+#: parco_verismo/templates/parco_verismo/index.html:257
+msgid "Studi e ricerche scientifiche"
+msgstr "Scientific studies and research"
+
+#: parco_verismo/templates/parco_verismo/index.html:258
+msgid "Documenti storici e manoscritti"
+msgstr "Historical documents and manuscripts"
+
+#: parco_verismo/templates/parco_verismo/index.html:259
+msgid "Risorse per la ricerca accademica"
+msgstr "Resources for academic research"
+
+#: parco_verismo/templates/parco_verismo/index.html:280
+#: parco_verismo/templates/parco_verismo/navbar.html:108
+msgid "Opere & Letteratura"
+msgstr "Works & Literature"
+
+#: parco_verismo/templates/parco_verismo/index.html:283
+msgid "Esplora le opere, i testi e i protagonisti del movimento verista"
+msgstr "Explore the works, texts and protagonists of the verist movement"
+
+#: parco_verismo/templates/parco_verismo/index.html:293
+#: parco_verismo/templates/parco_verismo/navbar.html:115
+msgid "Opere di Verga"
+msgstr "Works by Verga"
+
+#: parco_verismo/templates/parco_verismo/index.html:294
+msgid ""
+"Catalogo e risorse sulle opere principali di Giovanni Verga, saggi e "
+"edizioni critiche."
+msgstr ""
+"Catalogue and resources on the main works of Giovanni Verga, essays and "
+"critical editions."
+
+#: parco_verismo/templates/parco_verismo/index.html:295
+msgid "Scopri le opere"
+msgstr "Discover the works"
+
+#: parco_verismo/templates/parco_verismo/index.html:304
+#: parco_verismo/templates/parco_verismo/navbar.html:122
+msgid "Opere di Capuana"
+msgstr "Works by Capuana"
+
+#: parco_verismo/templates/parco_verismo/index.html:305
+msgid ""
+"Raccolta di testi, contesti critici e materiali su Luigi Capuana e la sua "
+"produzione."
+msgstr ""
+"Collection of texts, critical contexts and materials on Luigi Capuana and "
+"his production."
+
+#: parco_verismo/templates/parco_verismo/index.html:306
+msgid "Esplora Capuana"
+msgstr "Explore Capuana"
+
+#: parco_verismo/templates/parco_verismo/index.html:315
+#: parco_verismo/templates/parco_verismo/navbar.html:127
+msgid "Personaggi & Lessico del Verismo"
+msgstr "Characters & Vocabulary of Verismo"
+
+#: parco_verismo/templates/parco_verismo/index.html:316
+msgid ""
+"Schede sui personaggi principali, lessico caratteristico e termini letterari "
+"del Verismo."
+msgstr ""
+"Character profiles, characteristic vocabulary and literary terms of Verismo."
+
+#: parco_verismo/templates/parco_verismo/index.html:317
+msgid "Approfondisci"
+msgstr "Learn more"
+
+#: parco_verismo/templates/parco_verismo/index.html:333
+msgid "Prenota il tuo itinerario"
+msgstr "Book your itinerary"
+
+#: parco_verismo/templates/parco_verismo/index.html:334
+msgid ""
+"Compila i tuoi dati e scegli luogo e tipologia d'itinerario. Ti contatteremo "
+"al più presto."
+msgstr ""
+"Fill in your details and choose the location and type of itinerary. We will "
+"contact you as soon as possible."
+
+#: parco_verismo/templates/parco_verismo/index.html:341
+msgid "Nome"
+msgstr "Name"
+
+#: parco_verismo/templates/parco_verismo/index.html:342
+msgid "Inserisci il tuo nome"
+msgstr "Enter your name"
+
+#: parco_verismo/templates/parco_verismo/index.html:346
+msgid "Cognome"
+msgstr "Surname"
+
+#: parco_verismo/templates/parco_verismo/index.html:347
+msgid "Inserisci il tuo cognome"
+msgstr "Enter your surname"
+
+#: parco_verismo/templates/parco_verismo/index.html:351
+msgid "Email"
+msgstr "Email"
+
+#: parco_verismo/templates/parco_verismo/index.html:352
+msgid "Inserisci la tua email"
+msgstr "Enter your email"
+
+#: parco_verismo/templates/parco_verismo/index.html:365
+msgid "Tipologia itinerario"
+msgstr "Itinerary type"
+
+#: parco_verismo/templates/parco_verismo/index.html:367
+msgid "Itinerari verghiani"
+msgstr "Verga itineraries"
+
+#: parco_verismo/templates/parco_verismo/index.html:368
+msgid "Itinerari capuaniani"
+msgstr "Capuana itineraries"
+
+#: parco_verismo/templates/parco_verismo/index.html:369
+msgid "Itinerari tematici"
+msgstr "Thematic itineraries"
+
+#: parco_verismo/templates/parco_verismo/index.html:375
+msgid "Invia richiesta"
+msgstr "Send request"
+
+#: parco_verismo/templates/parco_verismo/index.html:377
+msgid "Ti risponderemo via email per confermare la tua richiesta."
+msgstr "We will reply by email to confirm your request."
+
+# ===== ITINERARI =====
+#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:8
+msgid ""
+"Itinerari Verghiani - Scopri i luoghi delle opere di Giovanni Verga "
+"attraverso percorsi letterari nel cuore della Sicilia."
+msgstr ""
+"Verga Itineraries - Discover the places of Giovanni Verga's works through "
+"literary routes in the heart of Sicily."
+
+#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:10
+msgid "Parco Letterario Verismo - Itinerari Verghiani"
+msgstr "Verismo Literary Park - Verga Itineraries"
+
+#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:44
+msgid "Nessun itinerario disponibile"
+msgstr "No itinerary available"
+
+#: parco_verismo/templates/parco_verismo/itinerari_verghiani.html:45
+msgid ""
+"Al momento non ci sono itinerari verghiani disponibili. Torna presto per "
+"scoprire i percorsi!"
+msgstr ""
+"There are currently no Verga itineraries available. Check back soon to "
+"discover the routes!"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:17
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:112
+msgid "Torna agli itinerari verghiani"
+msgstr "Back to Verga itineraries"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:21
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:116
+msgid "Torna agli itinerari capuaniani"
+msgstr "Back to Capuana itineraries"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:25
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:120
+msgid "Torna agli itinerari tematici"
+msgstr "Back to thematic itineraries"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:49
+msgid "Descrizione del percorso"
+msgstr "Route description"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:65
+msgid "Apri su Maps"
+msgstr "Open on Maps"
+
+#: parco_verismo/templates/parco_verismo/itinerario_detail.html:76
+msgid "Tappe del percorso"
+msgstr "Route stages"
+
+# ===== LICODIA =====
+#: parco_verismo/templates/parco_verismo/licodia.html:4
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:203
+msgid "Licodia Eubea"
+msgstr "Licodia Eubea"
+
+# ===== VIZZINI / MINEO / LICODIA (blocktrans) =====
+#: parco_verismo/templates/parco_verismo/licodia.html:21
+#: parco_verismo/templates/parco_verismo/mineo.html:21
+#: parco_verismo/templates/parco_verismo/vizzini.html:21
+msgid "Territorio"
+msgstr "Territory"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:23
 msgid "Tra storia, natura e tradizione nel cuore degli Iblei"
 msgstr ""
 "Between history, nature and tradition in the heart of the Hyblean Mountains"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:35
+#: parco_verismo/templates/parco_verismo/mineo.html:35
+#: parco_verismo/templates/parco_verismo/vizzini.html:35
 msgid "Introduzione"
 msgstr "Introduction"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:36
+
 msgid ""
 "\n"
-"            <p>A 600 metri sul livello del mare, sul versante nord "
-"occidentale degli Iblei, sorge Licodia Eubea. Il significato del toponimo è "
-"incerto, ma gli studi concordano nel riconoscere nel fondovalle la presenza "
-"di un'antica civiltà, documentata da una vasta rete di necropoli. In epoca "
-"moderna il luogo venne identificato con la <strong>subcolonia greca Lentini "
-"Subcensueta</strong> e successivamente con <strong>La Ciura</strong>, fino "
-"ad assumere nel <strong>1872</strong> il nome attuale. Le ricerche "
-"archeologiche di <strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</"
-"strong> hanno confermato l'esistenza di una rilevante borgata sicula, con "
-"una necropoli estesa e strutturata, databile all'<strong>VIII secolo a.C.</"
-"strong> Il Borgo rappresenta ancora oggi il nucleo più antico dell'abitato, "
+"                <p class=\"lead mb-3\">A 600 metri sul livello del mare, sul "
+"versante nord occidentale degli Iblei, sorge Licodia Eubea. Il significato "
+"del toponimo è incerto, ma gli studi concordano nel riconoscere nel "
+"fondovalle la presenza di un'antica civiltà, documentata da una vasta rete "
+"di necropoli.</p>\n"
+"                <p class=\"text-secondary\">In epoca moderna il luogo venne "
+"identificato con la <strong>subcolonia greca Lentini Subcensueta</strong> e "
+"successivamente con <strong>La Ciura</strong>, fino ad assumere nel "
+"<strong>1872</strong> il nome attuale. Le ricerche archeologiche di "
+"<strong>Paolo Orsi</strong> e <strong>Vincenzo Cazzaniga</strong> hanno "
+"confermato l'esistenza di una rilevante borgata sicula, con una necropoli "
+"estesa e strutturata, databile all'<strong>VIII secolo a.C.</strong> Il "
+"Borgo rappresenta ancora oggi il nucleo più antico dell'abitato, "
 "sopravvissuto al terremoto del 1693.</p>\n"
-"            "
+"                "
 msgstr ""
 "\n"
-"            <p>Rising 600 meters above sea level, on the northwestern side of the Hyblean "
-"Mountains, stands Licodia Eubea. The meaning of the toponym is uncertain, but "
-"studies agree in recognizing in the valley floor the presence of an ancient "
-"civilization, documented by an extensive network of necropolises. In modern "
-"times the place was identified with the <strong>Greek subcolony Lentini "
-"Subcensueta</strong> and later with <strong>La Ciura</strong>, until assuming "
-"in <strong>1872</strong> the current name. The archaeological research of "
-"<strong>Paolo Orsi</strong> and <strong>Vincenzo Cazzaniga</strong> confirmed "
-"the existence of a significant Sicilian settlement, with an extensive and "
-"structured necropolis, dating to the <strong>8th century BC</strong>. The "
-"Borgo still represents the oldest nucleus of the settlement, having survived "
-"the earthquake of 1693.</p>\n"
+"            <p>Rising 600 meters above sea level, on the northwestern side "
+"of the Hyblean Mountains, stands Licodia Eubea. The meaning of the toponym "
+"is uncertain, but studies agree in recognizing in the valley floor the "
+"presence of an ancient civilization, documented by an extensive network of "
+"necropolises. In modern times the place was identified with the "
+"<strong>Greek subcolony Lentini Subcensueta</strong> and later with "
+"<strong>La Ciura</strong>, until assuming in <strong>1872</strong> the "
+"current name. The archaeological research of <strong>Paolo Orsi</strong> and "
+"<strong>Vincenzo Cazzaniga</strong> confirmed the existence of a significant "
+"Sicilian settlement, with an extensive and structured necropolis, dating to "
+"the <strong>8th century BC</strong>. The Borgo still represents the oldest "
+"nucleus of the settlement, having survived the earthquake of 1693.</p>\n"
 "            "
 
+#: parco_verismo/templates/parco_verismo/licodia.html:55
 msgid "Bosco Vaito"
 msgstr "Vaito Forest"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:56
+
 msgid ""
 "\n"
-"            <p>Bosco sporadico di circa <strong>84 ettari</strong>, "
-"caratterizzato dalla presenza della <em>sughera (Quercus suber)</em>, specie "
-"arborea tipica della macchia mediterranea e particolarmente rara in questa "
-"zona degli Iblei. Rappresenta una continuità naturale con il più esteso "
-"<strong>Bosco di Santo Pietro</strong>, situato verso sud, formando un "
-"corridoio ecologico di notevole interesse botanico e faunistico. L'area è "
-"ideale per escursioni naturalistiche, birdwatching e fotografia "
-"paesaggistica, offrendo ai visitatori sentieri immersi nella vegetazione "
-"spontanea e panorami suggestivi sul territorio circostante. Il bosco "
-"conserva un ecosistema prezioso che testimonia l'antico rapporto tra l'uomo "
-"e l'ambiente ibleo.</p>\n"
-"            "
+"                <p class=\"lead mb-3\">Bosco sporadico di circa <strong>84 "
+"ettari</strong>, caratterizzato dalla presenza della <em>sughera (Quercus "
+"suber)</em>, specie arborea tipica della macchia mediterranea e "
+"particolarmente rara in questa zona degli Iblei.</p>\n"
+"                <p class=\"text-secondary\">Rappresenta una continuità "
+"naturale con il più esteso <strong>Bosco di Santo Pietro</strong>, situato "
+"verso sud, formando un corridoio ecologico di notevole interesse botanico e "
+"faunistico. L'area è ideale per escursioni naturalistiche, birdwatching e "
+"fotografia paesaggistica, offrendo ai visitatori sentieri immersi nella "
+"vegetazione spontanea e panorami suggestivi sul territorio circostante. Il "
+"bosco conserva un ecosistema prezioso che testimonia l'antico rapporto tra "
+"l'uomo e l'ambiente ibleo.</p>\n"
+"                "
 msgstr ""
 "\n"
-"            <p>Sporadic forest of approximately <strong>84 hectares</strong>, "
-"characterized by the presence of <em>cork oak (Quercus suber)</em>, a tree "
-"species typical of the Mediterranean scrub and particularly rare in this area "
-"of the Hyblean Mountains. It represents a natural continuity with the more "
-"extensive <strong>Santo Pietro Forest</strong>, located to the south, forming "
-"an ecological corridor of considerable botanical and faunistic interest. The "
-"area is ideal for nature excursions, birdwatching and landscape photography, "
-"offering visitors paths immersed in spontaneous vegetation and suggestive "
-"panoramas over the surrounding territory. The forest preserves a precious "
-"ecosystem that testifies to the ancient relationship between man and the "
-"Hyblean environment.</p>\n"
+"            <p>Sporadic forest of approximately <strong>84 hectares</"
+"strong>, characterized by the presence of <em>cork oak (Quercus suber)</em>, "
+"a tree species typical of the Mediterranean scrub and particularly rare in "
+"this area of the Hyblean Mountains. It represents a natural continuity with "
+"the more extensive <strong>Santo Pietro Forest</strong>, located to the "
+"south, forming an ecological corridor of considerable botanical and "
+"faunistic interest. The area is ideal for nature excursions, birdwatching "
+"and landscape photography, offering visitors paths immersed in spontaneous "
+"vegetation and suggestive panoramas over the surrounding territory. The "
+"forest preserves a precious ecosystem that testifies to the ancient "
+"relationship between man and the Hyblean environment.</p>\n"
 "            "
 
+#: parco_verismo/templates/parco_verismo/licodia.html:75
 msgid "Lago Dirillo"
 msgstr "Dirillo Lake"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:76
+
 msgid ""
 "\n"
-"            <p>Bacino artificiale originato dalla <strong>diga Ragoleto "
-"(1961)</strong>, alimentato dal fiume Dirillo, uno dei principali corsi "
-"d'acqua del territorio ibleo. L'invaso, nato per scopi irrigui e di "
-"approvvigionamento idrico, ha trasformato il paesaggio creando un ambiente "
-"lacustre di grande suggestione. Nelle aree circostanti sono stati "
-"individuati <strong>sepolcreti e strutture di epoca tardo romana</strong> "
-"(IV secolo d.C.), testimonianza dell'antica presenza umana lungo le sponde "
-"del fiume. Il lago offre un paesaggio ideale per passeggiate rilassanti, "
-"birdwatching e fotografia naturalistica, attirando numerose specie di "
-"avifauna stanziale e migratoria. Le sue acque tranquille e il contesto "
-"naturale incontaminato lo rendono meta privilegiata per gli amanti della "
-"natura e della storia.</p>\n"
-"            "
+"                <p class=\"lead mb-3\">Bacino artificiale originato dalla "
+"<strong>diga Ragoleto (1961)</strong>, alimentato dal fiume Dirillo, uno dei "
+"principali corsi d'acqua del territorio ibleo. L'invaso, nato per scopi "
+"irrigui e di approvvigionamento idrico, ha trasformato il paesaggio creando "
+"un ambiente lacustre di grande suggestione.</p>\n"
+"                <p class=\"text-secondary\">Nelle aree circostanti sono "
+"stati individuati <strong>sepolcreti e strutture di epoca tardo romana</"
+"strong> (IV secolo d.C.), testimonianza dell'antica presenza umana lungo le "
+"sponde del fiume. Il lago offre un paesaggio ideale per passeggiate "
+"rilassanti, birdwatching e fotografia naturalistica, attirando numerose "
+"specie di avifauna stanziale e migratoria. Le sue acque tranquille e il "
+"contesto naturale incontaminato lo rendono meta privilegiata per gli amanti "
+"della natura e della storia.</p>\n"
+"                "
 msgstr ""
 "\n"
-"            <p>Artificial basin created by the <strong>Ragoleto Dam "
-"(1961)</strong>, fed by the Dirillo River, one of the main watercourses in "
-"the Hyblean territory. The reservoir, created for irrigation and water supply "
+"            <p>Artificial basin created by the <strong>Ragoleto Dam (1961)</"
+"strong>, fed by the Dirillo River, one of the main watercourses in the "
+"Hyblean territory. The reservoir, created for irrigation and water supply "
 "purposes, has transformed the landscape creating a highly suggestive lake "
 "environment. In the surrounding areas <strong>burial grounds and structures "
 "from the late Roman period</strong> (4th century AD) have been identified, "
@@ -446,261 +1857,639 @@ msgstr ""
 "nature and history lovers.</p>\n"
 "            "
 
+#: parco_verismo/templates/parco_verismo/licodia.html:94
+#: parco_verismo/templates/parco_verismo/mineo.html:94
+#: parco_verismo/templates/parco_verismo/vizzini.html:94
 msgid "Tradizioni e Feste"
 msgstr "Traditions and Festivals"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:95
+msgid ""
+"Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità "
+"licodiana"
+msgstr ""
+"Discover the celebrations and events that mark the life of the Licodian "
+"community"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:104
+#: parco_verismo/templates/parco_verismo/mineo.html:104
+#: parco_verismo/templates/parco_verismo/vizzini.html:115
 msgid "Settimana Santa"
 msgstr "Holy Week"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:105
+#: parco_verismo/templates/parco_verismo/mineo.html:105
+#: parco_verismo/templates/parco_verismo/vizzini.html:116
 msgid "Marzo/Aprile"
 msgstr "March/April"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:106
 msgid ""
-"\n"
-"                  <p class=\"card-text\">L'evento religioso più sentito "
-"dalla comunità. Le celebrazioni si aprono con il <strong>Settenario "
-"dell'Addolorata</strong> e culminano nel <strong>Venerdì Santo</strong> con "
-"la <em>Via Giunta</em>, la Crocifissione e la deposizione del Cristo "
-"nell'urna. La Domenica di Pasqua è dedicata alla tradizionale "
-"<em>\"Giunta\"</em>.</p>\n"
-"                  "
+"L'evento religioso più sentito. Le celebrazioni culminano nel "
+"<strong>Venerdì Santo</strong> con la <em>Via Giunta</em> e la tradizionale "
+"\"Giunta\" pasquale."
 msgstr ""
-"\n"
-"                  <p class=\"card-text\">The most deeply felt religious event "
-"by the community. The celebrations open with the <strong>Seven Days of Our "
-"Lady of Sorrows</strong> and culminate on <strong>Good Friday</strong> with "
-"the <em>Via Giunta</em>, the Crucifixion and the deposition of Christ in the "
-"urn. Easter Sunday is dedicated to the traditional <em>\"Giunta\"</em>.</p>\n"
-"                  "
+"The most heartfelt religious event. Celebrations culminate on "
+"<strong>Good Friday</strong> with the <em>Via Giunta</em> and the "
+"traditional Easter \"Giunta\"."
 
+#: parco_verismo/templates/parco_verismo/licodia.html:115
 msgid "Festa dell'Uva"
 msgstr "Grape Festival"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:116
 msgid "Prima domenica di settembre"
 msgstr "First Sunday of September"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:117
 msgid ""
-"\n"
-"                  <p class=\"card-text\">Antica ricorrenza agricola ripresa "
-"nel Novecento, divenuta una manifestazione comunitaria molto partecipata, "
-"con degustazioni, iniziative culturali e la tradizionale <strong>pigiatura "
-"dell'uva nel tino</strong>.</p>\n"
-"                  "
+"Antica ricorrenza agricola con degustazioni, iniziative culturali e la "
+"tradizionale <strong>pigiatura dell'uva nel tino</strong>."
 msgstr ""
-"\n"
-"                  <p class=\"card-text\">Ancient agricultural celebration "
-"revived in the twentieth century, becoming a highly participatory community "
-"event, with tastings, cultural initiatives and the traditional "
-"<strong>grape stomping in the vat</strong>.</p>\n"
-"                  "
+"Ancient agricultural celebration with tastings, cultural initiatives and the "
+"traditional <strong>grape stomping in the vat</strong>."
 
-msgid "Rassegna del Documentario Archeologico"
-msgstr "Archaeological Documentary Review"
+#: parco_verismo/templates/parco_verismo/licodia.html:126
+msgid "Rassegna Archeologica"
+msgstr "Archaeological Review"
 
-msgid "Ottobre"
-msgstr "October"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:128
 msgid ""
-"\n"
-"                  <p class=\"card-text\">Festival cinematografico avviato "
-"nel <strong>2011</strong>, oggi tra i principali eventi italiani dedicati "
-"alla <strong>divulgazione archeologica</strong>. Organizzato "
-"dall'<em>Associazione ArcheoVisiva</em>.</p>\n"
-"                  "
+"Festival cinematografico tra i principali eventi italiani dedicati alla "
+"<strong>divulgazione archeologica</strong>."
 msgstr ""
-"\n"
-"                  <p class=\"card-text\">Cinema festival launched in "
-"<strong>2011</strong>, today among the main Italian events dedicated to "
-"<strong>archaeological dissemination</strong>. Organized by the "
-"<em>ArcheoVisiva Association</em>.</p>\n"
-"                  "
+"A film festival among the main Italian events dedicated to "
+"<strong>archaeological outreach</strong>."
 
+#: parco_verismo/templates/parco_verismo/licodia.html:137
 msgid "Sagra della Patacò"
 msgstr "Patacò Festival"
 
-msgid "Dicembre"
-msgstr "December"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:139
 msgid ""
-"\n"
-"                  <p class=\"card-text\">Evento dedicato alla <strong>farina "
-"di fave secche</strong>, pietanza tradizionale licodiana, nato per "
-"valorizzare un prodotto storico poco conosciuto.</p>\n"
-"                  "
+"Evento dedicato alla <strong>farina di fave secche</strong>, pietanza "
+"tradizionale licodiana."
 msgstr ""
-"\n"
-"                  <p class=\"card-text\">Event dedicated to <strong>dried "
-"fava bean flour</strong>, a traditional Licodiana dish, created to promote a "
-"little-known historical product.</p>\n"
-"                  "
+"Event dedicated to <strong>dried fava bean flour</strong>, a traditional "
+"Licodiana dish."
 
-msgid "Galleria Fotografica"
-msgstr "Photo Gallery"
+#: parco_verismo/templates/parco_verismo/licodia.html:150
+#: parco_verismo/templates/parco_verismo/mineo.html:150
+#: parco_verismo/templates/parco_verismo/vizzini.html:150
+msgid "Patrimonio Storico"
+msgstr "Historical Heritage"
 
-msgid "Monumenti e Luoghi di Interesse"
-msgstr "Monuments and Places of Interest"
+#: parco_verismo/templates/parco_verismo/licodia.html:151
+msgid "Scopri i monumenti e i luoghi simbolo di Licodia Eubea"
+msgstr "Discover the monuments and landmarks of Licodia Eubea"
 
-msgid ""
-"\n"
-"                  <p class=\"citation-text\">«In queste strade di pietra la "
-"memoria si posa lieve, e ogni eco del passato dalla necropoli sicula al "
-"grappolo d'uva diventa canto di tempo e terra.»</p>\n"
-"                  "
-msgstr ""
-"\n"
-"                  <p class=\"citation-text\">«In these stone streets memory "
-"rests lightly, and every echo of the past from the Sicilian necropolis to "
-"the bunch of grapes becomes a song of time and earth.»</p>\n"
-"                  "
+#: parco_verismo/templates/parco_verismo/licodia.html:158
+msgid "Sito Storico Principale"
+msgstr "Main Historical Site"
 
-msgid "(citazione libera)"
-msgstr "(free quote)"
+#: parco_verismo/templates/parco_verismo/licodia.html:197
+#: parco_verismo/templates/parco_verismo/mineo.html:197
+#: parco_verismo/templates/parco_verismo/vizzini.html:197
+msgid "Chiese e Luoghi di Culto"
+msgstr "Churches and Places of Worship"
 
-msgid ""
-"\n"
-"                  <p class=\"citation-text\">«Quando il vento accarezza le "
-"vigne del colle e l'ombra del castello scende sul borgo antico, Licodia "
-"Eubea non racconta solo storia: offre un dialogo silenzioso fra pietra, "
-"vigna e cielo siciliano.»</p>\n"
-"                  "
-msgstr ""
-"\n"
-"                  <p class=\"citation-text\">«When the wind caresses the "
-"vines of the hill and the shadow of the castle falls on the ancient village, "
-"Licodia Eubea does not just tell history: it offers a silent dialogue between "
-"stone, vine and Sicilian sky.»</p>\n"
-"                  "
+#: parco_verismo/templates/parco_verismo/licodia.html:198
+#: parco_verismo/templates/parco_verismo/mineo.html:198
+#: parco_verismo/templates/parco_verismo/vizzini.html:198
+msgid "Un patrimonio religioso ricco di storia e arte sacra"
+msgstr "A religious heritage rich in history and sacred art"
 
-msgid "Mappa di Licodia Eubea"
-msgstr "Map of Licodia Eubea"
+#: parco_verismo/templates/parco_verismo/licodia.html:252
+#: parco_verismo/templates/parco_verismo/mineo.html:252
+#: parco_verismo/templates/parco_verismo/vizzini.html:252
+msgid "Cultura e Patrimonio"
+msgstr "Culture and Heritage"
 
+#: parco_verismo/templates/parco_verismo/licodia.html:253
+#: parco_verismo/templates/parco_verismo/mineo.html:253
+#: parco_verismo/templates/parco_verismo/vizzini.html:253
+msgid "Musei e Cultura"
+msgstr "Museums and Culture"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:254
+msgid "Testimonianze della storia millenaria del territorio"
+msgstr "Testimonies of the territory's thousand-year history"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:265
+#: parco_verismo/templates/parco_verismo/licodia.html:286
+#: parco_verismo/templates/parco_verismo/mineo.html:265
+#: parco_verismo/templates/parco_verismo/mineo.html:286
+#: parco_verismo/templates/parco_verismo/vizzini.html:265
+msgid "Museo"
+msgstr "Museum"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:307
+msgid "Monumento"
+msgstr "Monument"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:328
+msgid "Esplora Licodia Eubea"
+msgstr "Explore Licodia Eubea"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:329
+#: parco_verismo/templates/parco_verismo/mineo.html:329
+#: parco_verismo/templates/parco_verismo/vizzini.html:329
+msgid "Scopri i luoghi di interesse sulla mappa interattiva"
+msgstr "Discover the places of interest on the interactive map"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:336
+#: parco_verismo/templates/parco_verismo/mineo.html:336
+#: parco_verismo/templates/parco_verismo/vizzini.html:336
+msgid "Filtra per categoria"
+msgstr "Filter by category"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:341
+#: parco_verismo/templates/parco_verismo/mineo.html:341
+#: parco_verismo/templates/parco_verismo/vizzini.html:341
 msgid "Cerca un luogo..."
 msgstr "Search for a place..."
 
-msgid "Filtri"
-msgstr "Filters"
-
-msgid "Icona Servizi Pubblici"
-msgstr "Public Services Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:349
+#: parco_verismo/templates/parco_verismo/mineo.html:349
+#: parco_verismo/templates/parco_verismo/vizzini.html:349
 msgid "Servizi Pubblici"
 msgstr "Public Services"
 
-msgid "Icona Servizi Culturali"
-msgstr "Cultural Services Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:353
+#: parco_verismo/templates/parco_verismo/mineo.html:353
+#: parco_verismo/templates/parco_verismo/vizzini.html:353
 msgid "Servizi Culturali"
 msgstr "Cultural Services"
 
-msgid "Icona Prodotti Tipici"
-msgstr "Typical Products Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:357
+#: parco_verismo/templates/parco_verismo/mineo.html:357
+#: parco_verismo/templates/parco_verismo/vizzini.html:357
 msgid "Prodotti Tipici"
 msgstr "Typical Products"
 
-msgid "Icona Ospitalità"
-msgstr "Hospitality Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:361
+#: parco_verismo/templates/parco_verismo/mineo.html:361
+#: parco_verismo/templates/parco_verismo/vizzini.html:361
 msgid "Ospitalità"
 msgstr "Hospitality"
 
-msgid "Icona Luoghi Verghiani"
-msgstr "Verga Places Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:365
+#: parco_verismo/templates/parco_verismo/vizzini.html:365
 msgid "Luoghi Verghiani"
 msgstr "Verga Places"
 
-msgid "Icona Ristorazione"
-msgstr "Restaurant Icon"
-
+#: parco_verismo/templates/parco_verismo/licodia.html:369
+#: parco_verismo/templates/parco_verismo/mineo.html:369
+#: parco_verismo/templates/parco_verismo/vizzini.html:369
 msgid "Ristorazione"
 msgstr "Restaurants"
 
-msgid "Icona Tutti"
-msgstr "All Icon"
+#: parco_verismo/templates/parco_verismo/licodia.html:373
+#: parco_verismo/templates/parco_verismo/mineo.html:373
+#: parco_verismo/templates/parco_verismo/vizzini.html:373
+msgid "Mostra tutti"
+msgstr "Show all"
 
-msgid "Tutti"
-msgstr "All"
+# ===== MINEO =====
+#: parco_verismo/templates/parco_verismo/mineo.html:4
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:188
+msgid "Mineo"
+msgstr "Mineo"
 
-msgid ""
-"Mineo - Città natale di Luigi Capuana, tra storia, archeologia e tradizioni "
-"siciliane. Scopri il Parco Letterario del Verismo."
-msgstr ""
-"Mineo - Birthplace of Luigi Capuana, between history, archaeology and "
-"Sicilian traditions. Discover the Verismo Literary Park."
-
-msgid "Parco Letterario Verismo - Mineo"
-msgstr "Verismo Literary Park - Mineo"
-
+#: parco_verismo/templates/parco_verismo/mineo.html:23
 msgid "Patria di Luigi Capuana, culla del Verismo siciliano"
 msgstr "Homeland of Luigi Capuana, cradle of Sicilian Verismo"
 
-msgid "Mappa di Mineo"
-msgstr "Map of Mineo"
+#: parco_verismo/templates/parco_verismo/mineo.html:36
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">Mineo sorge a 500 metri sul livello "
+"del mare, nel cuore degli Iblei, dominando la piana di Catania. Città di "
+"antichissime origini, identificata con l'antica <strong>Menai</strong> o "
+"<strong>Menaion</strong> citata dalle fonti classiche.</p>\n"
+"                <p class=\"text-secondary\">Conserva tracce di insediamenti "
+"che risalgono all'età del bronzo. Nel corso dei secoli Mineo è stata teatro "
+"di dominazioni greche, romane, bizantine, arabe e normanne. È universalmente "
+"nota per aver dato i natali a <strong>Luigi Capuana</strong> (1839-1915), "
+"uno dei padri fondatori del <strong>Verismo italiano</strong>, narratore e "
+"teorico della letteratura che ha immortalato nei suoi racconti la vita e le "
+"tradizioni del popolo siciliano.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">Mineo rises 500 metres above sea "
+"level, in the heart of the Hyblean Mountains, dominating the Catania plain. "
+"A city of very ancient origins, identified with the ancient <strong>Menai</"
+"strong> or <strong>Menaion</strong> mentioned in classical sources.</p>\n"
+"                <p class=\"text-secondary\">It preserves traces of "
+"settlements dating back to the Bronze Age. Over the centuries Mineo has been "
+"the scene of Greek, Roman, Byzantine, Arab and Norman dominations. It is "
+"universally known for being the birthplace of <strong>Luigi Capuana</strong> "
+"(1839-1915), one of the founding fathers of <strong>Italian Verismo</strong>, "
+"a narrator and literary theorist who immortalized the life and traditions of "
+"the Sicilian people in his stories.</p>\n"
+"                "
 
-msgid "Icona Luoghi Capuaniani"
-msgstr "Capuana Places Icon"
+#: parco_verismo/templates/parco_verismo/mineo.html:55
+msgid "Casa Natale di Luigi Capuana"
+msgstr "Luigi Capuana's Birthplace"
 
+#: parco_verismo/templates/parco_verismo/mineo.html:56
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">Nel cuore del centro storico di Mineo "
+"si trova la <strong>Casa Natale di Luigi Capuana</strong>, oggi trasformata "
+"in <strong>museo letterario</strong> dedicato alla vita e all'opera dello "
+"scrittore verista.</p>\n"
+"                <p class=\"text-secondary\">L'edificio, risalente al XVIII "
+"secolo, conserva arredi d'epoca, manoscritti originali, prime edizioni delle "
+"sue opere e oggetti personali. La casa rappresenta un luogo imprescindibile "
+"per comprendere il contesto culturale che ha ispirato capolavori come "
+"<em>Giacinta</em>, <em>Il Marchese di Roccaverdina</em> e le celebri novelle "
+"per l'infanzia.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">In the heart of Mineo's historic "
+"centre stands the <strong>Birthplace of Luigi Capuana</strong>, now "
+"transformed into a <strong>literary museum</strong> dedicated to the life "
+"and work of the verist writer.</p>\n"
+"                <p class=\"text-secondary\">The building, dating back to the "
+"18th century, preserves period furnishings, original manuscripts, first "
+"editions of his works and personal objects. The house represents an "
+"essential place to understand the cultural context that inspired "
+"masterpieces like <em>Giacinta</em>, <em>Il Marchese di Roccaverdina</em> "
+"and the famous children's stories.</p>\n"
+"                "
+
+#: parco_verismo/templates/parco_verismo/mineo.html:75
+msgid "Castello di Mineo"
+msgstr "Mineo Castle"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:76
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">Il <strong>Castello di Mineo</"
+"strong>, o <strong>Castello dei Palagonia</strong>, domina dall'alto il "
+"profilo della città ed è uno dei simboli architettonici più significativi "
+"del territorio.</p>\n"
+"                <p class=\"text-secondary\">Eretto in epoca medievale e più "
+"volte rimaneggiato, il castello fu residenza della nobile famiglia "
+"Palagonia. Nonostante i segni del tempo, il complesso conserva ancora "
+"imponenti mura, torri e strutture murarie che testimoniano l'importanza "
+"strategica e difensiva del sito. Dalle sue terrazze si gode di un panorama "
+"spettacolare sulla vallata circostante e sui monti Iblei.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">The <strong>Castle of Mineo</strong>, "
+"or <strong>Palagonia Castle</strong>, dominates the city's skyline from "
+"above and is one of the most significant architectural symbols of the "
+"territory.</p>\n"
+"                <p class=\"text-secondary\">Built in medieval times and "
+"remodelled several times, the castle was the residence of the noble "
+"Palagonia family. Despite the signs of time, the complex still preserves "
+"imposing walls, towers and masonry structures that testify to the strategic "
+"and defensive importance of the site. From its terraces you can enjoy a "
+"spectacular panorama over the surrounding valley and the Hyblean Mountains.</"
+"p>\n"
+"                "
+
+#: parco_verismo/templates/parco_verismo/mineo.html:95
+msgid ""
+"Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità "
+"mineota"
+msgstr ""
+"Discover the celebrations and events that mark the life of the Mineo "
+"community"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:106
+msgid ""
+"Processioni solenni, rappresentazioni della Passione e antichi riti "
+"accompagnano i fedeli in un'atmosfera di <strong>intensa partecipazione "
+"popolare</strong>."
+msgstr ""
+"Solemn processions, representations of the Passion and ancient rites "
+"accompany the faithful in an atmosphere of <strong>intense popular "
+"participation</strong>."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:115
+msgid "Festa di Sant'Agrippina"
+msgstr "St. Agrippina's Feast"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:117
+msgid ""
+"La celebrazione più importante dell'anno, con <strong>processioni, "
+"luminarie</strong>, concerti bandistici e spettacoli pirotecnici."
+msgstr ""
+"The most important celebration of the year, with <strong>processions, "
+"light displays</strong>, band concerts and fireworks."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:126
+msgid "Premio Luigi Capuana"
+msgstr "Luigi Capuana Award"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:128
+msgid ""
+"Riconoscimento nazionale dedicato alla letteratura, con scrittori e critici "
+"che celebrano l'eredità del <strong>grande verista</strong>."
+msgstr ""
+"A national literary award, with writers and critics celebrating the legacy "
+"of the <strong>great verist</strong>."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:137
+msgid "Sagra dell'Arancia"
+msgstr "Orange Festival"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:138
+msgid "Febbraio/Marzo"
+msgstr "February/March"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:139
+msgid ""
+"Celebrazione dell'<strong>arancia rossa di Sicilia</strong>, con "
+"degustazioni, stand gastronomici e attività culturali."
+msgstr ""
+"Celebration of the <strong>Sicilian blood orange</strong>, with tastings, "
+"food stands and cultural activities."
+
+#: parco_verismo/templates/parco_verismo/mineo.html:151
+msgid "Scopri i monumenti e i luoghi simbolo di Mineo"
+msgstr "Discover the monuments and landmarks of Mineo"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:158
+#: parco_verismo/templates/parco_verismo/vizzini.html:158
+msgid "Centro Storico"
+msgstr "Historic Centre"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:254
+msgid "Testimonianze della storia letteraria e archeologica del territorio"
+msgstr "Testimonies of the territory's literary and archaeological history"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:328
+msgid "Esplora Mineo"
+msgstr "Explore Mineo"
+
+#: parco_verismo/templates/parco_verismo/mineo.html:365
 msgid "Luoghi Capuaniani"
 msgstr "Capuana Places"
 
+# ===== MISSIONE E VISIONE =====
+#: parco_verismo/templates/parco_verismo/missione_visione.html:4
+msgid "Missione e Visione"
+msgstr "Mission and Vision"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:20
+msgid "Chi Siamo"
+msgstr "About Us"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:22
+msgid "Il Parco Letterario del Verismo"
+msgstr "The Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:25
+msgid ""
+"Trasformare la letteratura in dispositivo contemporaneo di sviluppo, "
+"identità e partecipazione civica"
+msgstr ""
+"Transforming literature into a contemporary tool for development, identity "
+"and civic participation"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:118
+msgid ""
+"Il Parco Letterario del Verismo nasce per costruire nei territori di "
+"Vizzini, Mineo e Licodia Eubea un modello integrato di welfare culturale "
+"fondato sulla valorizzazione dell&rsquo;eredità verista di Giovanni Verga e "
+"Luigi Capuana come motore di crescita sociale, educativa e turistica."
+msgstr ""
+"The Verismo Literary Park was created to build an integrated cultural "
+"welfare model in the territories of Vizzini, Mineo and Licodia Eubea, based "
+"on the enhancement of the verist heritage of Giovanni Verga and Luigi "
+"Capuana as an engine for social, educational and tourist growth."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:128
+msgid "Letteratura come Dispositivo"
+msgstr "Literature as a Tool"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:129
+msgid ""
+"Trasformare la letteratura in uno strumento contemporaneo di sviluppo, "
+"identità e partecipazione civica."
+msgstr ""
+"Transforming literature into a contemporary tool for development, identity "
+"and civic participation."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:138
+msgid "Crescita Integrata"
+msgstr "Integrated Growth"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:139
+msgid ""
+"Sviluppo sociale, educativo e turistico attraverso la valorizzazione del "
+"patrimonio verghiano-capuaniano."
+msgstr ""
+"Social, educational and tourist development through the enhancement of the "
+"Verga-Capuana heritage."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:148
+msgid "Radicamento Territoriale"
+msgstr "Territorial Rooting"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:149
+msgid ""
+"Coinvolgimento delle comunità locali di Vizzini, Mineo e Licodia Eubea nel "
+"modello di welfare culturale."
+msgstr ""
+"Involvement of local communities of Vizzini, Mineo and Licodia Eubea in the "
+"cultural welfare model."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:204
+msgid ""
+"Non custodire la memoria, ma riattivare il modo in cui essa viene riattivata "
+"nel presente. Il patrimonio culturale non deve rimanere un reperto, ma "
+"diventare infrastruttura viva di senso, di legami e di futuro per le "
+"comunità coinvolte."
+msgstr ""
+"Not preserving memory, but reactivating the way it is reactivated in the "
+"present. Cultural heritage must not remain an artifact, but become a living "
+"infrastructure of meaning, connections and future for the communities "
+"involved."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:209
+msgid "Azioni Strategiche"
+msgstr "Strategic Actions"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:213
+msgid "Costituzione di un Comitato Tecnico-Scientifico"
+msgstr "Establishment of a Technical-Scientific Committee"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:217
+msgid "Messa in rete dei servizi culturali e turistici"
+msgstr "Networking of cultural and tourist services"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:221
+msgid "Creazione di itinerari tematici e digitali"
+msgstr "Creation of thematic and digital itineraries"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:225
+msgid "Accordi con università e ITS"
+msgstr "Agreements with universities and ITS"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:229
+msgid "Premio Verga-Capuana per le scuole"
+msgstr "Verga-Capuana Award for schools"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:233
+msgid "Giornata di Studi annuale"
+msgstr "Annual Study Day"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:237
+msgid "Manifestazioni teatrali e produzioni culturali contemporanee"
+msgstr "Theatre events and contemporary cultural productions"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:261
+msgid "Riconoscimento Istituzionale"
+msgstr "Institutional Recognition"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:264
+msgid ""
+"Il progetto &egrave; promosso dagli Enti locali del territorio ed &egrave; "
+"formalmente riconosciuto e finanziato dalla Regione Siciliana ai sensi del "
+"D.D.G. n. 1159 del 6 marzo 2025, quale iniziativa di interesse pubblico "
+"finalizzata alla realizzazione del Parco Letterario del Verismo. Questo "
+"riconoscimento istituzionale sancisce il valore strategico "
+"dell&rsquo;intervento e ne legittima l&rsquo;attuazione in un orizzonte di "
+"continuità e pianificazione."
+msgstr ""
+"The project is promoted by local authorities and is formally recognized and "
+"funded by the Sicilian Region pursuant to D.D.G. n. 1159 of 6 March 2025, as "
+"an initiative of public interest aimed at creating the Verismo Literary "
+"Park. This institutional recognition confirms the strategic value of the "
+"intervention and legitimizes its implementation in a horizon of continuity "
+"and planning."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:279
+msgid "I Nostri Valori Fondamentali"
+msgstr "Our Core Values"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:282
+msgid ""
+"Un ecosistema coerente e durevole di ricerca, formazione, fruizione pubblica "
+"e narrazione condivisa."
+msgstr ""
+"A coherent and lasting ecosystem of research, training, public enjoyment and "
+"shared storytelling."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:292
+msgid "Ricerca"
+msgstr "Research"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:293
+msgid ""
+"Approfondimento continuo del patrimonio verghiano-capuaniano attraverso "
+"studi e analisi critiche."
+msgstr ""
+"Continuous exploration of the Verga-Capuana heritage through studies and "
+"critical analyses."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:302
+msgid "Formazione"
+msgstr "Training"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:303
+msgid ""
+"Sviluppo di competenze e consapevolezza culturale nelle comunità locali, in "
+"particolare tra i giovani."
+msgstr ""
+"Development of skills and cultural awareness in local communities, "
+"particularly among young people."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:312
+msgid "Fruizione Pubblica"
+msgstr "Public Access"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:313
+msgid ""
+"Accesso diffuso e inclusivo al patrimonio culturale per tutta la comunità, "
+"dai residenti ai visitatori."
+msgstr ""
+"Widespread and inclusive access to cultural heritage for the entire "
+"community, from residents to visitors."
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:322
+msgid "Narrazione Condivisa"
+msgstr "Shared Storytelling"
+
+#: parco_verismo/templates/parco_verismo/missione_visione.html:323
+msgid ""
+"Costruzione collettiva di significati e storie che valorizzano il patrimonio "
+"nel presente."
+msgstr ""
+"Collective construction of meanings and stories that enhance heritage in the "
+"present."
+
+#: parco_verismo/templates/parco_verismo/navbar.html:30
 msgid "Apri navigazione"
 msgstr "Open navigation"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:41
 msgid "Il Parco"
 msgstr "The Park"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:44
 msgid "Missioni e visione"
 msgstr "Mission & Vision"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:45
 msgid "Comitato tecnico"
 msgstr "Technical Committee"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:46
 msgid "Regolamenti & documenti"
 msgstr "Regulations & documents"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:47
 msgid "Partner e rete territoriale"
 msgstr "Partners & local network"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:48
 msgid "Accrediti e finanziamenti"
 msgstr "Accreditations & funding"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:55
 msgid "Luoghi & Percorsi"
 msgstr "Places & Routes"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:78
 msgid "Eventi & News"
 msgstr "Events & News"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:88
 msgid "Calendario"
 msgstr "Calendar"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:93
+#: parco_verismo/templates/parco_verismo/notizie.html:58
 msgid "News"
 msgstr "News"
 
-msgid "Opere & Letteratura"
-msgstr "Works & Literature"
-
-msgid "Opere di Verga"
-msgstr "Works by Verga"
-
-msgid "Opere di Capuana"
-msgstr "Works by Capuana"
-
-msgid "Personaggi & Lessico del Verismo"
-msgstr "Characters & Vocabulary of Verismo"
-
+#: parco_verismo/templates/parco_verismo/navbar.html:132
 msgid "Luoghi delle Opere"
 msgstr "Places of the Works"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:142
 msgid "Archivio fotografico"
 msgstr "Photo archive"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:159
 msgid "Prenota"
 msgstr "Book"
 
+#: parco_verismo/templates/parco_verismo/navbar.html:180
 msgid "Cambia lingua"
 msgstr "Change language"
 
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:15
 #, python-format
 msgid ""
 "\n"
@@ -715,21 +2504,27 @@ msgstr ""
 "        </div>\n"
 "        "
 
+#: parco_verismo/templates/parco_verismo/notizia_detail.html:37
 msgid "Torna alle news"
 msgstr "Back to news"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:4
 msgid "Notizie - Parco Letterario Verismo"
 msgstr "News - Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:59
 msgid "News & Novità"
 msgstr "News & Updates"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:60
 msgid "Rimani aggiornato sulle ultime novità del Parco Letterario del Verismo"
 msgstr "Stay up to date with the latest news from the Verismo Literary Park"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:72
 msgid "Nessuna notizia disponibile"
 msgstr "No news available"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:73
 msgid ""
 "Al momento non ci sono notizie pubblicate. Torna presto per leggere le "
 "nostre novità!"
@@ -737,19 +2532,28 @@ msgstr ""
 "There are no news items published at the moment. Check back soon to read our "
 "updates!"
 
+#: parco_verismo/templates/parco_verismo/notizie.html:159
+msgid "Nessun contenuto in questa data"
+msgstr "No content on this date"
+
+#: parco_verismo/templates/parco_verismo/opera_detail.html:13
 #, python-format
 msgid "di %(autore)s"
 msgstr "by %(autore)s"
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:20
 msgid "Trama"
 msgstr "Plot"
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:24
 msgid "Analisi e Contesto"
 msgstr "Analysis and Context"
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:31
 msgid "Leggi l'opera completa su Wikisource"
 msgstr "Read the full work on Wikisource"
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:34
 msgid ""
 "Il link ti porterà alla pagina di Wikisource dove potrai leggere l'opera "
 "integrale gratuitamente."
@@ -757,14 +2561,17 @@ msgstr ""
 "The link will take you to Wikisource, where you can read the full work for "
 "free."
 
+#: parco_verismo/templates/parco_verismo/opera_detail.html:39
 #, python-format
 msgid "← Torna alle opere di %(autore)s"
 msgstr "← Back to %(autore)s' works"
 
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:4
 #, python-format
 msgid "Opere di %(autore)s"
 msgstr "%(autore)s' Works"
 
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:10
 #, python-format
 msgid ""
 "\n"
@@ -775,103 +2582,704 @@ msgstr ""
 "  <h1 class=\"text-center mb-4\">Works by %(autore)s</h1>\n"
 "  "
 
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:30
 msgid "Anno di pubblicazione:"
 msgstr "Year of publication:"
 
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:41
 msgid "Nessuna opera disponibile per questo autore."
 msgstr "No works available for this author."
 
+# ===== PARTNER E RETE TERRITORIALE =====
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:6
+msgid "Partner e Rete Territoriale - Parco Letterario Verismo"
+msgstr "Partners & Local Network - Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:21
+msgid "Partner & Rete"
+msgstr "Partners & Network"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:22
+msgid "Partner & Rete Territoriale"
+msgstr "Partners & Local Network"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:23
 msgid ""
-"Vizzini - Città natale di Giovanni Verga, tra storia, tradizioni siciliane e "
-"letteratura verista. Scopri il borgo e il Parco Letterario Verghiano."
+"Una rete integrata di eccellenza con istituzioni, amministrazioni locali e "
+"organizzazioni internazionali."
 msgstr ""
-"Vizzini - Birthplace of Giovanni Verga, between history, Sicilian traditions "
-"and verist literature. Discover the village and the Verga Literary Park."
+"An integrated network of excellence with institutions, local administrations "
+"and international organizations."
 
-msgid "Parco Letterario Verismo - Vizzini"
-msgstr "Verismo Literary Park - Vizzini"
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:74
+msgid "Partner Istituzionali"
+msgstr "Institutional Partners"
 
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:77
+msgid ""
+"Collaborazioni strategiche con enti pubblici e istituzioni per la promozione "
+"della cultura verista."
+msgstr ""
+"Strategic collaborations with public bodies and institutions for the "
+"promotion of verist culture."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:88
+msgid "Ente Riconoscente"
+msgstr "Recognizing Authority"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:89
+msgid ""
+"Riconoscimento e supporto della Regione Siciliana al Parco Letterario come "
+"polo di valorizzazione del patrimonio culturale regionale."
+msgstr ""
+"Recognition and support from the Sicilian Region to the Literary Park as a "
+"hub for enhancing regional cultural heritage."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:90
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:102
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:114
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:126
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:138
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:150
+msgid "Scopri"
+msgstr "Discover"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:99
+msgid "Comuni di Vizzini, Mineo, Licodia"
+msgstr "Municipalities of Vizzini, Mineo, Licodia"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:100
+msgid "Partner Territoriali"
+msgstr "Territorial Partners"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:101
+msgid ""
+"Amministrazioni locali impegnate nella conservazione del patrimonio storico-"
+"letterario e nello sviluppo culturale sostenibile del territorio."
+msgstr ""
+"Local administrations committed to preserving historical-literary heritage "
+"and sustainable cultural development of the territory."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:111
+msgid "Università della Sicilia"
+msgstr "Universities of Sicily"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:112
+msgid "Partner Accademico"
+msgstr "Academic Partner"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:113
+msgid ""
+"Collaborazione con atenei regionali per ricerca, formazione e produzione di "
+"contenuti scientifici sulla letteratura verista."
+msgstr ""
+"Collaboration with regional universities for research, training and "
+"production of scientific content on verist literature."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:123
+msgid "Istituto Verga"
+msgstr "Verga Institute"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:124
+msgid "Partner Culturale"
+msgstr "Cultural Partner"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:125
+
+msgid ""
+"Ente dedicato allo studio e alla diffusione dell'opera di Giovanni Verga a "
+"livello nazionale e internazionale."
+msgstr ""
+"Organization dedicated to the study and dissemination of Giovanni Verga's "
+"work nationally and internationally."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:135
+msgid "CIPIM Sicilia"
+msgstr "CIPIM Sicily"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:136
+msgid "Partner Strategico"
+msgstr "Strategic Partner"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:137
+msgid ""
+"Collaborazione con il Centro di Iniziativa Popolare di Isola di Capo Rizzuto "
+"per lo sviluppo di progetti culturali integrati."
+msgstr ""
+"Collaboration with the Centro di Iniziativa Popolare di Isola di Capo "
+"Rizzuto for the development of integrated cultural projects."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:147
+msgid "Parchi Letterari Internazionali"
+msgstr "International Literary Parks"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:148
+msgid "Rete Mondiale"
+msgstr "World Network"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:149
+msgid ""
+"Iscrizione e partecipazione attiva alla rete internazionale dei Parchi "
+"Letterari per lo scambio di esperienze e migliori pratiche."
+msgstr ""
+"Registration and active participation in the international network of "
+"Literary Parks for the exchange of experiences and best practices."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162
+msgid "Rete"
+msgstr "Network"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:162
+msgid "Territoriale"
+msgstr "Territorial"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:165
+msgid ""
+"Una maglia fitta di servizi e strutture distribuite nel territorio dei tre "
+"comuni."
+msgstr ""
+"A dense network of services and facilities distributed throughout the three "
+"municipalities."
+
+# ===== VIZZINI =====
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:173
+#: parco_verismo/templates/parco_verismo/vizzini.html:4
+msgid "Vizzini"
+msgstr "Vizzini"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:174
+msgid "Patria di Giovanni Verga"
+msgstr "Homeland of Giovanni Verga"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:176
+msgid "Centro Visitatori"
+msgstr "Visitor Centre"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:177
+msgid "Percorsi tematici letterari"
+msgstr "Literary thematic routes"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:178
+msgid "Archivio storico locale"
+msgstr "Local historical archive"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:179
+msgid "Spazi per convegni"
+msgstr "Conference facilities"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:181
+msgid "Visita Vizzini"
+msgstr "Visit Vizzini"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:189
+msgid "Terra della narrativa capuaniana"
+msgstr "Land of Capuana's narrative"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:191
+msgid "Museo Etnografico"
+msgstr "Ethnographic Museum"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:192
+msgid "Laboratori didattici"
+msgstr "Educational workshops"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:193
+msgid "Archivio archeologico"
+msgstr "Archaeological archive"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:194
+msgid "Sala letture"
+msgstr "Reading room"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:196
+msgid "Visita Mineo"
+msgstr "Visit Mineo"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:204
+msgid "Centro di ricerca e conservazione"
+msgstr "Research and conservation centre"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:207
+msgid "Biblioteca specializzata"
+msgstr "Specialized library"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:208
+msgid "Archivio letterario"
+msgstr "Literary archive"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:209
+msgid "Laboratorio di restauro"
+msgstr "Restoration workshop"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:211
+msgid "Visita Licodia"
+msgstr "Visit Licodia"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:218
+msgid "Piattaforma Digitale"
+msgstr "Digital Platform"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:219
+msgid "Hub virtuale integrato"
+msgstr "Integrated virtual hub"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:222
+msgid "Archivio fotografico online"
+msgstr "Online photo archive"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:223
+msgid "Calendario eventi"
+msgstr "Event calendar"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:224
+msgid "Community letteraria"
+msgstr "Literary community"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:226
+msgid "Accedi Online"
+msgstr "Access Online"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:237
+msgid "Sponsor e Sostenitori"
+msgstr "Sponsors and Supporters"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:239
+msgid ""
+"Imprese e organizzazioni che credono nella mission culturale del Parco "
+"Letterario."
+msgstr ""
+"Companies and organizations that believe in the cultural mission of the "
+"Literary Park."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:244
+msgid "Partner"
+msgstr "Partner"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:245
+msgid "Sponsor"
+msgstr "Sponsor"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:246
+msgid "Supporter"
+msgstr "Supporter"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:247
+msgid "Donatore"
+msgstr "Donor"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:251
+msgid "Interessato a collaborare con il Parco Letterario?"
+msgstr "Interested in collaborating with the Literary Park?"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:252
+msgid "Proponi una Collaborazione"
+msgstr "Propose a Collaboration"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:262
+msgid "Unisciti alla Nostra Comunità"
+msgstr "Join Our Community"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:263
+msgid ""
+"Scopri le opportunità di collaborazione e di partecipazione ai progetti "
+"culturali del Parco Letterario del Verismo."
+msgstr ""
+"Discover opportunities for collaboration and participation in the cultural "
+"projects of the Verismo Literary Park."
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:265
+msgid "Contattaci"
+msgstr "Contact Us"
+
+#: parco_verismo/templates/parco_verismo/partner_rete_territoriale.html:266
+msgid "Scopri il Comitato"
+msgstr "Discover the Committee"
+
+# ===== REGOLAMENTI E DOCUMENTI =====
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:6
+msgid "Regolamenti e Documenti - Parco Letterario Verismo"
+msgstr "Regulations & Documents - Verismo Literary Park"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:22
+msgid "Regolamenti & Documenti"
+msgstr "Regulations & Documents"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:23
+msgid ""
+"Trasparenza amministrativa e documentazione ufficiale del Parco Letterario "
+"del Verismo. Scarica regolamenti, bilanci e documenti ufficiali."
+msgstr ""
+"Administrative transparency and official documentation of the Verismo "
+"Literary Park. Download regulations, budgets and official documents."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:58
+msgid "Regolamenti Operativi"
+msgstr "Operational Regulations"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:59
+
+msgid ""
+"I regolamenti che disciplinano le attività del Parco Letterario e l'accesso "
+"ai servizi."
+msgstr ""
+"The regulations governing the activities of the Literary Park and access to "
+"services."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:66
+msgid "Statuto del Parco Letterario"
+msgstr "Literary Park Statute"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:67
+msgid "Approvato 2024"
+msgstr "Approved 2024"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:68
+
+msgid ""
+"Lo statuto fondamentale che definisce la natura, i principi, gli obiettivi e "
+"l'organizzazione del Parco Letterario del Verismo."
+msgstr ""
+"The fundamental statute defining the nature, principles, objectives and "
+"organization of the Verismo Literary Park."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:76
+msgid "Regolamento Interno"
+msgstr "Internal Regulations"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:77
+msgid "Versione 2.0 - 2024"
+msgstr "Version 2.0 - 2024"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:78
+msgid ""
+"Norme che regolano il funzionamento interno del Parco, le responsabilità "
+"degli organi e le procedure amministrative."
+msgstr ""
+"Rules governing the internal functioning of the Park, the responsibilities "
+"of the bodies and administrative procedures."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:86
+msgid "Regolamento Visite e Accessi"
+msgstr "Visit and Access Regulations"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:87
+msgid "In vigore"
+msgstr "In force"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:88
+msgid ""
+"Disposizioni per l'accesso ai siti, alle strutture e agli eventi organizzati "
+"dal Parco Letterario."
+msgstr ""
+"Provisions for access to sites, facilities and events organized by the "
+"Literary Park."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:96
+msgid "Privacy e Protezione Dati"
+msgstr "Privacy and Data Protection"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:97
+msgid "GDPR Compliant 2024"
+msgstr "GDPR Compliant 2024"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:98
+msgid ""
+"Politica sulla protezione dei dati personali e sulla privacy secondo le "
+"normative europee GDPR."
+msgstr ""
+"Personal data protection and privacy policy according to European GDPR "
+"regulations."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110
+msgid "Documentazione"
+msgstr "Documentation"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:110
+msgid "Amministrativa"
+msgstr "Administrative"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:111
+msgid ""
+"Atti, bilanci e documenti pubblici secondo le norme di trasparenza "
+"amministrativa."
+msgstr ""
+"Acts, budgets and public documents according to administrative transparency "
+"regulations."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:118
+msgid "Bilanci"
+msgstr "Budgets"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:119
+msgid "Bilanci annuali, relazioni finanziarie e rendiconti economici."
+msgstr "Annual budgets, financial reports and economic statements."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:121
+msgid "Bilancio 2023"
+msgstr "Budget 2023"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:122
+msgid "Bilancio 2022"
+msgstr "Budget 2022"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:123
+msgid "Relazioni Econom."
+msgstr "Econ. Reports"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:131
+msgid "Atti Amministrativi"
+msgstr "Administrative Acts"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:132
+msgid "Delibere, determinazioni e provvedimenti ufficiali."
+msgstr "Resolutions, determinations and official provisions."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:134
+msgid "Delibere 2024"
+msgstr "Resolutions 2024"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:135
+msgid "Determinazioni"
+msgstr "Determinations"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:136
+msgid "Provvedimenti"
+msgstr "Provisions"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:144
+msgid "Documentazione Generale"
+msgstr "General Documentation"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:145
+msgid "Rapporti, studi e documenti strategici."
+msgstr "Reports, studies and strategic documents."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:147
+msgid "Relazione Attività"
+msgstr "Activity Report"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:148
+msgid "Piano Strategico"
+msgstr "Strategic Plan"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:149
+msgid "Programmi Annuali"
+msgstr "Annual Programmes"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:162
+msgid "Scarica Rapidamente"
+msgstr "Quick Download"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:170
+msgid "Statuto"
+msgstr "Statute"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:176
+msgid "Regolamento"
+msgstr "Regulation"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:182
+msgid "Bilancio"
+msgstr "Budget"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:188
+msgid "Privacy"
+msgstr "Privacy"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:194
+msgid "Delibere"
+msgstr "Resolutions"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:200
+msgid "Archivio"
+msgstr "Archive"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:215
+msgid "Trasparenza e Responsabilità"
+msgstr "Transparency and Responsibility"
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:218
+msgid ""
+"Il Parco Letterario si impegna per la massima trasparenza amministrativa e "
+"il rispetto della normativa vigente in materia di privacy e protezione dei "
+"dati."
+msgstr ""
+"The Literary Park is committed to maximum administrative transparency and "
+"compliance with current privacy and data protection regulations."
+
+#: parco_verismo/templates/parco_verismo/regolamenti_documenti.html:221
+msgid "Contattaci per Info"
+msgstr "Contact Us for Info"
+
+#: parco_verismo/templates/parco_verismo/vizzini.html:23
 msgid "Patria di Giovanni Verga, cuore del Verismo siciliano"
 msgstr "Homeland of Giovanni Verga, heart of Sicilian Verismo"
 
-msgid "Mappa di Vizzini"
-msgstr "Map of Vizzini"
+#: parco_verismo/templates/parco_verismo/vizzini.html:36
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">Vizzini sorge a 586 metri sul livello "
+"del mare, arroccata sui monti Iblei. La città conserva un ricco patrimonio "
+"artistico e architettonico che testimonia la sua lunga storia, dalle origini "
+"sicule alle dominazioni greca, romana, araba e normanna.</p>\n"
+"                <p class=\"text-secondary\">Conosciuta in tutto il mondo "
+"come la <strong>patria di Giovanni Verga</strong> (1840-1922), il più grande "
+"esponente del <strong>Verismo italiano</strong>. Qui sono ambientate le sue "
+"opere immortali: <em>Cavalleria Rusticana</em>, <em>La Lupa</em>, <em>Mastro-"
+"don Gesualdo</em>. Le strade e i vicoli di Vizzini hanno ispirato le pagine "
+"che hanno rivoluzionato la letteratura italiana, catturando l'essenza della "
+"vita e delle passioni del popolo siciliano.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">Vizzini rises 586 metres above sea "
+"level, perched on the Hyblean Mountains. The town preserves a rich artistic "
+"and architectural heritage that bears witness to its long history, from its "
+"Sicilian origins to Greek, Roman, Arab and Norman dominations.</p>\n"
+"                <p class=\"text-secondary\">Known worldwide as the "
+"<strong>homeland of Giovanni Verga</strong> (1840-1922), the greatest "
+"exponent of <strong>Italian Verismo</strong>. His immortal works are set "
+"here: <em>Cavalleria Rusticana</em>, <em>La Lupa</em>, <em>Mastro-don "
+"Gesualdo</em>. The streets and alleys of Vizzini inspired the pages that "
+"revolutionized Italian literature, capturing the essence of the life and "
+"passions of the Sicilian people.</p>\n"
+"                "
 
-#~ msgid "Dettagli"
-#~ msgstr "Details"
+#: parco_verismo/templates/parco_verismo/vizzini.html:55
+msgid "Casa Natale di Giovanni Verga"
+msgstr "Giovanni Verga's Birthplace"
 
-#~ msgid "Salva"
-#~ msgstr "Save"
+#: parco_verismo/templates/parco_verismo/vizzini.html:56
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">La <strong>Casa Natale di Giovanni "
+"Verga</strong> rappresenta il luogo simbolo del Verismo italiano. Qui, il 2 "
+"settembre 1840, nacque il grande scrittore che avrebbe immortalato la "
+"Sicilia nella letteratura mondiale.</p>\n"
+"                <p class=\"text-secondary\">L'edificio conserva ancora "
+"l'atmosfera del XIX secolo, con arredi d'epoca, documenti originali e cimeli "
+"che testimoniano la vita e l'opera del maestro. La casa museo offre un "
+"percorso emozionante attraverso le radici familiari e l'universo creativo di "
+"Verga, permettendo ai visitatori di immergersi nel contesto che ispirò "
+"capolavori come <em>I Malavoglia</em> e le <em>Novelle Rusticane</em>.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">The <strong>Birthplace of Giovanni "
+"Verga</strong> represents the symbolic place of Italian Verismo. Here, on 2 "
+"September 1840, the great writer who would immortalize Sicily in world "
+"literature was born.</p>\n"
+"                <p class=\"text-secondary\">The building still preserves the "
+"atmosphere of the 19th century, with period furnishings, original documents "
+"and memorabilia that testify to the life and work of the master. The house "
+"museum offers an exciting journey through Verga's family roots and creative "
+"universe, allowing visitors to immerse themselves in the context that "
+"inspired masterpieces like <em>I Malavoglia</em> and <em>Novelle "
+"Rusticane</em>.</p>\n"
+"                "
 
-#~ msgid "Condividi su WhatsApp"
-#~ msgstr "Share on WhatsApp"
+#: parco_verismo/templates/parco_verismo/vizzini.html:75
+msgid "La Cunziria"
+msgstr "La Cunziria"
 
-#~ msgid "Promemoria"
-#~ msgstr "Reminder"
+#: parco_verismo/templates/parco_verismo/vizzini.html:76
+msgid ""
+"\n"
+"                <p class=\"lead mb-3\">L'antico <strong>Borgo della "
+"Cunziria</strong> è un affascinante villaggio rupestre risalente al XVI-XVII "
+"secolo, dove un tempo si lavoravano le pelli con tecniche tradizionali. Le "
+"sue grotte e abitazioni scavate nella roccia creano un paesaggio unico e "
+"suggestivo.</p>\n"
+"                <p class=\"text-secondary\">Il borgo è celebre per essere "
+"stato il set naturale della <strong>Cavalleria Rusticana</strong> di Verga, "
+"e più tardi del film omonimo di Franco Zeffirelli (1982) con Plácido "
+"Domingo. Oggi la Cunziria è meta di pellegrinaggio letterario e "
+"cinematografico, un luogo dove il tempo sembra essersi fermato, conservando "
+"intatta l'atmosfera descritta nelle pagine verghiane.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                <p class=\"lead mb-3\">The ancient <strong>Borgo della "
+"Cunziria</strong> is a fascinating cave village dating back to the 16th-17th "
+"century, where leather was once worked using traditional techniques. Its "
+"caves and dwellings carved into the rock create a unique and evocative "
+"landscape.</p>\n"
+"                <p class=\"text-secondary\">The village is famous for being "
+"the natural set of Verga's <strong>Cavalleria Rusticana</strong>, and later "
+"of Franco Zeffirelli's eponymous film (1982) with Plácido Domingo. Today La "
+"Cunziria is a destination for literary and cinematographic pilgrimage, a "
+"place where time seems to have stood still, preserving intact the atmosphere "
+"described in Verga's pages.</p>\n"
+"                "
 
-#~ msgid "Nessun evento nel calendario"
-#~ msgstr "No events in the calendar"
+#: parco_verismo/templates/parco_verismo/vizzini.html:95
+msgid ""
+"Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità "
+"vizzinese"
+msgstr ""
+"Discover the celebrations and events that mark the life of the Vizzini "
+"community"
 
-#~ msgid ""
-#~ "Il calendario eventi è attualmente vuoto. Torna presto per scoprire le "
-#~ "nostre iniziative!"
-#~ msgstr ""
-#~ "The event calendar is currently empty. Check back soon to discover our "
-#~ "initiatives!"
+#: parco_verismo/templates/parco_verismo/vizzini.html:104
+msgid "Sagra della Ricotta"
+msgstr "Ricotta Festival"
 
-#~ msgid "Crea Promemoria"
-#~ msgstr "Create Reminder"
+#: parco_verismo/templates/parco_verismo/vizzini.html:106
+msgid ""
+"Celebrazione della tradizione casearia locale con degustazioni di "
+"<strong>ricotta fresca</strong>, cannoli e dolci tipici siciliani."
+msgstr ""
+"Celebration of local dairy tradition with tastings of <strong>fresh "
+"ricotta</strong>, cannoli and typical Sicilian sweets."
 
-#~ msgid "Come salvare l'evento:"
-#~ msgstr "How to save the event:"
+#: parco_verismo/templates/parco_verismo/vizzini.html:117
+msgid ""
+"Le suggestive processioni pasquali con la tradizionale <strong>\"Giunta\"</"
+"strong>, momento culminante delle celebrazioni religiose."
+msgstr ""
+"The evocative Easter processions with the traditional <strong>\"Giunta\"</"
+"strong>, the culminating moment of religious celebrations."
 
-#~ msgid ""
-#~ "1. Clicca sul pulsante \"Salva\" accanto all'evento<br>2. Scegli il tuo "
-#~ "calendario preferito<br>3. L'evento verrà aggiunto automaticamente!"
-#~ msgstr ""
-#~ "1. Click the \"Save\" button next to the event<br>2. Choose your "
-#~ "favourite calendar<br>3. The event will be added automatically!"
+#: parco_verismo/templates/parco_verismo/vizzini.html:126
+msgid "Festa di San Gregorio"
+msgstr "St. Gregory's Feast"
 
-#~ msgid "Data"
-#~ msgstr "Date"
+#: parco_verismo/templates/parco_verismo/vizzini.html:128
+msgid ""
+"Festa patronale con processioni solenni, <strong>luminarie</strong>, "
+"concerti e spettacoli pirotecnici."
+msgstr ""
+"Patron saint festival with solemn processions, <strong>light displays</"
+"strong>, concerts and fireworks."
 
-#~ msgid "Ora"
-#~ msgstr "Time"
+#: parco_verismo/templates/parco_verismo/vizzini.html:137
+msgid "Eventi Verghiani"
+msgstr "Verga Events"
 
-#~ msgid "Clicca sui pulsanti \"Salva\" per aggiungere l\\"
-#~ msgstr ""
-#~ "Click the \"Save\" buttons to add the event directly to your calendar!"
+#: parco_verismo/templates/parco_verismo/vizzini.html:138
+msgid "Estate"
+msgstr "Summer"
 
-#, python-format
-#~ msgid "Pubblicato il %(data_pub)s"
-#~ msgstr "Published on %(data_pub)s"
+#: parco_verismo/templates/parco_verismo/vizzini.html:139
+msgid ""
+"Rassegne letterarie, spettacoli teatrali e rappresentazioni delle opere di "
+"<strong>Giovanni Verga</strong>."
+msgstr ""
+"Literary festivals, theatrical performances and representations of "
+"<strong>Giovanni Verga's</strong> works."
 
-#~ msgid "L'archivio fotografico sarà presto disponibile."
-#~ msgstr "The photo archive will be available soon."
+#: parco_verismo/templates/parco_verismo/vizzini.html:151
+msgid "Scopri i monumenti e i luoghi simbolo di Vizzini"
+msgstr "Discover the monuments and landmarks of Vizzini"
 
-#, python-format
-#~ msgid "di %(opera.autore.nome)s"
-#~ msgstr "by %(opera.autore.nome)s"
+#: parco_verismo/templates/parco_verismo/vizzini.html:254
+msgid "Testimonianze della storia letteraria e artistica del territorio"
+msgstr "Testimonies of the territory's literary and artistic history"
 
-#, python-format
-#~ msgid "%(evento.titolo)s - Parco Letterario Verismo"
-#~ msgstr "%(evento.titolo)s - Verismo Literary Park"
+#: parco_verismo/templates/parco_verismo/vizzini.html:307
+msgid "Sito Storico"
+msgstr "Historical Site"
 
-#, python-format
-#~ msgid "%(notizia.titolo)s - Parco Letterario Verismo"
-#~ msgstr "%(notizia.titolo)s - Verismo Literary Park"
-
-#, python-format
-#~ msgid "Pubblicata il %(notizia.data_pubblicazione|date:\"l, d F Y\")s"
-#~ msgstr "Published on %(notizia.data_pubblicazione|date:\"l, d F Y\")s"
-
-#, python-format
-#~ msgid "%(opera.titolo)s - Parco Letterario Verismo"
-#~ msgstr "%(opera.titolo)s - Verismo Literary Park"
-
-#, python-format
-#~ msgid "Opere di %(autore.nome)s - Parco Letterario Verismo"
-#~ msgstr "%(autore.nome)s' Works - Verismo Literary Park"
-
-#~ msgid "Lingua"
-#~ msgstr "Language"
+#: parco_verismo/templates/parco_verismo/vizzini.html:328
+msgid "Esplora Vizzini"
+msgstr "Explore Vizzini"
