@@ -5,6 +5,32 @@
    ======================================================== */
 
 /* ========================================================
+   SVG COLOR CLASSES - usando variabili CSS
+   ======================================================== */
+
+.placeholder-image svg,
+.placeholder-image-secondary svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Colori di riempimento */
+.svg-fill-primary { fill: var(--color-primary); }
+.svg-fill-primary-dark { fill: var(--color-primary-dark); }
+.svg-fill-primary-light { fill: var(--color-primary-light); }
+.svg-fill-secondary { fill: var(--color-secondary); }
+.svg-fill-secondary-light { fill: var(--color-secondary-light); }
+.svg-fill-accent { fill: var(--color-accent); }
+.svg-fill-background { fill: var(--color-background); }
+.svg-fill-surface { fill: var(--color-surface-elevated); }
+
+/* Colori di stroke */
+.svg-stroke-primary { stroke: var(--color-primary); }
+.svg-stroke-primary-dark { stroke: var(--color-primary-dark); }
+.svg-stroke-secondary { stroke: var(--color-secondary); }
+.svg-stroke-accent { stroke: var(--color-accent); }
+
+/* ========================================================
    HERO SECTION
    ======================================================== */
 

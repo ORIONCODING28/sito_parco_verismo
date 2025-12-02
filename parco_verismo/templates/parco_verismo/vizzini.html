@@ -1,306 +1,395 @@
+{% extends "parco_verismo/base.html" %}
 {% load static i18n %}
-{% get_current_language as LANGUAGE_CODE %}
-<!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}" data-theme="verismo">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{% trans 'Vizzini - Città natale di Giovanni Verga, tra storia, tradizioni siciliane e letteratura verista. Scopri il borgo e il Parco Letterario Verghiano.' %}" />
-    <meta name="keywords" content="Vizzini, Giovanni Verga, Verismo, Sicilia, Iblei, Cunziria, borgo storico" />
-    <title>{% trans 'Parco Letterario Verismo - Vizzini' %}</title>
 
-    <!-- Bootstrap CSS locale -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+{% block title %}{% trans 'Vizzini' %} - {% trans 'Parco Letterario Verismo' %}{% endblock %}
 
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/vizzini.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+{% endblock %}
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="{% static 'fonts/inter-400.css' %}" />
-    <link rel="stylesheet" href="{% static 'fonts/montserrat-500.css' %}" />
-    <link rel="stylesheet" href="{% static 'fonts/montserrat-700.css' %}" />
+{% block body_class %}vizzini-page transparent-nav{% endblock %}
 
-    <!-- Stili -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/vizzini.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  </head>
-
-  <body>
-    {% include 'parco_verismo/navbar.html' %}
-
-    {% block content %}
-      <div class="container-fluid my-5">
-        <!-- Hero Section -->
-        <section class="hero-vizzini d-flex align-items-center justify-content-center text-center mb-5">
-          <div class="hero-content px-3" data-aos="fade-up">
-            <h1 class="display-3 fw-bold text-white" data-aos="fade-down" data-aos-delay="200">Vizzini</h1>
-            <p class="lead text-light mt-3" data-aos="fade-up" data-aos-delay="400">{% trans 'Patria di Giovanni Verga, cuore del Verismo siciliano' %}</p>
-          </div>
-        </section>
-
-        <!-- Introduzione -->
-        <section class="row align-items-center mb-5">
-          <div class="col-md-7 mb-3 mb-md-0" data-aos="fade-right">
-            <h2 class="text-primary mb-3">{% trans 'Introduzione' %}</h2>
-            <p>
-              Vizzini sorge a 586 metri sul livello del mare, su tre colli principali: Castello, Maddalena e Calvario, nel cuore dei Monti Iblei. Il borgo ha origini antichissime, con reperti archeologici risalenti all'età del bronzo. Dominato nei secoli da Greci, Romani, Bizantini e Arabi, Vizzini conserva testimonianze storiche di ogni epoca, con edifici religiosi e civili che raccontano la sua evoluzione.  
-              È universalmente nota come città natale di <strong>Giovanni Verga</strong> (1840-1922), padre del <strong>Verismo italiano</strong>, che nelle sue opere ha immortalato la vita contadina e le tradizioni del territorio. Oggi Vizzini unisce fascino storico, paesaggi naturali e una forte identità culturale, meta ideale per chi vuole conoscere la Sicilia autentica.
-            </p>
-          </div>
-          <div class="col-md-5 text-center" data-aos="fade-left" data-aos-delay="200">
-            <img src="/static/assets/img/vizzini/comune.jpg" class="img-fluid rounded shadow" alt="Panorama di Vizzini" />
-          </div>
-        </section>
-
-        <!-- Casa e Luoghi di Verga -->
-        <section class="row align-items-center mb-5">
-          <div class="col-md-5 text-center mb-3 mb-md-0" data-aos="fade-right">
-            <img src="/static/assets/img/vizzini/casaVerga.jpg" class="img-fluid rounded shadow" alt="Casa di Giovanni Verga" />
-          </div>
-          <div class="col-md-7" data-aos="fade-left" data-aos-delay="200">
-            <h2 class="text-primary mb-3">Casa Natale e Borgo della Cunziria</h2>
-            <p>
-              Nel centro storico si trova la <strong>Casa Natale di Giovanni Verga</strong>, oggi trasformata in museo dedicato alla vita e alle opere del grande scrittore. A pochi chilometri dal centro si trova il <strong>Borgo della Cunziria</strong>, antico sito di concia delle pelli, reso celebre dalle novelle di Verga come <em>Cavalleria Rusticana</em>. Entrambi i luoghi rappresentano un punto di riferimento per la cultura verghiana, con eventi, visite guidate e manifestazioni teatrali che celebrano la tradizione letteraria locale.
-            </p>
-          </div>
-        </section>
-
-        <!-- Monumenti principali -->
-        <section class="row align-items-center mb-5">
-          <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right">
-            <h2 class="text-primary mb-3">Monumenti e Luoghi Storici</h2>
-            <p>
-              Tra i luoghi più importanti di Vizzini spiccano il <strong>Duomo di San Gregorio Magno</strong>, la <strong>Basilica di San Giovanni Battista</strong>, il <strong>Santuario della Madonna del Pericolo</strong>, la <strong>Chiesa di Santa Teresa</strong> e il <strong>Convento dei Cappuccini</strong>. Oltre a questi, il <strong>Borgo della Cunziria</strong> e la <strong>Valle dei Mulini</strong> offrono scorci storici e naturalistici unici, mentre il <strong>Bosco Granvilla</strong> è ideale per passeggiate immerse nella natura.
-            </p>
-          </div>
-          <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="200">
-            <img src="/static/assets/img/vizzini/duomo.jpg" class="img-fluid rounded shadow" alt="Duomo di Vizzini" />
-          </div>
-        </section>
-
-        <!-- Eventi / Tradizioni -->
-        <section class="mb-5">
-          <h2 class="text-primary mb-4" data-aos="fade-up">{% trans 'Tradizioni e Feste' %}</h2>
-          <div class="row g-4">
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
-              <div class="card h-100 border shadow-sm">
-                <img src="/static/assets/img/vizzini/festaRicotta.jpg" class="card-img-top" alt="Sagra della Ricotta" />
-                <div class="card-body">
-                  <h5 class="card-title text-success">Sagra della Ricotta</h5>
-                  <p class="card-text"><small class="text-muted">Aprile</small></p>
-                  <p class="card-text">
-                    Celebrazione dei prodotti lattiero-caseari locali, con particolare attenzione alla ricotta fresca. Degustazioni e stand gastronomici richiamano visitatori da tutta la regione.
-                  </p>
+{% block content %}
+<!-- Hero Section -->
+<section class="pages-hero vizzini-hero">
+    <div class="pages-hero-overlay"></div>
+    <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
+                <div class="pages-hero-content">
+                    <span class="pages-badge">{% trans 'Territorio' %}</span>
+                    <h1 class="pages-hero-title display-3 fw-bold mb-4">Vizzini</h1>
+                    <p class="pages-hero-subtitle lead">{% trans 'Patria di Giovanni Verga, cuore del Verismo siciliano' %}</p>
                 </div>
-              </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-              <div class="card h-100 border shadow-sm">
-                <img src="/static/assets/img/vizzini/processione.jpg" class="card-img-top" alt="Processione Cristo alla Colonna" />
-                <div class="card-body">
-                  <h5 class="card-title text-success">Processione del Cristo alla Colonna</h5>
-                  <p class="card-text"><small class="text-muted">Mercoledì Santo</small></p>
-                  <p class="card-text">
-                    Tradizionale celebrazione religiosa durante la Settimana Santa, con intensa partecipazione della comunità locale.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-              <div class="card h-100 border shadow-sm">
-                <img src="/static/assets/img/vizzini/festa.jpeg" class="card-img-top" alt="Festa di San Gregorio" />
-                <div class="card-body">
-                  <h5 class="card-title text-success">Festa di San Gregorio Magno</h5>
-                  <p class="card-text"><small class="text-muted">Settembre</small></p>
-                  <p class="card-text">
-                    Celebrazione del patrono della città, con processioni, concerti e eventi culturali che animano le strade di Vizzini.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-              <div class="card h-100 border shadow-sm">
-                <img src="/static/assets/img/vizzini/verga.jpeg" class="card-img-top" alt="Rappresentazioni Verghiane" />
-                <div class="card-body">
-                  <h5 class="card-title text-success">Eventi Verghiani</h5>
-                  <p class="card-text"><small class="text-muted">Luglio/Agosto</small></p>
-                  <p class="card-text">
-                    Manifestazioni culturali e teatrali dedicate a Giovanni Verga e al suo borgo, con spettacoli nel Borgo della Cunziria.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- Galleria Fotografica -->
-        <section class="mb-5">
-          <h2 class="text-primary mb-4 text-center" data-aos="fade-up">{% trans 'Galleria Fotografica' %}</h2>
-          <div class="row g-3">
-            <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="0">
-              <img src="/static/assets/img/vizzini/centrostorico.jpg" class="img-fluid rounded shadow" alt="Centro Storico di Vizzini" />
+<!-- Introduzione -->
+<section class="pages-section pages-intro py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Introduzione' %}</h2>
+                {% blocktrans %}
+                <p class="lead mb-3">Vizzini sorge a 586 metri sul livello del mare, arroccata sui monti Iblei. La città conserva un ricco patrimonio artistico e architettonico che testimonia la sua lunga storia, dalle origini sicule alle dominazioni greca, romana, araba e normanna.</p>
+                <p class="text-secondary">Conosciuta in tutto il mondo come la <strong>patria di Giovanni Verga</strong> (1840-1922), il più grande esponente del <strong>Verismo italiano</strong>. Qui sono ambientate le sue opere immortali: <em>Cavalleria Rusticana</em>, <em>La Lupa</em>, <em>Mastro-don Gesualdo</em>. Le strade e i vicoli di Vizzini hanno ispirato le pagine che hanno rivoluzionato la letteratura italiana, catturando l'essenza della vita e delle passioni del popolo siciliano.</p>
+                {% endblocktrans %}
             </div>
-            <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
-              <img src="/static/assets/img/vizzini/duomo_1.jpeg" class="img-fluid rounded shadow" alt="Duomo di Vizzini" />
-            </div>
-            <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
-              <img src="/static/assets/img/vizzini/cunziria.jpg" class="img-fluid rounded shadow" alt="Borgo della Cunziria" />
-            </div>
-            <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
-              <img src="/static/assets/img/vizzini/bosco.jpeg" class="img-fluid rounded shadow" alt="Bosco Granvilla" />
-            </div>
-          </div>
-        </section>
-
-        <!-- Monumenti e Luoghi di Interesse (Accordion) -->
-        <section class="mb-5">
-          <h2 class="text-primary mb-3" data-aos="fade-up">{% trans 'Monumenti e Luoghi di Interesse' %}</h2>
-
-          <div class="accordion accordion-flush" id="monumentiAccordion">
-            <!-- Duomo -->
-            <div class="accordion-item" data-aos="fade-up" data-aos-delay="0">
-              <h2 class="accordion-header" id="heading1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Duomo di San Gregorio Magno</button></h2>
-              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#monumentiAccordion">
-                <div class="accordion-body">
-                  Il <strong>Duomo di San Gregorio Magno</strong> è la cattedrale principale di Vizzini, con una struttura in stile barocco che domina il centro storico.
+            <div class="col-lg-6">
+                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+                    <img src="{% static 'assets/img/vizzini/panorama.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Panorama di Vizzini" />
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Casa Natale di Giovanni Verga -->
+<section class="pages-section pages-natura py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'Casa Natale di Giovanni Verga' %}</h2>
+                {% blocktrans %}
+                <p class="lead mb-3">La <strong>Casa Natale di Giovanni Verga</strong> rappresenta il luogo simbolo del Verismo italiano. Qui, il 2 settembre 1840, nacque il grande scrittore che avrebbe immortalato la Sicilia nella letteratura mondiale.</p>
+                <p class="text-secondary">L'edificio conserva ancora l'atmosfera del XIX secolo, con arredi d'epoca, documenti originali e cimeli che testimoniano la vita e l'opera del maestro. La casa museo offre un percorso emozionante attraverso le radici familiari e l'universo creativo di Verga, permettendo ai visitatori di immergersi nel contesto che ispirò capolavori come <em>I Malavoglia</em> e le <em>Novelle Rusticane</em>.</p>
+                {% endblocktrans %}
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+                    <img src="{% static 'assets/img/vizzini/casa-verga.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Casa Natale di Giovanni Verga" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- La Cunziria -->
+<section class="pages-section pages-lago py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="pages-section-title h2 fw-bold mb-4">{% trans 'La Cunziria' %}</h2>
+                {% blocktrans %}
+                <p class="lead mb-3">L'antico <strong>Borgo della Cunziria</strong> è un affascinante villaggio rupestre risalente al XVI-XVII secolo, dove un tempo si lavoravano le pelli con tecniche tradizionali. Le sue grotte e abitazioni scavate nella roccia creano un paesaggio unico e suggestivo.</p>
+                <p class="text-secondary">Il borgo è celebre per essere stato il set naturale della <strong>Cavalleria Rusticana</strong> di Verga, e più tardi del film omonimo di Franco Zeffirelli (1982) con Plácido Domingo. Oggi la Cunziria è meta di pellegrinaggio letterario e cinematografico, un luogo dove il tempo sembra essersi fermato, conservando intatta l'atmosfera descritta nelle pagine verghiane.</p>
+                {% endblocktrans %}
+            </div>
+            <div class="col-lg-6">
+                <div class="pages-image-wrapper rounded-4 overflow-hidden shadow-lg">
+                    <img src="{% static 'assets/img/vizzini/cunziria.jpg' %}" class="img-fluid w-100" style="height: 400px; object-fit: cover;" alt="Borgo della Cunziria" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tradizioni e Feste -->
+<section class="pages-section pages-tradizioni py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">{% trans 'Tradizioni e Feste' %}</h2>
+            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri le celebrazioni e gli eventi che scandiscono la vita della comunità vizzinese' %}</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon">
+                        <i class="bi bi-cup-straw"></i>
+                    </div>
+                    <h4 class="pages-value-title">{% trans 'Sagra della Ricotta' %}</h4>
+                    <p><small class="text-muted">{% trans 'Aprile' %}</small></p>
+                    <p>{% blocktrans %}Celebrazione della tradizione casearia locale con degustazioni di <strong>ricotta fresca</strong>, cannoli e dolci tipici siciliani.{% endblocktrans %}</p>
+                </div>
             </div>
 
-            <!-- Basilica -->
-            <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
-              <h2 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Basilica di San Giovanni Battista</button></h2>
-              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#monumentiAccordion">
-                <div class="accordion-body">
-                  La <strong>Basilica di San Giovanni Battista</strong> ospita al suo interno opere d’arte barocche e una Madonna dipinta da Mario Minniti.
+            <div class="col-md-6 col-lg-3">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon">
+                        <i class="bi bi-brightness-high"></i>
+                    </div>
+                    <h4 class="pages-value-title">{% trans 'Settimana Santa' %}</h4>
+                    <p><small class="text-muted">{% trans 'Marzo/Aprile' %}</small></p>
+                    <p>{% blocktrans %}Le suggestive processioni pasquali con la tradizionale <strong>"Giunta"</strong>, momento culminante delle celebrazioni religiose.{% endblocktrans %}</p>
                 </div>
-              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4 class="pages-value-title">{% trans 'Festa di San Gregorio' %}</h4>
+                    <p><small class="text-muted">{% trans 'Settembre' %}</small></p>
+                    <p>{% blocktrans %}Festa patronale con processioni solenni, <strong>luminarie</strong>, concerti e spettacoli pirotecnici.{% endblocktrans %}</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <h4 class="pages-value-title">{% trans 'Eventi Verghiani' %}</h4>
+                    <p><small class="text-muted">{% trans 'Estate' %}</small></p>
+                    <p>{% blocktrans %}Rassegne letterarie, spettacoli teatrali e rappresentazioni delle opere di <strong>Giovanni Verga</strong>.{% endblocktrans %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Patrimonio Storico -->
+<section class="pages-section pages-monumenti py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
+            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Scopri i monumenti e i luoghi simbolo di Vizzini' %}</p>
+        </div>
+
+        <!-- Piazza Umberto I - In evidenza -->
+        <div class="row g-5 align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="pages-highlight-text">
+                    <span class="pages-badge mb-3">{% trans 'Centro Storico' %}</span>
+                    <h3 class="h4 fw-bold mb-3">Piazza Umberto I</h3>
+                    <p class="lead">Il cuore pulsante di Vizzini, dove la vita sociale e le tradizioni si intrecciano in un'atmosfera unica.</p>
+                    <p class="text-secondary">Dominata dalla scalinata monumentale del <strong>Duomo di San Gregorio Magno</strong>, la piazza è il punto di riferimento della città. Qui si affacciano eleganti palazzi nobiliari e si svolgono le principali manifestazioni cittadine. La "scalunata" in pietra lavica, con i suoi gradini decorati, è uno dei simboli più fotografati di Vizzini.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="pages-points">
+                    <div class="pages-point">
+                        <div class="pages-point-icon"><i class="bi bi-building"></i></div>
+                        <div class="pages-point-content">
+                            <h4>Palazzo Verga</h4>
+                            <p>Residenza storica della famiglia dello scrittore, oggi <strong>museo e centro culturale</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="pages-point">
+                        <div class="pages-point-icon"><i class="bi bi-bank"></i></div>
+                        <div class="pages-point-content">
+                            <h4>Palazzo Comunale</h4>
+                            <p>Elegante edificio <strong>ottocentesco</strong> sede dell'amministrazione cittadina.</p>
+                        </div>
+                    </div>
+                    <div class="pages-point">
+                        <div class="pages-point-icon"><i class="bi bi-tree"></i></div>
+                        <div class="pages-point-content">
+                            <h4>Bosco Granvilla</h4>
+                            <p>Area naturale di <strong>querce e lecci</strong>, ideale per escursioni e passeggiate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Chiese e Luoghi di Culto -->
+<section class="pages-section pages-chiese py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
+            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Duomo di San Gregorio Magno</h4>
+                    <p>Chiesa madre di Vizzini, ricostruita nel <strong>XVIII secolo</strong> dopo il terremoto del 1693. Custodisce pregevoli opere d'arte barocca.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Basilica di San Giovanni Battista</h4>
+                    <p>Edificio religioso di grande valore storico con facciata <strong>tardogotica</strong> e portale finemente decorato.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Chiesa di Santa Maria di Gesù</h4>
+                    <p>Annessa all'antico <strong>Convento dei Cappuccini</strong>, conserva opere d'arte sacra del XVII secolo.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Chiesa di Sant'Agata</h4>
+                    <p>Piccola chiesa del centro storico, dedicata alla <strong>patrona di Catania</strong>.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Chiesa di San Sebastiano</h4>
+                    <p>Edificio barocco con facciata in pietra calcarea e <strong>campanile panoramico</strong>.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="pages-value-card h-100">
+                    <div class="pages-value-icon"><i class="bi bi-building"></i></div>
+                    <h4 class="pages-value-title">Chiesa del Rosario</h4>
+                    <p>Custodisce un prezioso <strong>crocifisso ligneo</strong> del XV secolo e affreschi votivi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Musei e Cultura -->
+<section class="pages-section pages-musei py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
+            <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
+            <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">{% trans 'Testimonianze della storia letteraria e artistica del territorio' %}</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Museo Verghiano -->
+            <div class="col-lg-4">
+                <div class="cultura-card h-100">
+                    <div class="cultura-card-header">
+                        <div class="cultura-card-icon">
+                            <i class="bi bi-book-half"></i>
+                        </div>
+                        <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+                    </div>
+                    <div class="cultura-card-body">
+                        <h3 class="cultura-card-title">Casa Museo Verga</h3>
+                        <p class="cultura-card-text">La <strong>casa natale dello scrittore</strong>, oggi museo dedicato alla sua vita e alle sue opere immortali.</p>
+                        <ul class="cultura-card-list">
+                            <li><i class="bi bi-pen"></i> Manoscritti originali</li>
+                            <li><i class="bi bi-camera"></i> Fotografie d'epoca</li>
+                            <li><i class="bi bi-house"></i> Arredi storici</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centro Studi Verghiani -->
+            <div class="col-lg-4">
+                <div class="cultura-card h-100">
+                    <div class="cultura-card-header">
+                        <div class="cultura-card-icon">
+                            <i class="bi bi-journal-richtext"></i>
+                        </div>
+                        <span class="cultura-card-badge">{% trans 'Centro Studi' %}</span>
+                    </div>
+                    <div class="cultura-card-body">
+                        <h3 class="cultura-card-title">Centro Studi Verghiani</h3>
+                        <p class="cultura-card-text">Centro di ricerca e documentazione dedicato al <strong>Verismo</strong> e alla letteratura siciliana.</p>
+                        <ul class="cultura-card-list">
+                            <li><i class="bi bi-collection"></i> Archivio documentale</li>
+                            <li><i class="bi bi-people"></i> Convegni e seminari</li>
+                            <li><i class="bi bi-book"></i> Biblioteca specializzata</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Borgo della Cunziria -->
-            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-              <h2 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Borgo della Cunziria</button></h2>
-              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#monumentiAccordion">
-                <div class="accordion-body">
-                  La <strong>Cunziria</strong> è un borgo storico-fantasma famoso per la concia delle pelli e per essere stato il “palcoscenico” delle novelle di Verga, come <em>Cavalleria Rusticana</em>.
+            <div class="col-lg-4">
+                <div class="cultura-card h-100">
+                    <div class="cultura-card-header">
+                        <div class="cultura-card-icon">
+                            <i class="bi bi-film"></i>
+                        </div>
+                        <span class="cultura-card-badge">{% trans 'Sito Storico' %}</span>
+                    </div>
+                    <div class="cultura-card-body">
+                        <h3 class="cultura-card-title">Borgo della Cunziria</h3>
+                        <p class="cultura-card-text">Villaggio rupestre set della <strong>Cavalleria Rusticana</strong> di Zeffirelli.</p>
+                        <ul class="cultura-card-list">
+                            <li><i class="bi bi-geo-alt"></i> Percorsi verghiani</li>
+                            <li><i class="bi bi-camera-reels"></i> Location cinematografica</li>
+                            <li><i class="bi bi-calendar-event"></i> Eventi estivi</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
+        </div>
+    </div>
+</section>
 
-            <!-- Convento Cappuccini -->
-            <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
-              <h2 class="accordion-header" id="heading4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Convento dei Cappuccini</button></h2>
-              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#monumentiAccordion">
-                <div class="accordion-body">
-                  Il <strong>Convento dei Cappuccini</strong> conserva chiostri, celle monastiche e spazi religiosi di interesse storico e architettonico.
+<!-- Mappa Interattiva -->
+<section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
+    <div class="container-xl">
+        <div class="text-center mb-5">
+            <h2 class="pages-section-title h2 fw-bold">{% trans 'Esplora Vizzini' %}</h2>
+            <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">{% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}</p>
+        </div>
+        
+        <div class="map-layout">
+            <!-- Pannello Laterale Filtri -->
+            <div class="map-sidebar">
+                <div class="map-sidebar-header">
+                    <h4><i class="bi bi-funnel me-2"></i>{% trans 'Filtra per categoria' %}</h4>
                 </div>
-              </div>
+                <div class="map-sidebar-content">
+                    <!-- Barra di ricerca -->
+                    <div class="search-container">
+                        <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
+                        <div class="search-results"></div>
+                    </div>
+                    
+                    <!-- Filtri come lista -->
+                    <div class="filters-list">
+                        <div data-type="Servizi Pubblici" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-building-fill text-primary"></i>
+                            <span>{% trans 'Servizi Pubblici' %}</span>
+                        </div>
+                        <div data-type="Servizi Culturali" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-bank2 text-primary"></i>
+                            <span>{% trans 'Servizi Culturali' %}</span>
+                        </div>
+                        <div data-type="Prodotti Tipici" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-basket2-fill text-primary"></i>
+                            <span>{% trans 'Prodotti Tipici' %}</span>
+                        </div>
+                        <div data-type="Ospitalità" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-house-heart-fill text-primary"></i>
+                            <span>{% trans 'Ospitalità' %}</span>
+                        </div>
+                        <div data-type="Luoghi Verghiani" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-book-fill text-primary"></i>
+                            <span>{% trans 'Luoghi Verghiani' %}</span>
+                        </div>
+                        <div data-type="Ristorazione" class="filter-item d-flex align-items-center gap-2">
+                            <i class="bi bi-cup-hot-fill text-primary"></i>
+                            <span>{% trans 'Ristorazione' %}</span>
+                        </div>
+                        <div data-type="all" class="filter-item filter-item-reset d-flex align-items-center gap-2">
+                            <i class="bi bi-arrow-clockwise text-primary"></i>
+                            <span>{% trans 'Mostra tutti' %}</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Bosco Granvilla -->
-            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-              <h2 class="accordion-header" id="heading5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">Bosco Granvilla</button></h2>
-              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#monumentiAccordion">
-                <div class="accordion-body">
-                  Il <strong>Bosco Granvilla</strong> è una zona naturale ideale per passeggiate e trekking immersi nella natura siciliana.
-                </div>
-              </div>
+            
+            <!-- Mappa -->
+            <div class="map-main">
+                <div id="map" class="map-container rounded shadow"></div>
             </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
 
-          </div>
-        </section>
-
-        <!-- Citazioni -->
-        <section class="citations-section mb-5">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-start" data-aos="fade-right">
-                <div class="citation-box">
-                  <p class="citation-text">«Vizzini è il borgo dove la Sicilia di Verga prende vita, tra vicoli antichi e storie di uomini e donne indimenticabili.»</p>
-                  <footer class="citation-footer">— (citazione libera)</footer>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 d-flex justify-content-end" data-aos="fade-left" data-aos-delay="200">
-                <div class="citation-box">
-                  <p class="citation-text">«Tra il borgo della Cunziria e i palazzi storici, la letteratura verghiana vive ancora oggi nelle pietre e nei racconti di Vizzini.»</p>
-                  <footer class="citation-footer">— (citazione libera)</footer>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Titolo separato dalla mappa -->
-        <h2 class="text-primary text-center mb-4" data-aos="fade-down">{% trans 'Mappa di Vizzini' %}</h2>
-
-        <section id="map-section" class="map-section mb-5" data-aos="zoom-in">
-          <div id="map" class="container-fluid map-container rounded shadow"></div>
-
-          <!-- Barra di ricerca -->
-          <div class="search-container">
-            <input type="text" class="form-control search-box" placeholder="{% trans 'Cerca un luogo...' %}" />
-            <div class="search-results"></div>
-          </div>
-
-          <!-- Filtri dropdown -->
-          <div class="filters-container dropdown">
-            <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2 filter-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="{% static 'assets/icons/filtri.svg' %}" width="20" height="20" alt="{% trans 'Filtri' %}" /> {% trans 'Filtri' %}
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li data-type="Servizi Pubblici" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/servizi_pubblici.svg' %}" width="20" height="20" alt="{% trans 'Icona Servizi Pubblici' %}" /> {% trans 'Servizi Pubblici' %}
-              </li>
-              <li data-type="Servizi Culturali" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/servizi_culturali.svg' %}" width="20" height="20" alt="{% trans 'Icona Servizi Culturali' %}" /> {% trans 'Servizi Culturali' %}
-              </li>
-              <li data-type="Prodotti Tipici" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/prodotti_tipici.svg' %}" width="20" height="20" alt="{% trans 'Icona Prodotti Tipici' %}" /> {% trans 'Prodotti Tipici' %}
-              </li>
-              <li data-type="Ospitalità" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/ospitalita.svg' %}" width="20" height="20" alt="{% trans 'Icona Ospitalità' %}" /> {% trans 'Ospitalità' %}
-              </li>
-              <li data-type="Luoghi Verghiani" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/luoghi_verghiani.svg' %}" width="20" height="20" alt="{% trans 'Icona Luoghi Verghiani' %}" /> {% trans 'Luoghi Verghiani' %}
-              </li>
-              <li data-type="Ristorazione" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/ristorazione.svg' %}" width="20" height="20" alt="{% trans 'Icona Ristorazione' %}" /> {% trans 'Ristorazione' %}
-              </li>
-              <li data-type="all" class="filter-item dropdown-item d-flex align-items-center gap-2">
-                <img src="{% static 'assets/icons/arrow-rotate.svg' %}" width="20" height="20" alt="{% trans 'Icona Tutti' %}" /> {% trans 'Tutti' %}
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    {% endblock %}
-
-    {% include 'parco_verismo/components/footer.html' %}
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        offset: 100,
-        delay: 0
-      });
-    </script>
-    
-    <!-- Map Scripts -->
-    <script src="{% static 'js/map/points_vizzini.js' %}"></script>
-    <script src="{% static 'js/map/script_vizzini.js' %}"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-  </body>
-</html>
+{% block extra_scripts %}
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Map Scripts -->
+<script src="{% static 'js/map/points_vizzini.js' %}"></script>
+<script src="{% static 'js/map/script_vizzini.js' %}"></script>
+{% endblock %}
 

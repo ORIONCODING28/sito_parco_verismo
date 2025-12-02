@@ -3,24 +3,271 @@
 
 {% block title %}{% trans 'Notizie - Parco Letterario Verismo' %}{% endblock %}
 
-{% block hero_section %}{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/notizie.css' %}">
+{% endblock %}
+
+{% block body_class %}notizie-page{% endblock %}
 
 {% block content %}
-<section class="container my-5 pt-5">
-  <h1 class="text-center mb-4">{% trans 'News & Novità' %}</h1>
-  <p class="text-center mb-5">{% trans 'Rimani aggiornato sulle ultime novità del Parco Letterario del Verismo' %}</p>
+<!-- Floating Calendar Button -->
+<button class="calendar-fab" id="calendarFab" aria-label="{% trans 'Apri calendario' %}">
+    <i class="bi bi-calendar3"></i>
+</button>
 
-  <div class="row">
-    {% for notizia in notizie %}
-      {% include 'parco_verismo/components/notizia_card.html' with notizia=notizia %}
-    {% empty %}
-      <div class="col-12">
-        <div class="alert alert-info text-center">
-          <h5>{% trans 'Nessuna notizia disponibile' %}</h5>
-          <p>{% trans 'Al momento non ci sono notizie pubblicate. Torna presto per leggere le nostre novità!' %}</p>
+<!-- Calendar Popup -->
+<div class="calendar-popup" id="calendarPopup">
+    <div class="calendar-popup-header">
+        <button class="calendar-nav-btn" id="prevMonth"><i class="bi bi-chevron-left"></i></button>
+        <h4 class="calendar-month-title" id="calendarMonthTitle"></h4>
+        <button class="calendar-nav-btn" id="nextMonth"><i class="bi bi-chevron-right"></i></button>
+        <button class="calendar-close-btn" id="closeCalendar"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="calendar-body">
+        <div class="calendar-weekdays">
+            <span>{% trans 'Lun' %}</span>
+            <span>{% trans 'Mar' %}</span>
+            <span>{% trans 'Mer' %}</span>
+            <span>{% trans 'Gio' %}</span>
+            <span>{% trans 'Ven' %}</span>
+            <span>{% trans 'Sab' %}</span>
+            <span>{% trans 'Dom' %}</span>
         </div>
-      </div>
-    {% endfor %}
-  </div>
+        <div class="calendar-days" id="calendarDays"></div>
+    </div>
+    <div class="calendar-events-panel" id="calendarEventsPanel">
+        <div class="calendar-events-header">
+            <span class="calendar-events-date" id="selectedDate"></span>
+        </div>
+        <div class="calendar-events-list" id="calendarEventsList">
+            <!-- Eventi del giorno selezionato -->
+        </div>
+    </div>
+    <div class="calendar-legend">
+        <span class="legend-item"><span class="legend-dot has-event"></span> {% trans 'Evento' %}</span>
+        <span class="legend-item"><span class="legend-dot has-news"></span> {% trans 'Notizia' %}</span>
+        <span class="legend-item"><span class="legend-dot today"></span> {% trans 'Oggi' %}</span>
+    </div>
+</div>
+
+<!-- Notizie List Section -->
+<section class="pages-section pages-notizie-list py-5 py-lg-6">
+    <div class="container-xl">
+        <!-- Header Sezione -->
+        <div class="notizie-header">
+            <span class="pages-badge">{% trans 'News' %}</span>
+            <h1>{% trans 'News & Novità' %}</h1>
+            <p>{% trans 'Rimani aggiornato sulle ultime novità del Parco Letterario del Verismo' %}</p>
+        </div>
+
+        <div class="row g-4">
+            {% for notizia in notizie %}
+                {% include 'parco_verismo/components/notizia_card.html' with notizia=notizia %}
+            {% empty %}
+                <div class="col-12">
+                    <div class="notizie-empty">
+                        <div class="notizie-empty-icon">
+                            <i class="bi bi-newspaper"></i>
+                        </div>
+                        <h5>{% trans 'Nessuna notizia disponibile' %}</h5>
+                        <p>{% trans 'Al momento non ci sono notizie pubblicate. Torna presto per leggere le nostre novità!' %}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
+
+<!-- Script Calendario -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const fab = document.getElementById('calendarFab');
+    const popup = document.getElementById('calendarPopup');
+    const closeBtn = document.getElementById('closeCalendar');
+    const prevBtn = document.getElementById('prevMonth');
+    const nextBtn = document.getElementById('nextMonth');
+    const monthTitle = document.getElementById('calendarMonthTitle');
+    const daysContainer = document.getElementById('calendarDays');
+    const eventsPanel = document.getElementById('calendarEventsPanel');
+    const eventsList = document.getElementById('calendarEventsList');
+    const selectedDateEl = document.getElementById('selectedDate');
+
+    // Eventi dal backend
+    const events = [
+        {% for evento in eventi %}
+        {
+            date: "{{ evento.data_inizio|date:'Y-m-d' }}",
+            title: "{{ evento.titolo|escapejs }}",
+            url: "{{ evento.get_absolute_url }}",
+            type: "event",
+            time: "{{ evento.data_inizio|date:'H:i' }}",
+            location: "{{ evento.luogo|escapejs }}"
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    ];
+
+    // Notizie dal backend
+    const news = [
+        {% for notizia in notizie %}
+        {
+            date: "{{ notizia.data_pubblicazione|date:'Y-m-d' }}",
+            title: "{{ notizia.titolo|escapejs }}",
+            url: "{{ notizia.get_absolute_url }}",
+            type: "news"
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    ];
+
+    // Combina eventi e notizie
+    const allItems = [...events, ...news];
+
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    const monthNames = [
+        '{% trans "Gennaio" %}', '{% trans "Febbraio" %}', '{% trans "Marzo" %}', 
+        '{% trans "Aprile" %}', '{% trans "Maggio" %}', '{% trans "Giugno" %}',
+        '{% trans "Luglio" %}', '{% trans "Agosto" %}', '{% trans "Settembre" %}', 
+        '{% trans "Ottobre" %}', '{% trans "Novembre" %}', '{% trans "Dicembre" %}'
+    ];
+
+    const dayNames = [
+        '{% trans "Domenica" %}', '{% trans "Lunedì" %}', '{% trans "Martedì" %}',
+        '{% trans "Mercoledì" %}', '{% trans "Giovedì" %}', '{% trans "Venerdì" %}', '{% trans "Sabato" %}'
+    ];
+
+    function getItemsForDate(dateStr) {
+        return allItems.filter(item => item.date === dateStr);
+    }
+
+    function hasEvents(dateStr) {
+        return events.some(e => e.date === dateStr);
+    }
+
+    function hasNews(dateStr) {
+        return news.some(n => n.date === dateStr);
+    }
+
+    function showEventsForDate(dateStr, dayOfWeek, dayNum) {
+        const items = getItemsForDate(dateStr);
+        const dateObj = new Date(dateStr);
+        
+        selectedDateEl.textContent = dayNames[dateObj.getDay()] + ' ' + dayNum + ' ' + monthNames[currentMonth];
+        
+        if (items.length === 0) {
+            eventsList.innerHTML = '<p class="no-events">{% trans "Nessun contenuto in questa data" %}</p>';
+        } else {
+            eventsList.innerHTML = items.map(item => `
+                <a href="${item.url}" class="calendar-event-item ${item.type}">
+                    <span class="event-type-badge ${item.type}">${item.type === 'event' ? '<i class="bi bi-calendar-event"></i>' : '<i class="bi bi-newspaper"></i>'}</span>
+                    <div class="event-info">
+                        <span class="event-title">${item.title}</span>
+                        ${item.time ? '<span class="event-time"><i class="bi bi-clock"></i> ' + item.time + '</span>' : ''}
+                        ${item.location ? '<span class="event-location"><i class="bi bi-geo-alt"></i> ' + item.location + '</span>' : ''}
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            `).join('');
+        }
+        
+        eventsPanel.classList.add('active');
+    }
+
+    function renderCalendar() {
+        const firstDay = new Date(currentYear, currentMonth, 1);
+        const lastDay = new Date(currentYear, currentMonth + 1, 0);
+        const startDay = (firstDay.getDay() + 6) % 7; // Lunedì = 0
+        const totalDays = lastDay.getDate();
+
+        monthTitle.textContent = monthNames[currentMonth] + ' ' + currentYear;
+        daysContainer.innerHTML = '';
+        eventsPanel.classList.remove('active');
+
+        // Empty days before month starts
+        for (let i = 0; i < startDay; i++) {
+            const emptyDay = document.createElement('span');
+            emptyDay.className = 'calendar-day empty';
+            daysContainer.appendChild(emptyDay);
+        }
+
+        // Days of the month
+        for (let day = 1; day <= totalDays; day++) {
+            const dayEl = document.createElement('span');
+            dayEl.className = 'calendar-day';
+            dayEl.textContent = day;
+
+            const dateStr = currentYear + '-' + 
+                String(currentMonth + 1).padStart(2, '0') + '-' + 
+                String(day).padStart(2, '0');
+
+            const dateHasEvents = hasEvents(dateStr);
+            const dateHasNews = hasNews(dateStr);
+
+            if (dateHasEvents) {
+                dayEl.classList.add('has-event');
+            }
+            if (dateHasNews) {
+                dayEl.classList.add('has-news');
+            }
+
+            const today = new Date();
+            if (day === today.getDate() && 
+                currentMonth === today.getMonth() && 
+                currentYear === today.getFullYear()) {
+                dayEl.classList.add('today');
+            }
+
+            // Click per vedere eventi/notizie del giorno
+            if (dateHasEvents || dateHasNews) {
+                dayEl.addEventListener('click', function() {
+                    // Rimuovi selezione precedente
+                    document.querySelectorAll('.calendar-day.selected').forEach(el => el.classList.remove('selected'));
+                    dayEl.classList.add('selected');
+                    showEventsForDate(dateStr, firstDay.getDay(), day);
+                });
+            }
+
+            daysContainer.appendChild(dayEl);
+        }
+    }
+
+    // Toggle popup
+    fab.addEventListener('click', function() {
+        popup.classList.toggle('active');
+        if (popup.classList.contains('active')) {
+            renderCalendar();
+        }
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popup.classList.remove('active');
+    });
+
+    prevBtn.addEventListener('click', function() {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        renderCalendar();
+    });
+
+    nextBtn.addEventListener('click', function() {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        renderCalendar();
+    });
+
+    // Close on click outside
+    document.addEventListener('click', function(e) {
+        if (!popup.contains(e.target) && !fab.contains(e.target)) {
+            popup.classList.remove('active');
+        }
+    });
+});
+</script>
 {% endblock %}

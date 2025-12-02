@@ -1,0 +1,644 @@
+/* ===========================
+   NOTIZIE PAGE - CUSTOM STYLES
+   Utilizza le variabili globali da styles.css
+   =========================== */
+
+/* ===========================
+   SECTION STYLES
+   =========================== */
+
+.pages-section.pages-notizie-list {
+    background: var(--color-background);
+    min-height: 60vh;
+}
+
+/* ===========================
+   HEADER SEZIONE
+   =========================== */
+
+.notizie-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.notizie-header .pages-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, 
+        rgba(199, 106, 82, 0.15) 0%, 
+        rgba(192, 140, 59, 0.15) 100%);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.notizie-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--color-heading);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.notizie-header p {
+    color: var(--color-text-secondary);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   NOTIZIA CARD STYLES
+   =========================== */
+
+.notizia-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notizia-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+.notizia-card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.notizia-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.notizia-card:hover .notizia-card-image img {
+    transform: scale(1.05);
+}
+
+.notizia-card-image .notizia-date-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--color-primary);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    min-width: 60px;
+    box-shadow: var(--shadow-md);
+}
+
+.notizia-date-badge .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.notizia-date-badge .month {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+}
+
+.notizia-card-placeholder {
+    height: 200px;
+    background: linear-gradient(135deg,
+        var(--color-primary-pale) 0%,
+        var(--color-surface-elevated) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+.notizia-card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.notizia-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.notizia-card-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.notizia-card-title a:hover {
+    color: var(--color-primary);
+}
+
+.notizia-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.notizia-card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.notizia-card-meta-item i {
+    color: var(--color-primary);
+    font-size: 1rem;
+    width: 18px;
+    text-align: center;
+}
+
+.notizia-card-description {
+    color: var(--color-text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    flex: 1;
+}
+
+.notizia-card-footer {
+    margin-top: auto;
+}
+
+.notizia-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.notizia-card-btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.notizia-card-btn i {
+    transition: transform var(--transition-fast);
+}
+
+.notizia-card-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* ===========================
+   EMPTY STATE
+   =========================== */
+
+.notizie-empty {
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-lg);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.notizie-empty-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.15) 0%,
+        rgba(192, 140, 59, 0.15) 100%);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.notizie-empty h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.notizie-empty p {
+    color: var(--color-text-secondary);
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 991.98px) {
+    .notizie-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .notizie-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .notizia-card-image {
+        height: 180px;
+    }
+    
+    .calendar-popup {
+        right: 1rem;
+        left: 1rem;
+        width: auto;
+        bottom: 5rem;
+    }
+}
+
+/* ===========================
+   FLOATING CALENDAR BUTTON
+   =========================== */
+
+.calendar-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all var(--transition-fast);
+}
+
+.calendar-fab:hover {
+    background: var(--color-primary-dark);
+    transform: scale(1.1);
+}
+
+.calendar-fab:active {
+    transform: scale(0.95);
+}
+
+/* ===========================
+   CALENDAR POPUP
+   =========================== */
+
+.calendar-popup {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    width: 320px;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.95);
+    transition: all var(--transition-base);
+}
+
+.calendar-popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.calendar-popup-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, 
+        var(--color-primary) 0%, 
+        var(--color-primary-dark) 100%);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    gap: 0.5rem;
+}
+
+.calendar-month-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+.calendar-nav-btn,
+.calendar-close-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.calendar-nav-btn:hover,
+.calendar-close-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.calendar-body {
+    padding: 1rem 1.25rem;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-weekdays span {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    border-radius: 50%;
+    cursor: default;
+    position: relative;
+    transition: all var(--transition-fast);
+}
+
+.calendar-day.empty {
+    visibility: hidden;
+}
+
+.calendar-day.today {
+    background: var(--color-surface-elevated);
+    font-weight: 600;
+    box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.calendar-day.has-event {
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.calendar-day.has-event:hover {
+    background: var(--color-primary-dark);
+    transform: scale(1.1);
+}
+
+.calendar-day.today.has-event {
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.calendar-legend {
+    padding: 0.75rem 1.25rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background: var(--color-surface-elevated);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-neutral-300);
+}
+
+.legend-dot.has-event {
+    background: var(--color-primary);
+}
+
+.legend-dot.today {
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.legend-dot.has-news {
+    background: var(--color-secondary);
+}
+
+/* ===========================
+   CALENDAR EVENTS PANEL
+   =========================== */
+
+.calendar-events-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 1px solid var(--color-border);
+}
+
+.calendar-events-panel.active {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.calendar-events-header {
+    padding: 0.75rem 1.25rem;
+    background: var(--color-surface-elevated);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+}
+
+.calendar-events-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.calendar-events-list {
+    padding: 0.5rem;
+}
+
+.calendar-events-list .no-events {
+    text-align: center;
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.calendar-event-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.calendar-event-item:last-child {
+    margin-bottom: 0;
+}
+
+.calendar-event-item:hover {
+    background: var(--color-surface-elevated);
+    border-color: var(--color-primary-light);
+    transform: translateX(4px);
+}
+
+.event-type-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.event-type-badge.event {
+    background: var(--color-primary);
+    color: white;
+}
+
+.event-type-badge.news {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.event-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.event-title {
+    display: block;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-time,
+.event-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin-right: 0.75rem;
+}
+
+.event-time i,
+.event-location i {
+    font-size: 0.7rem;
+}
+
+.calendar-event-item > .bi-chevron-right {
+    color: var(--color-text-tertiary);
+    font-size: 0.875rem;
+    transition: transform var(--transition-fast);
+}
+
+.calendar-event-item:hover > .bi-chevron-right {
+    color: var(--color-primary);
+    transform: translateX(2px);
+}
+
+/* Day con notizie */
+.calendar-day.has-news {
+    background: var(--color-secondary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.calendar-day.has-news:hover {
+    background: var(--color-secondary-dark);
+    transform: scale(1.1);
+}
+
+/* Day con entrambi (evento + notizia) */
+.calendar-day.has-event.has-news {
+    background: linear-gradient(135deg, var(--color-primary) 50%, var(--color-secondary) 50%);
+}
+
+.calendar-day.has-event.has-news:hover {
+    transform: scale(1.1);
+}
+
+/* Day selezionato */
+.calendar-day.selected {
+    box-shadow: 0 0 0 2px var(--color-text-primary);
+}

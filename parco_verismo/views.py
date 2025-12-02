@@ -63,11 +63,14 @@ def opera_detail_view(request, slug):
 def eventi_view(request):
     """
     Mostra tutti gli eventi attivi ordinati per data.
+    Include anche le notizie per il calendario.
     """
     from django.utils import timezone
     eventi = Evento.objects.filter(is_active=True, data_inizio__gte=timezone.now()).order_by('data_inizio')
+    notizie = Notizia.objects.filter(is_active=True).order_by('-data_pubblicazione')[:20]
     context = {
         'eventi': eventi,
+        'notizie': notizie,
     }
     return render(request, 'parco_verismo/eventi.html', context)
 
@@ -100,10 +103,14 @@ def evento_detail_view(request, slug):
 def notizie_view(request):
     """
     Mostra tutte le notizie attive ordinate per data di pubblicazione.
+    Include anche gli eventi per il calendario.
     """
+    from django.utils import timezone
     notizie = Notizia.objects.filter(is_active=True).order_by('-data_pubblicazione')
+    eventi = Evento.objects.filter(is_active=True, data_inizio__gte=timezone.now()).order_by('data_inizio')[:20]
     context = {
         'notizie': notizie,
+        'eventi': eventi,
     }
     return render(request, 'parco_verismo/notizie.html', context)
 

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Inizializza mappa
-  var map = L.map(document.querySelector(".map-container"), { zoomControl: false }).setView([37.16274952281529, 14.75682145282006], 16);
+  // Inizializza mappa centrata su Vizzini
+  var map = L.map(document.querySelector(".map-container"), { zoomControl: false }).setView([37.1607, 14.7490], 16);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -9,14 +9,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
-  // Icone categorie
+  // Legge le variabili CSS dal tema corrente
+  const rootStyles = getComputedStyle(document.documentElement);
+  const getColor = (varName) => rootStyles.getPropertyValue(varName).trim();
+
+  // Funzione per creare icona marker con Bootstrap Icons
+  function createMarkerIcon(iconClass, bgColor) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `<div class="marker-pin" style="background: ${bgColor};">
+               <i class="bi ${iconClass}"></i>
+             </div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 36],
+      popupAnchor: [0, -36]
+    });
+  }
+
+  // Colori da variabili CSS del tema
+  const colors = {
+    primary: getColor('--color-primary') || '#823228',
+    primaryLight: getColor('--color-primary-light') || '#C76A52',
+    secondary: getColor('--color-secondary') || '#C08C3B',
+    secondaryDark: getColor('--color-secondary-dark') || '#8F6110',
+    accent: getColor('--color-accent') || '#2F6D5C',
+    success: getColor('--color-success') || '#4B9F7C',
+    info: getColor('--color-info') || '#2F6E8C',
+    warning: getColor('--color-warning') || '#D07A00'
+  };
+
+  // Icone categorie con colori dal tema
   var categoryIcons = {
-    "Servizi Pubblici": L.icon({iconUrl:"/static/assets/icons/servizi_pubblici.svg", iconSize:[32,32]}),
-    "Servizi Culturali": L.icon({iconUrl:"/static/assets/icons/servizi_culturali.svg", iconSize:[32,32]}),
-    "Prodotti Tipici": L.icon({iconUrl:"/static/assets/icons/prodotti_tipici.svg", iconSize:[32,32]}),
-    "Ospitalità": L.icon({iconUrl:"/static/assets/icons/ospitalita.svg", iconSize:[32,32]}),
-    "Luoghi Verghiani": L.icon({iconUrl:"/static/assets/icons/luoghi_verghiani.svg", iconSize:[32,32]}),
-    "Ristorazione": L.icon({iconUrl:"/static/assets/icons/ristorazione.svg", iconSize:[32,32]})
+    "Servizi Pubblici": createMarkerIcon("bi-building-fill", colors.info),
+    "Servizi Culturali": createMarkerIcon("bi-bank2", colors.primary),
+    "Prodotti Tipici": createMarkerIcon("bi-basket2-fill", colors.secondaryDark),
+    "Ospitalità": createMarkerIcon("bi-house-heart-fill", colors.accent),
+    "Luoghi Verghiani": createMarkerIcon("bi-book-fill", colors.secondary),
+    "Ristorazione": createMarkerIcon("bi-cup-hot-fill", colors.warning)
   };
 
   var markers = [];
@@ -27,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     allPointsData.push(p);
     if(!p.coords) return;
 
-    // 🔵 LINK GRATUITO GOOGLE MAPS PER IL PERCORSO
+    // Link Google Maps per il percorso
     var routeLink = `https://www.google.com/maps/dir/?api=1&destination=${p.coords[0]},${p.coords[1]}`;
 
     // Marker + popup con link percorso
@@ -57,13 +86,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  const filterBtns = document.querySelectorAll(".filter-btn");
-  filterBtns.forEach(btn => {
-    btn.addEventListener("click", function(){
-      const type = this.dataset.filter;
+  const filterItems = document.querySelectorAll(".filter-item");
+
+  filterItems.forEach(item => {
+    item.addEventListener("click", function(){
+      const type = this.dataset.type;
       filterMarkers(type);
 
-      filterBtns.forEach(b => b.classList.remove("active"));
+      filterItems.forEach(i => i.classList.remove("active"));
       this.classList.add("active");
     });
   });
@@ -72,39 +102,37 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchBox = document.querySelector(".search-box");
   const searchResults = document.querySelector(".search-results");
 
-  if(searchBox && searchResults) {
-    searchBox.addEventListener("input", function(){
-      const q = this.value.toLowerCase().trim();
-      searchResults.innerHTML = "";
-      if(q.length < 2){
+  searchBox.addEventListener("input", function(){
+    const q = this.value.toLowerCase().trim();
+    searchResults.innerHTML = "";
+    if(q.length < 2){
+      searchResults.style.display = "none";
+      return;
+    }
+
+    const filtered = allPointsData.filter(p => p.name.toLowerCase().includes(q));
+
+    filtered.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "search-result-item";
+      div.textContent = p.name;
+      div.addEventListener("click", function(){
+        if(p.coords) map.setView(p.coords, 18);
+        const m = markers.find(m => m.name === p.name);
+        if(m) m.openPopup();
+
+        searchBox.value = "";
         searchResults.style.display = "none";
-        return;
-      }
-
-      const filtered = allPointsData.filter(p => p.name.toLowerCase().includes(q));
-
-      filtered.forEach(p => {
-        const div = document.createElement("div");
-        div.className = "search-result-item";
-        div.textContent = p.name;
-        div.addEventListener("click", function(){
-          if(p.coords) map.setView(p.coords, 18);
-          const m = markers.find(m => m.name === p.name);
-          if(m) m.openPopup();
-
-          searchBox.value = "";
-          searchResults.style.display = "none";
-        });
-        searchResults.appendChild(div);
       });
-
-      searchResults.style.display = filtered.length ? "block" : "none";
+      searchResults.appendChild(div);
     });
 
-    document.addEventListener("click", function(e){
-      if(!e.target.closest(".search-container")){
-        searchResults.style.display = "none";
-      }
-    });
-  }
+    searchResults.style.display = filtered.length ? "block" : "none";
+  });
+
+  document.addEventListener("click", function(e){
+    if(!e.target.closest(".search-container")){
+      searchResults.style.display = "none";
+    }
+  });
 });

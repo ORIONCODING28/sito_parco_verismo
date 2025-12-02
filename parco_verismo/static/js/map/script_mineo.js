@@ -1,114 +1,127 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Inizializza mappa
-  var map = L.map(document.querySelector(".map-container"), { zoomControl: false }).setView([37.265072111776625, 14.690961105310981], 17);
+// Legge le variabili CSS per i colori dei marker
+function getCSSColor(varName) {
+    return getComputedStyle(document.documentElement).getPropertyValue(varName).trim() || '#823228';
+}
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
+// Crea marker con icone Bootstrap Icons e colori da CSS variables
+function createMarker(type) {
+    const colorPrimary = getCSSColor('--color-primary');
+    const colorSecondary = getCSSColor('--color-secondary');
+    const colorAccent = getCSSColor('--color-accent');
+    const colorInfo = getCSSColor('--color-info');
+    const colorWarning = getCSSColor('--color-warning');
 
-  L.control.zoom({ position: 'bottomleft' }).addTo(map);
-
-  // Icone categorie
-  var categoryIcons = {
-    "Servizi Pubblici": L.icon({iconUrl:"/static/assets/icons/servizi_pubblici.svg", iconSize:[32,32]}),
-    "Servizi Culturali": L.icon({iconUrl:"/static/assets/icons/servizi_culturali.svg", iconSize:[32,32]}),
-    "Prodotti Tipici": L.icon({iconUrl:"/static/assets/icons/prodotti_tipici.svg", iconSize:[32,32]}),
-    "Ospitalità": L.icon({iconUrl:"/static/assets/icons/ospitalita.svg", iconSize:[32,32]}),
-    "Luoghi Verghiani": L.icon({iconUrl:"/static/assets/icons/luoghi_verghiani.svg", iconSize:[32,32]}),
-    "Ristorazione": L.icon({iconUrl:"/static/assets/icons/ristorazione.svg", iconSize:[32,32]})
-  };
-
-  var markers = [];
-  var allPointsData = [];
-
-  // Aggiungi marker
-  mineoPoints.forEach(p => {
-    allPointsData.push(p);
-    if(!p.coords) return;
-
-    // 🔵 LINK GRATUITO GOOGLE MAPS PER IL PERCORSO
-    var routeLink = `https://www.google.com/maps/dir/?api=1&destination=${p.coords[0]},${p.coords[1]}`;
-
-    // Marker + popup con link percorso
-    var m = L.marker(p.coords, {icon: categoryIcons[p.type]})
-             .bindPopup(`
-                <strong>${p.name}</strong><br>
-                ${p.type}<br><br>
-                <a href="${routeLink}" target="_blank" style="color:#007bff; font-weight:bold;">
-                  ➤ Ottieni percorso
-                </a>
-             `);
-
-    m.type = p.type;
-    m.name = p.name;
-    markers.push(m);
-    m.addTo(map);
-  });
-
-  // Filtri
-  function filterMarkers(type){
-    markers.forEach(m => {
-      if(type === "all" || m.type === type){
-        if(!map.hasLayer(m)) map.addLayer(m);
-      } else {
-        if(map.hasLayer(m)) map.removeLayer(m);
-      }
-    });
-  }
-
-  const dropdownBtn = document.querySelector(".filter-dropdown");
-  const filterItems = document.querySelectorAll(".filter-item");
-  const dropdownInstance = bootstrap.Dropdown.getOrCreateInstance(dropdownBtn);
-
-  filterItems.forEach(item => {
-    item.addEventListener("click", function(){
-      const type = this.dataset.type;
-      filterMarkers(type);
-
-      filterItems.forEach(i => i.classList.remove("active"));
-      this.classList.add("active");
-
-      dropdownInstance.hide();
-      dropdownBtn.innerHTML = `<i class="bi bi-funnel-fill fs-5"></i> ${this.textContent}`;
-    });
-  });
-
-  // Ricerca live
-  const searchBox = document.querySelector(".search-box");
-  const searchResults = document.querySelector(".search-results");
-
-  searchBox.addEventListener("input", function(){
-    const q = this.value.toLowerCase().trim();
-    searchResults.innerHTML = "";
-    if(q.length < 2){
-      searchResults.style.display = "none";
-      return;
+    let icon, color;
+    switch (type) {
+        case 'Servizi Pubblici':
+            icon = 'bi-building';
+            color = colorPrimary;
+            break;
+        case 'Servizi Culturali':
+            icon = 'bi-bank';
+            color = colorSecondary;
+            break;
+        case 'Prodotti Tipici':
+            icon = 'bi-basket';
+            color = colorAccent;
+            break;
+        case 'Ospitalità':
+            icon = 'bi-house-door';
+            color = colorInfo;
+            break;
+        case 'Ristorazione':
+            icon = 'bi-cup-hot';
+            color = colorWarning;
+            break;
+        case 'Luoghi Capuaniani':
+            icon = 'bi-book';
+            color = '#6B4E3D';
+            break;
+        default:
+            icon = 'bi-geo-alt';
+            color = colorPrimary;
     }
 
-    const filtered = allPointsData.filter(p => p.name.toLowerCase().includes(q));
+    return L.divIcon({
+        className: 'custom-marker',
+        html: `<div class="marker-pin" style="background-color: ${color};">
+                   <i class="bi ${icon}"></i>
+               </div>`,
+        iconSize: [30, 42],
+        iconAnchor: [15, 42],
+        popupAnchor: [0, -35]
+    });
+}
 
-    filtered.forEach(p => {
-      const div = document.createElement("div");
-      div.className = "search-result-item";
-      div.textContent = p.name;
-      div.addEventListener("click", function(){
-        if(p.coords) map.setView(p.coords, 18);
-        const m = markers.find(m => m.name === p.name);
-        if(m) m.openPopup();
+document.addEventListener('DOMContentLoaded', function() {
+    // Inizializza la mappa centrata su Mineo
+    var map = L.map('map-mineo').setView([37.2648, 14.6925], 15);
 
-        searchBox.value = "";
-        searchResults.style.display = "none";
-      });
-      searchResults.appendChild(div);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Layer group per i marker
+    var markers = L.layerGroup().addTo(map);
+
+    // Aggiungi tutti i marker
+    function addMarkers(filter) {
+        markers.clearLayers();
+        mineoPoints.forEach(function(point) {
+            if (filter === 'all' || point.type === filter) {
+                var marker = L.marker(point.coords, {
+                    icon: createMarker(point.type)
+                }).bindPopup('<strong>' + point.name + '</strong><br><em>' + point.type + '</em>');
+                markers.addLayer(marker);
+            }
+        });
+    }
+
+    // Inizializza con tutti i marker
+    addMarkers('all');
+
+    // Gestisci i filtri dal sidebar
+    var filterItems = document.querySelectorAll('.filter-item');
+    filterItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Rimuovi active da tutti
+            filterItems.forEach(function(el) {
+                el.classList.remove('active');
+            });
+            // Aggiungi active al cliccato
+            this.classList.add('active');
+            
+            var filter = this.getAttribute('data-filter');
+            addMarkers(filter);
+            
+            // Centra la mappa se necessario
+            if (markers.getLayers().length > 0) {
+                var group = new L.featureGroup(markers.getLayers());
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        });
     });
 
-    searchResults.style.display = filtered.length ? "block" : "none";
-  });
+    // Fix per rendering della mappa quando diventa visibile
+    setTimeout(function() {
+        map.invalidateSize();
+    }, 100);
 
-  document.addEventListener("click", function(e){
-    if(!e.target.closest(".search-container")){
-      searchResults.style.display = "none";
+    // Observer per quando la sezione mappa diventa visibile
+    var mapSection = document.querySelector('.pages-mappa');
+    if (mapSection) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    map.invalidateSize();
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(mapSection);
     }
-  });
+
+    // Click sul marker centra e zoom
+    markers.on('click', function(e) {
+        map.setView(e.latlng, 17);
+    });
 });

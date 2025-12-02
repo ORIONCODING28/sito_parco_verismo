@@ -1,355 +1,783 @@
 /* ===========================
    LICODIA PAGE - CUSTOM STYLES
-   Stile fedele a missione_visione.html
+   Utilizza le variabili globali da styles.css
    =========================== */
 
-/* Hero Background Override */
-.licodia-page .pages-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                    url("/static/assets/img/licodia/hero-bg.jpg");
-  background-position: center;
-  background-size: cover;
+/* ===========================
+   HERO BACKGROUND OVERRIDE
+   =========================== */
+
+.licodia-page .pages-hero.licodia-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                      url("/static/assets/img/licodia/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.licodia-page .pages-hero.licodia-hero .pages-hero-title {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.licodia-page .pages-hero.licodia-hero .pages-hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.licodia-page .pages-hero.licodia-hero .pages-badge {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
 }
 
 /* ===========================
-   SECTION HEIGHTS & SPACING
+   SECTION ALTERNATION
    =========================== */
 
-.pages-intro,
-.pages-natura,
-.pages-lago {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
+.pages-section.pages-intro {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.pages-section.pages-natura {
+    background: linear-gradient(135deg, 
+        var(--color-surface) 0%,
+        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface)) 100%);
+}
+
+.pages-section.pages-lago {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.pages-section.pages-tradizioni {
+    background: color-mix(in srgb, var(--color-neutral-100) 50%, var(--color-background));
+}
+
+.pages-section.pages-monumenti {
+    background: var(--color-background);
+}
+
+.pages-section.pages-chiese {
+    background: linear-gradient(135deg, 
+        var(--color-surface) 0%,
+        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface)) 100%);
+}
+
+.pages-section.pages-musei {
+    background: color-mix(in srgb, var(--color-neutral-100) 50%, var(--color-background));
+}
+
+.pages-section.pages-mappa {
+    background: var(--color-background);
+}
+
+.pages-section.pages-map-header {
+    background: var(--color-background);
 }
 
 /* ===========================
-   PAGES COMPONENTS
+   VALUE CARDS (Tradizioni)
    =========================== */
 
-/* Text Styles */
-.pages-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  margin-bottom: 1rem;
+.pages-value-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-/* Highlight Text */
-.pages-highlight-text {
-  padding: 1.5rem;
-  background: linear-gradient(135deg,
-      rgba(199, 106, 82, 0.08) 0%,
-      rgba(192, 140, 59, 0.05) 100%);
-  border-left: 4px solid var(--color-primary);
-  border-radius: 0.5rem;
+.pages-value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+    background: color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-surface));
 }
 
-.pages-highlight-text .lead {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-  margin: 0;
-  line-height: 1.8;
+.pages-value-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.15) 0%,
+        rgba(192, 140, 59, 0.15) 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
 }
 
-/* Points Grid */
-.pages-points {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2.5rem;
+.pages-value-card:hover .pages-value-icon {
+    background: var(--gradient-primary);
+    color: white;
+    transform: scale(1.1);
 }
 
-.pages-point {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  background: var(--color-surface);
-  border-radius: 0.75rem;
-  border: 1px solid var(--color-border);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.pages-value-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    margin: 0;
 }
 
-.pages-point:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-surface));
+.pages-value-card p {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.pages-point-icon {
-  flex-shrink: 0;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, 
-      rgba(130, 50, 40, 0.1) 0%,
-      rgba(192, 140, 59, 0.1) 100%);
-  border-radius: 0.5rem;
-  color: var(--color-primary);
-  font-size: 1.5rem;
-}
+/* ===========================
+   QUOTE STYLES
+   =========================== */
 
-.pages-point-content h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.pages-point-content p {
-  font-size: 0.95rem;
-  color: var(--color-text-secondary);
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* Tradizioni Section */
-.pages-tradizioni {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-.pages-tradizioni .row {
-  row-gap: 2rem;
-}
-
-/* Quote Styles */
 .pages-quote {
-  background: var(--color-surface-elevated);
-  border-left: 4px solid var(--color-primary);
-  border-radius: var(--radius-md);
-  padding: 1.5rem 2rem;
-  margin: 0;
-  box-shadow: var(--shadow-sm);
+    background: var(--color-surface);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 2rem;
+    margin: 0;
+    box-shadow: var(--shadow-sm);
+    height: 100%;
 }
 
 .pages-quote-text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: var(--color-text-primary);
-  font-style: italic;
-  margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 
 .pages-quote-footer {
-  font-size: 0.9rem;
-  color: var(--color-text-secondary);
-  font-style: normal;
-  font-weight: 500;
-}
-
-/* Accordion Styles */
-.pages-accordion .accordion-item {
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  margin-bottom: 0.5rem;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-
-.pages-accordion .accordion-button {
-  background: var(--color-surface);
-  color: var(--color-text-primary);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 1.25rem 1.5rem;
-  border: none;
-  box-shadow: none;
-}
-
-.pages-accordion .accordion-button:not(.collapsed) {
-  background: linear-gradient(135deg,
-      rgba(199, 106, 82, 0.08) 0%,
-      rgba(192, 140, 59, 0.05) 100%);
-  color: var(--color-primary);
-}
-
-.pages-accordion .accordion-button:focus {
-  box-shadow: none;
-  border-color: var(--color-border);
-}
-
-.pages-accordion .accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23823228'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.pages-accordion .accordion-body {
-  padding: 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  background: var(--color-surface);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    font-style: normal;
+    font-weight: 500;
 }
 
 /* ===========================
-   MAP SECTION
+   IMAGE WRAPPER
    =========================== */
 
-.map-section {
-  width: 100%;
-  max-width: 100%;
-  position: relative;
+.pages-image-wrapper {
+    position: relative;
+    box-shadow: var(--shadow-lg);
 }
 
-.map-container {
-  height: 600px;
-  position: relative;
-  z-index: 1;
+/* ===========================
+   ACCORDION STYLES
+   =========================== */
+
+.pages-accordion .accordion-item {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    margin-bottom: 0.5rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
 }
 
-/* Search Container */
-.search-container {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1100;
-  width: 90%;
-  max-width: 400px;
+.pages-accordion .accordion-button {
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1.25rem 1.5rem;
+    border: none;
+    box-shadow: none;
 }
 
-.search-box {
-  background: white;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 0.75rem 1rem;
-  font-size: 0.95rem;
-  box-shadow: var(--shadow-lg);
-  transition: all 0.3s ease;
+.pages-accordion .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.08) 0%,
+        rgba(192, 140, 59, 0.05) 100%);
+    color: var(--color-primary);
 }
 
-.search-box:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 4px 12px rgba(130, 50, 40, 0.15);
+.pages-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--color-border);
 }
 
-.search-results {
-  background: white;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  margin-top: 0.5rem;
-  max-height: 300px;
-  overflow-y: auto;
-  box-shadow: var(--shadow-lg);
-  display: none;
+.pages-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23823228'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.search-results.active {
-  display: block;
+.pages-accordion .accordion-button i {
+    color: var(--color-primary);
 }
 
+.pages-accordion .accordion-body {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+}
+
+/* ===========================
+   TABS CHIESE (ARCHITETTURA RELIGIOSA)
+   =========================== */
+
+.chiese-tabs {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.chiese-tabs .nav-tabs {
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.05) 0%,
+        rgba(192, 140, 59, 0.03) 100%);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 1rem 0;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.chiese-tabs .nav-tabs .nav-link {
+    color: var(--color-text-secondary);
+    border: none;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding: 0.75rem 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.chiese-tabs .nav-tabs .nav-link:hover {
+    color: var(--color-primary);
+    background: rgba(199, 106, 82, 0.08);
+}
+
+.chiese-tabs .nav-tabs .nav-link.active {
+    color: var(--color-primary);
+    background: var(--color-surface);
+    border-bottom: 3px solid var(--color-primary);
+    font-weight: 600;
+}
+
+.chiese-tabs .nav-tabs .nav-link i {
+    color: var(--color-primary-light);
+}
+
+.chiese-tabs .tab-content {
+    padding: 2rem;
+}
+
+.chiese-tabs .tab-pane h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.chiese-tabs .tab-pane p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ===========================
+   MUSEO CARD
+   =========================== */
+
+.museo-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.museo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.museo-card-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg,
+        var(--color-primary-pale) 0%,
+        var(--color-neutral-100) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+.museo-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.museo-card-body {
+    padding: 1.5rem;
+}
+
+.museo-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.museo-card-text {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===========================
+   CULTURA CARD (Musei e Cultura)
+   =========================== */
+
+.cultura-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.cultura-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cultura-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+.cultura-card:hover::before {
+    opacity: 1;
+}
+
+.cultura-card-header {
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.08) 0%,
+        rgba(192, 140, 59, 0.05) 100%);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.cultura-card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.cultura-card-badge {
+    background: var(--color-primary-pale);
+    color: var(--color-primary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+}
+
+.cultura-card-body {
+    padding: 1.5rem;
+}
+
+.cultura-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+}
+
+.cultura-card-text {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.cultura-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cultura-card-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.cultura-card-list li:last-child {
+    border-bottom: none;
+}
+
+.cultura-card-list li i {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    width: 18px;
+    text-align: center;
+}
+
+/* ===========================
+   MAP SECTION - NEW LAYOUT
+   =========================== */
+
+.map-section-wrapper {
+    width: 100%;
+}
+
+.map-layout {
+    display: flex;
+    gap: 1.5rem;
+    min-height: 500px;
+}
+
+/* Sidebar */
+.map-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.map-sidebar-header {
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.1) 0%,
+        rgba(192, 140, 59, 0.08) 100%);
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.map-sidebar-header h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.map-sidebar-header i {
+    color: var(--color-primary);
+}
+
+.map-sidebar-content {
+    padding: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Search in sidebar */
+.map-sidebar .search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.map-sidebar .search-box {
+    width: 100%;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.map-sidebar .search-box:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(130, 50, 40, 0.1);
+}
+
+.map-sidebar .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin-top: 0.25rem;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+    display: none;
+    z-index: 100;
+}
+
+.map-sidebar .search-results.active {
+    display: block;
+}
+
+/* Filters list */
+.filters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.filters-list .filter-item {
+    padding: 0.7rem 0.9rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    border: 1px solid transparent;
+}
+
+.filters-list .filter-item:hover {
+    background: var(--color-surface-elevated);
+    color: var(--color-primary);
+    border-color: var(--color-border);
+}
+
+.filters-list .filter-item.active {
+    background: linear-gradient(135deg,
+        rgba(199, 106, 82, 0.12) 0%,
+        rgba(192, 140, 59, 0.08) 100%);
+    color: var(--color-primary);
+    font-weight: 600;
+    border-color: var(--color-primary-light);
+}
+
+.filters-list .filter-item i {
+    font-size: 1.1rem;
+    width: 22px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.filters-list .filter-item:hover i {
+    transform: scale(1.15);
+}
+
+.filters-list .filter-item-reset {
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--color-border);
+}
+
+/* Map main area */
+.map-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.map-main .map-container {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+/* Legacy support - hide old elements if present */
+.map-section .filters-container {
+    display: none;
+}
+
+/* Search result items */
 .search-result-item {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--color-border);
-  cursor: pointer;
-  transition: background 0.2s ease;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 .search-result-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .search-result-item:hover {
-  background: var(--color-surface-elevated);
+    background: var(--color-surface-elevated);
 }
 
 .search-result-item strong {
-  color: var(--color-text-primary);
-  display: block;
-  margin-bottom: 0.25rem;
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 0.85rem;
 }
 
 .search-result-item span {
-  color: var(--color-text-secondary);
-  font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
 }
 
-/* Filters Container */
-.filters-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1100;
+/* Custom Map Markers */
+.custom-marker {
+    background: transparent;
+    border: none;
 }
 
-.filter-dropdown {
-  background: white;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 0.75rem 1rem;
-  font-weight: 500;
-  box-shadow: var(--shadow-lg);
-  transition: all 0.3s ease;
+.marker-pin {
+    width: 36px;
+    height: 36px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    border: 2px solid white;
 }
 
-.filter-dropdown:hover {
-  background: var(--color-surface-elevated);
-  border-color: var(--color-primary);
+.marker-pin i {
+    transform: rotate(45deg);
+    color: white;
+    font-size: 1rem;
 }
 
-.dropdown-menu {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  padding: 0.5rem;
-}
-
-.filter-item {
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.filter-item:hover {
-  background: var(--color-surface-elevated);
-  color: var(--color-primary);
-}
-
-.filter-item.active {
-  background: linear-gradient(135deg,
-      rgba(199, 106, 82, 0.1) 0%,
-      rgba(192, 140, 59, 0.08) 100%);
-  color: var(--color-primary);
-  font-weight: 600;
-}
-
-/* Map Markers */
-.leaflet-marker-icon {
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: var(--shadow-md);
+/* Legacy markers fallback */
+.leaflet-marker-icon:not(.custom-marker) {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: var(--shadow-md);
 }
 
 .leaflet-popup-content-wrapper {
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
 }
 
 .leaflet-popup-content {
-  font-family: 'Inter', sans-serif;
-  color: var(--color-text-primary);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
 }
 
 .leaflet-popup-content h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--color-primary);
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .leaflet-popup-content p {
-  font-size: 0.9rem;
-  color: var(--color-text-secondary);
-  line-height: 1.5;
-  margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 991px) {
+    .map-layout {
+        flex-direction: column;
+    }
+    
+    .map-sidebar {
+        width: 100%;
+        max-height: none;
+    }
+    
+    .map-sidebar-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .map-sidebar .search-container {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .filters-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    
+    .filters-list .filter-item {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .filters-list .filter-item-reset {
+        margin-top: 0;
+        padding-top: 0.5rem;
+        border-top: none;
+        border-left: 1px dashed var(--color-border);
+        padding-left: 0.75rem;
+    }
+    
+    .map-main .map-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-main .map-container {
+        height: 350px;
+    }
+    
+    .filters-list .filter-item span {
+        display: none;
+    }
+    
+    .filters-list .filter-item {
+        padding: 0.6rem;
+    }
 }

@@ -9,14 +9,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
   L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
-  // Icone categorie
+  // Legge le variabili CSS dal tema corrente
+  const rootStyles = getComputedStyle(document.documentElement);
+  const getColor = (varName) => rootStyles.getPropertyValue(varName).trim();
+
+  // Funzione per creare icona marker con Bootstrap Icons
+  function createMarkerIcon(iconClass, bgColor) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `<div class="marker-pin" style="background: ${bgColor};">
+               <i class="bi ${iconClass}"></i>
+             </div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 36],
+      popupAnchor: [0, -36]
+    });
+  }
+
+  // Colori da variabili CSS del tema
+  const colors = {
+    primary: getColor('--color-primary') || '#823228',
+    primaryLight: getColor('--color-primary-light') || '#C76A52',
+    secondary: getColor('--color-secondary') || '#C08C3B',
+    secondaryDark: getColor('--color-secondary-dark') || '#8F6110',
+    accent: getColor('--color-accent') || '#2F6D5C',
+    success: getColor('--color-success') || '#4B9F7C',
+    info: getColor('--color-info') || '#2F6E8C',
+    warning: getColor('--color-warning') || '#D07A00'
+  };
+
+  // Icone categorie con colori dal tema
   var categoryIcons = {
-    "Servizi Pubblici": L.icon({iconUrl:"/static/assets/icons/servizi_pubblici.svg", iconSize:[32,32]}),
-    "Servizi Culturali": L.icon({iconUrl:"/static/assets/icons/servizi_culturali.svg", iconSize:[32,32]}),
-    "Prodotti Tipici": L.icon({iconUrl:"/static/assets/icons/prodotti_tipici.svg", iconSize:[32,32]}),
-    "Ospitalità": L.icon({iconUrl:"/static/assets/icons/ospitalita.svg", iconSize:[32,32]}),
-    "Luoghi Verghiani": L.icon({iconUrl:"/static/assets/icons/luoghi_verghiani.svg", iconSize:[32,32]}),
-    "Ristorazione": L.icon({iconUrl:"/static/assets/icons/ristorazione.svg", iconSize:[32,32]})
+    "Servizi Pubblici": createMarkerIcon("bi-building-fill", colors.info),
+    "Servizi Culturali": createMarkerIcon("bi-bank2", colors.primary),
+    "Prodotti Tipici": createMarkerIcon("bi-basket2-fill", colors.secondaryDark),
+    "Ospitalità": createMarkerIcon("bi-house-heart-fill", colors.accent),
+    "Luoghi Verghiani": createMarkerIcon("bi-book-fill", colors.secondary),
+    "Ristorazione": createMarkerIcon("bi-cup-hot-fill", colors.warning)
   };
 
   var markers = [];
@@ -57,9 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  const dropdownBtn = document.querySelector(".filter-dropdown");
   const filterItems = document.querySelectorAll(".filter-item");
-  const dropdownInstance = bootstrap.Dropdown.getOrCreateInstance(dropdownBtn);
 
   filterItems.forEach(item => {
     item.addEventListener("click", function(){
@@ -68,9 +95,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       filterItems.forEach(i => i.classList.remove("active"));
       this.classList.add("active");
-
-      dropdownInstance.hide();
-      dropdownBtn.innerHTML = `<i class="bi bi-funnel-fill fs-5"></i> ${this.textContent}`;
     });
   });
 
