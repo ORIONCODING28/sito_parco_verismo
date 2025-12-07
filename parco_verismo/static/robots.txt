@@ -1,0 +1,39 @@
+# Robots.txt per Parco Letterario del Verismo
+# Generato il 2025-12-07
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.parcoverismo.it/sitemap.xml
+
+# Disallow admin area
+Disallow: /admin/
+
+# Disallow media uploads (permetti indicizzazione immagini pubbliche)
+Allow: /media/
+
+# Disallow static files che non servono per SEO
+Disallow: /static/js/
+Disallow: /static/css/
+Allow: /static/assets/img/
+
+# Disallow login/logout
+Disallow: /i18n/
+
+# Disallow search results (se presenti)
+Disallow: /*?q=
+Disallow: /*?search=
+
+# Crawl-delay per essere gentili con il server
+Crawl-delay: 1
+
+# User agent specifici per motori di ricerca italiani
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /media/
+
+User-agent: bingbot
+Allow: /

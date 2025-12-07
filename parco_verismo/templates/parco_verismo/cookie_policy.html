@@ -1,0 +1,252 @@
+{% extends 'parco_verismo/base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Cookie Policy" %} - {% trans "Parco Letterario Verismo" %}{% endblock %}
+
+{% block extra_head %}
+<style>
+    .legal-page {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+    
+    .legal-page h1 {
+        color: #2E7D32;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .legal-page .last-updated {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    
+    .legal-page h2 {
+        color: #2E7D32;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    .legal-page h3 {
+        color: #333;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+    }
+    
+    .legal-page p, .legal-page li {
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 1rem;
+    }
+    
+    .legal-page ul {
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .legal-page table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+    }
+    
+    .legal-page table th {
+        background: #2E7D32;
+        color: white;
+        padding: 0.8rem;
+        text-align: left;
+    }
+    
+    .legal-page table td {
+        border: 1px solid #ddd;
+        padding: 0.8rem;
+    }
+    
+    .legal-page table tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+    
+    .btn-manage-cookies {
+        background: #2E7D32;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin: 1rem 0;
+        display: inline-block;
+    }
+    
+    .btn-manage-cookies:hover {
+        background: #1B5E20;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="legal-page">
+    <h1>{% trans "Informativa sui Cookie" %}</h1>
+    <p class="last-updated">{% trans "Ultimo aggiornamento" %}: 7 dicembre 2025</p>
+
+    <h2>{% trans "1. Cosa sono i Cookie" %}</h2>
+    <p>
+        {% trans "I cookie sono piccoli file di testo che i siti visitati inviano al terminale dell'utente (PC, tablet, smartphone, ecc.), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva. I cookie sono utilizzati per diverse finalità, hanno caratteristiche diverse, e possono essere utilizzati sia dal titolare del sito che si sta visitando, sia da terze parti." %}
+    </p>
+
+    <h2>{% trans "2. Tipologie di Cookie Utilizzati" %}</h2>
+
+    <h3>{% trans "2.1 Cookie Tecnici Necessari" %}</h3>
+    <p>
+        {% trans "Questi cookie sono essenziali per il corretto funzionamento del sito. Senza questi cookie alcune funzionalità del sito non funzionerebbero." %}
+    </p>
+    <p><strong>{% trans "Non richiedono consenso dell'utente" %}</strong></p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>{% trans "Nome" %}</th>
+                <th>{% trans "Finalità" %}</th>
+                <th>{% trans "Durata" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sessionid</td>
+                <td>{% trans "Cookie di sessione Django per mantenere lo stato dell'utente" %}</td>
+                <td>{% trans "Sessione" %}</td>
+            </tr>
+            <tr>
+                <td>csrftoken</td>
+                <td>{% trans "Cookie di sicurezza Django per protezione CSRF" %}</td>
+                <td>{% trans "1 anno" %}</td>
+            </tr>
+            <tr>
+                <td>django_language</td>
+                <td>{% trans "Cookie per memorizzare la preferenza linguistica (IT/EN)" %}</td>
+                <td>{% trans "1 anno" %}</td>
+            </tr>
+            <tr>
+                <td>cookie_consent</td>
+                <td>{% trans "Cookie per memorizzare le preferenze sui cookie" %}</td>
+                <td>{% trans "1 anno" %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>{% trans "2.2 Cookie di Analisi (Analytics)" %}</h3>
+    <p>
+        {% trans "Questi cookie raccolgono informazioni su come gli utenti utilizzano il sito (pagine visitate, tempo di permanenza, ecc.) per migliorare il funzionamento e l'esperienza del sito." %}
+    </p>
+    <p><strong>{% trans "Richiedono consenso dell'utente" %}</strong></p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>{% trans "Nome" %}</th>
+                <th>{% trans "Fornitore" %}</th>
+                <th>{% trans "Finalità" %}</th>
+                <th>{% trans "Durata" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>_pk_id.*</td>
+                <td>Matomo</td>
+                <td>{% trans "Raccolta dati statistici anonimi sull'utilizzo del sito" %}</td>
+                <td>{% trans "13 mesi" %}</td>
+            </tr>
+            <tr>
+                <td>_pk_ses.*</td>
+                <td>Matomo</td>
+                <td>{% trans "Tracciamento sessione utente per statistiche" %}</td>
+                <td>{% trans "30 minuti" %}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p>
+        {% trans "Nota: Il sito utilizza Matomo (ex Piwik), una piattaforma open source di web analytics conforme alla normativa privacy europea, con dati anonimizzati e server in Italia." %}
+    </p>
+
+    <h3>{% trans "2.3 Cookie di Marketing" %}</h3>
+    <p>
+        {% trans "Al momento questo sito non utilizza cookie di marketing o profilazione." %}
+    </p>
+
+    <h2>{% trans "3. Cookie di Terze Parti" %}</h2>
+    <p>{% trans "Il sito potrebbe utilizzare servizi di terze parti che installano i seguenti cookie:" %}</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>{% trans "Servizio" %}</th>
+                <th>{% trans "Finalità" %}</th>
+                <th>{% trans "Privacy Policy" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Google Maps</td>
+                <td>{% trans "Visualizzazione mappe interattive per itinerari" %}</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>YouTube</td>
+                <td>{% trans "Incorporazione video (se presenti)" %}</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">Link</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>{% trans "4. Gestione dei Cookie" %}</h2>
+    <p>
+        {% trans "È possibile gestire le preferenze relative ai cookie in qualsiasi momento cliccando sul pulsante qui sotto:" %}
+    </p>
+    
+    <button class="btn-manage-cookies" onclick="window.reopenCookiePreferences()">
+        {% trans "Gestisci Preferenze Cookie" %}
+    </button>
+
+    <h3>{% trans "4.1 Disabilitazione Cookie dal Browser" %}</h3>
+    <p>
+        {% trans "È possibile disabilitare i cookie direttamente dal browser utilizzato:" %}
+    </p>
+    <ul>
+        <li><strong>Chrome:</strong> <a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank">{% trans "Istruzioni" %}</a></li>
+        <li><strong>Firefox:</strong> <a href="https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox-desktop" target="_blank">{% trans "Istruzioni" %}</a></li>
+        <li><strong>Safari:</strong> <a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank">{% trans "Istruzioni" %}</a></li>
+        <li><strong>Edge:</strong> <a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">{% trans "Istruzioni" %}</a></li>
+    </ul>
+
+    <h2>{% trans "5. Base Giuridica del Trattamento" %}</h2>
+    <ul>
+        <li><strong>{% trans "Cookie tecnici" %}:</strong> {% trans "Non richiedono consenso (art. 122 Codice Privacy)" %}</li>
+        <li><strong>{% trans "Cookie analytics" %}:</strong> {% trans "Consenso esplicito dell'utente (GDPR art. 6, par. 1, lett. a)" %}</li>
+        <li><strong>{% trans "Cookie marketing" %}:</strong> {% trans "Consenso esplicito dell'utente (GDPR art. 6, par. 1, lett. a)" %}</li>
+    </ul>
+
+    <h2>{% trans "6. Diritti dell'Utente" %}</h2>
+    <p>
+        {% trans "Per maggiori informazioni sui diritti relativi al trattamento dei dati personali, consultare la" %} <a href="{% url 'privacy_policy' %}">{% trans "Privacy Policy" %}</a>.
+    </p>
+
+    <h2>{% trans "7. Aggiornamenti" %}</h2>
+    <p>
+        {% trans "La presente Cookie Policy può essere soggetta a modifiche. L'utente è invitato a verificare periodicamente questa pagina." %}
+    </p>
+
+    <h2>{% trans "8. Contatti" %}</h2>
+    <p>
+        {% trans "Per qualsiasi informazione relativa alla Cookie Policy è possibile contattare:" %}
+    </p>
+    <p>
+        <strong>{% trans "Email" %}:</strong> privacy@parcoverismo.it<br>
+        <strong>{% trans "PEC" %}:</strong> parcoverismo@pec.it
+    </p>
+</div>
+{% endblock %}

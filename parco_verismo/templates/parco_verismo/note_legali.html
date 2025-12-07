@@ -1,0 +1,194 @@
+{% extends 'parco_verismo/base.html' %}
+{% load static i18n %}
+
+{% block title %}{% trans "Note Legali" %} - {% trans "Parco Letterario Verismo" %}{% endblock %}
+
+{% block extra_head %}
+<style>
+    .legal-page {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 2rem;
+    }
+    
+    .legal-page h1 {
+        color: #2E7D32;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .legal-page .last-updated {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    
+    .legal-page h2 {
+        color: #2E7D32;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    .legal-page p, .legal-page li {
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 1rem;
+    }
+    
+    .legal-page ul {
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-box {
+        background: #f5f5f5;
+        padding: 1.5rem;
+        border-left: 4px solid #2E7D32;
+        margin: 2rem 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="legal-page">
+    <h1>{% trans "Note Legali" %}</h1>
+    <p class="last-updated">{% trans "Ultimo aggiornamento" %}: 7 dicembre 2025</p>
+
+    <h2>{% trans "1. Informazioni Generali" %}</h2>
+    <p>
+        {% trans "Il presente sito web è gestito dal Parco Letterario del Verismo, un'iniziativa culturale promossa dai Comuni di Vizzini, Licodia Eubea e Mineo (Provincia di Catania, Sicilia) per la valorizzazione del patrimonio letterario verista siciliano." %}
+    </p>
+
+    <div class="contact-box">
+        <p><strong>{% trans "Titolare del sito" %}:</strong> Parco Letterario del Verismo</p>
+        <p><strong>{% trans "Sede legale" %}:</strong> c/o Comune di Vizzini, Piazza Umberto I, 95049 Vizzini (CT)</p>
+        <p><strong>{% trans "Email" %}:</strong> info@parcoverismo.it</p>
+        <p><strong>{% trans "PEC" %}:</strong> parcoverismo@pec.it</p>
+        <p><strong>{% trans "P.IVA/Codice Fiscale" %}:</strong> [DA INSERIRE]</p>
+    </div>
+
+    <h2>{% trans "2. Oggetto e Finalità del Sito" %}</h2>
+    <p>
+        {% trans "Il sito www.parcoverismo.it ha lo scopo di:" %}
+    </p>
+    <ul>
+        <li>{% trans "Promuovere il patrimonio letterario verista siciliano, con particolare riferimento alle opere di Giovanni Verga e Luigi Capuana" %}</li>
+        <li>{% trans "Fornire informazioni su eventi culturali, itinerari letterari e iniziative del Parco" %}</li>
+        <li>{% trans "Diffondere la conoscenza del territorio siciliano legato alla letteratura verista" %}</li>
+        <li>{% trans "Facilitare l'accesso a documenti, studi e risorse bibliografiche sul Verismo" %}</li>
+    </ul>
+
+    <h2>{% trans "3. Contenuti del Sito" %}</h2>
+    <p>
+        {% trans "I contenuti presenti sul sito (testi, immagini, documenti, multimedia) sono forniti a scopo informativo e culturale. Il Parco Letterario del Verismo si impegna a mantenere le informazioni aggiornate e accurate, ma non può garantire l'assenza di errori o omissioni." %}
+    </p>
+    <p>
+        {% trans "Il Parco si riserva il diritto di modificare, aggiornare o rimuovere qualsiasi contenuto in qualsiasi momento senza preavviso." %}
+    </p>
+
+    <h2>{% trans "4. Proprietà Intellettuale" %}</h2>
+    <p>
+        {% trans "Tutti i contenuti originali presenti sul sito (testi, grafica, loghi, immagini, video, software) sono di proprietà del Parco Letterario del Verismo o dei rispettivi autori e sono protetti dalle leggi italiane ed internazionali sul diritto d'autore e sulla proprietà intellettuale." %}
+    </p>
+    <p>
+        {% trans "È consentito:" %}
+    </p>
+    <ul>
+        <li>{% trans "Visualizzare e scaricare i contenuti per uso personale, non commerciale" %}</li>
+        <li>{% trans "Citare estratti dei contenuti indicando chiaramente la fonte" %}</li>
+        <li>{% trans "Condividere link alle pagine del sito" %}</li>
+    </ul>
+    <p>
+        {% trans "È vietato:" %}
+    </p>
+    <ul>
+        <li>{% trans "Riprodurre, duplicare, copiare, vendere o sfruttare commercialmente i contenuti senza autorizzazione scritta" %}</li>
+        <li>{% trans "Modificare o alterare i contenuti" %}</li>
+        <li>{% trans "Rimuovere indicazioni di copyright o altre note di proprietà" %}</li>
+    </ul>
+
+    <h3>{% trans "4.1 Opere Letterarie" %}</h3>
+    <p>
+        {% trans "Le opere letterarie di Giovanni Verga, Luigi Capuana e altri autori veristi citate o collegate dal sito sono di pubblico dominio. I link a Wikisource e altre biblioteche digitali rimandano a risorse liberamente accessibili." %}
+    </p>
+
+    <h3>{% trans "4.2 Immagini e Fotografie" %}</h3>
+    <p>
+        {% trans "Le fotografie e le immagini presenti nel sito sono di proprietà del Parco Letterario del Verismo, dei Comuni partner, o utilizzate previa autorizzazione. Eventuali immagini di terzi sono utilizzate nel rispetto delle licenze d'uso applicabili." %}
+    </p>
+
+    <h2>{% trans "5. Link Esterni" %}</h2>
+    <p>
+        {% trans "Il sito contiene link a siti web esterni gestiti da terze parti. Il Parco Letterario del Verismo non ha controllo su tali siti e non è responsabile dei loro contenuti, delle loro politiche sulla privacy o delle loro pratiche." %}
+    </p>
+    <p>
+        {% trans "I link esterni sono forniti come servizio agli utenti e la loro presenza non implica approvazione o raccomandazione da parte del Parco." %}
+    </p>
+
+    <h2>{% trans "6. Esclusione di Responsabilità" %}</h2>
+    <p>
+        {% trans "Il Parco Letterario del Verismo:" %}
+    </p>
+    <ul>
+        <li>{% trans "Non garantisce che il sito sarà sempre disponibile, privo di errori o virus" %}</li>
+        <li>{% trans "Non è responsabile per interruzioni del servizio, malfunzionamenti tecnici o perdite di dati" %}</li>
+        <li>{% trans "Non è responsabile per danni diretti o indiretti derivanti dall'uso del sito" %}</li>
+        <li>{% trans "Non garantisce l'accuratezza, completezza o tempestività delle informazioni fornite" %}</li>
+    </ul>
+
+    <h2>{% trans "7. Uso Responsabile" %}</h2>
+    <p>
+        {% trans "L'utente si impegna a utilizzare il sito in modo lecito e responsabile. È vietato:" %}
+    </p>
+    <ul>
+        <li>{% trans "Violare leggi, regolamenti o diritti di terzi" %}</li>
+        <li>{% trans "Trasmettere virus, malware o codice dannoso" %}</li>
+        <li>{% trans "Tentare accessi non autorizzati ai sistemi informatici" %}</li>
+        <li>{% trans "Sovraccaricare i server con richieste automatizzate eccessive" %}</li>
+        <li>{% trans "Utilizzare il sito per attività commerciali non autorizzate" %}</li>
+    </ul>
+
+    <h2>{% trans "8. Modifiche alle Note Legali" %}</h2>
+    <p>
+        {% trans "Il Parco Letterario del Verismo si riserva il diritto di modificare le presenti Note Legali in qualsiasi momento. Le modifiche entrano in vigore dal momento della loro pubblicazione sul sito. Si invita l'utente a consultare periodicamente questa pagina." %}
+    </p>
+
+    <h2>{% trans "9. Legge Applicabile e Foro Competente" %}</h2>
+    <p>
+        {% trans "Le presenti Note Legali sono regolate dalla legge italiana. Per qualsiasi controversia relativa all'uso del sito, sarà competente in via esclusiva il Foro di Catania." %}
+    </p>
+
+    <h2>{% trans "10. Privacy e Cookie" %}</h2>
+    <p>
+        {% trans "Per informazioni sul trattamento dei dati personali e sull'uso dei cookie, consultare:" %}
+    </p>
+    <ul>
+        <li><a href="{% url 'privacy_policy' %}">{% trans "Privacy Policy" %}</a></li>
+        <li><a href="{% url 'cookie_policy' %}">{% trans "Cookie Policy" %}</a></li>
+        <li><a href="{% url 'dichiarazione_accessibilita' %}">{% trans "Dichiarazione di Accessibilità" %}</a></li>
+    </ul>
+
+    <h2>{% trans "11. Contatti" %}</h2>
+    <p>
+        {% trans "Per informazioni, segnalazioni o richieste relative al sito:" %}
+    </p>
+    <div class="contact-box">
+        <p><strong>{% trans "Email" %}:</strong> info@parcoverismo.it</p>
+        <p><strong>{% trans "PEC" %}:</strong> parcoverismo@pec.it</p>
+        <p><strong>{% trans "Telefono" %}:</strong> [DA INSERIRE]</p>
+        <p><strong>{% trans "Indirizzo" %}:</strong> Parco Letterario del Verismo<br>
+        c/o Comune di Vizzini<br>
+        Piazza Umberto I<br>
+        95049 Vizzini (CT)<br>
+        Italia</p>
+    </div>
+
+    <h2>{% trans "12. Crediti" %}</h2>
+    <p>
+        <strong>{% trans "Sviluppo e Design" %}:</strong> [DA INSERIRE]<br>
+        <strong>{% trans "Hosting" %}:</strong> [DA INSERIRE]<br>
+        <strong>{% trans "Tecnologie utilizzate" %}:</strong> Django 5.2, Bootstrap 5, Python
+    </p>
+</div>
+{% endblock %}
