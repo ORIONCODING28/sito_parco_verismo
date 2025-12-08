@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
     <link rel="stylesheet" href="{% static 'css/map_routes.css' %}" />
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
 
@@ -37,67 +40,42 @@
       </div>
     </section>
 
-    <div class="container my-5">
+    <div class="container-xl my-5">
       {% if itinerari %}
-      <h2 class="text-center mb-4" style="color: #823228;">{% trans 'Mappa Itinerari Verghiani' %}</h2>
-      <p class="text-center text-muted mb-4">{% trans 'Esplora i percorsi letterari di Giovanni Verga attraverso la Sicilia' %}</p>
+      <div class="text-center mb-5">
+        <h2 class="pages-section-title h2 fw-bold" style="color: #823228;">{% trans 'Mappa Itinerari Verghiani' %}</h2>
+        <p class="lead text-secondary" style="max-width: 600px; margin: 0 auto;">{% trans 'Scopri i luoghi di interesse sulla mappa interattiva' %}</p>
+      </div>
 
-      <section id="map-routes-section" class="map-routes-container mb-5">
+      <div class="map-layout">
+        <!-- Pannello Laterale Filtri -->
+        <div class="map-sidebar">
+          <div class="map-sidebar-header">
+            <h4><i class="bi bi-signpost-2 me-2"></i>{% trans 'Percorsi Disponibili' %}</h4>
+          </div>
+          <div class="map-sidebar-content">
+            <!-- Lista percorsi -->
+            <div class="filters-list">
+              {% for data in itinerari_data %}
+              <div class="filter-item route-btn d-flex align-items-center gap-2" 
+                   data-itinerario='{{ data.itinerario_json|safe }}'>
+                <span style="font-size: 1.2rem;">{{ data.obj.icona_percorso|default:'📖' }}</span>
+                <span>{{ data.obj.titolo }}</span>
+              </div>
+              {% endfor %}
+              <div class="filter-item filter-item-reset reset-view-btn d-flex align-items-center gap-2">
+                <i class="bi bi-arrow-clockwise text-primary"></i>
+                <span>{% trans 'Reset vista' %}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <!-- Mappa -->
-        <div id="map" class="map-container"></div>
-
-        <!-- Pannello laterale con i percorsi -->
-        <div class="routes-sidebar">
-          <div class="routes-sidebar-header">
-            <h5>🗺️ {% trans 'Percorsi Verghiani' %}</h5>
-          </div>
-
-          <!-- Pulsanti percorsi dinamici -->
-          {% for data in itinerari_data %}
-          <button class="route-btn" 
-                  data-itinerario='{"slug": "{{ data.obj.slug }}", 
-                                    "titolo": "{{ data.obj.titolo|escapejs }}", 
-                                    "descrizione_breve": "{{ data.obj.descrizione|truncatewords:15|escapejs }}",
-                                    "colore": "{{ data.obj.colore_percorso|default:'#2E7D32' }}", 
-                                    "icona": "{{ data.obj.icona_percorso|default:'📖' }}", 
-                                    "durata": "{{ data.obj.durata_stimata|default:'' }}", 
-                                    "difficolta": "{{ data.obj.get_difficolta_display|default:'' }}",
-                                    "coordinate_tappe": {{ data.coordinate_tappe_json|safe }}}'>
-            <span class="route-btn-icon">{{ data.obj.icona_percorso|default:'📖' }}</span>
-            <div class="route-btn-content">
-              <h6>{{ data.obj.titolo }}</h6>
-              <small>
-                {% if data.obj.durata_stimata %}{{ data.obj.durata_stimata }}{% endif %}
-                {% if data.obj.durata_stimata and data.obj.difficolta %} · {% endif %}
-                {% if data.obj.difficolta %}{{ data.obj.get_difficolta_display }}{% endif %}
-              </small>
-            </div>
-          </button>
-          {% endfor %}
-
-          <!-- Legenda -->
-          <div class="route-legend">
-            <h6>{% trans 'Legenda' %}</h6>
-            {% for itinerario in itinerari %}
-            <div class="legend-item">
-              <div class="legend-line" style="background: {{ itinerario.colore_percorso|default:'#2E7D32' }};"></div>
-              <span>{{ itinerario.titolo|truncatewords:3 }}</span>
-            </div>
-            {% endfor %}
-          </div>
+        <div class="map-main">
+          <div id="map" class="map-container rounded shadow"></div>
         </div>
-
-        <!-- Controlli mappa -->
-        <div class="map-controls">
-          <button class="map-control-btn reset-view-btn">
-            <span>🎯</span>
-            <span>{% trans 'Reset vista' %}</span>
-          </button>
-        </div>
-
-        <!-- Pannello informazioni percorso -->
-        <div class="route-info-panel"></div>
-      </section>
+      </div>
 
       {% else %}
       <div class="alert alert-info text-center">
