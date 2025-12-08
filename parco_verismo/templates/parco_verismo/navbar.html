@@ -156,7 +156,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="btn btn-primary ms-3" href="/#prenota"
+            <a class="btn btn-primary ms-3" href="{% url 'home' %}#prenota-itinerario"
               >{% trans 'Prenota' %}</a
             >
           </li>
@@ -177,11 +177,11 @@
                   {% csrf_token %}
                   {% get_current_language as current_lang %}
                   {% if current_lang == 'en' %}
-                  <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
-                  {% elif current_lang == 'it' %}
-                  <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
+                    {# Se siamo in inglese (/en/pagina), rimuovi /en per tornare in italiano #}
+                    <input type="hidden" name="next" value="{{ request.path|slice:'3:' }}">
                   {% else %}
-                  <input type="hidden" name="next" value="{{ request.path }}">
+                    {# Se siamo in italiano (/pagina), usa il path corrente #}
+                    <input type="hidden" name="next" value="{{ request.path }}">
                   {% endif %}
                   <button type="submit" name="language" value="{{ language.code }}" 
                     class="dropdown-item d-flex align-items-center {% if language.code == LANGUAGE_CODE %}active{% endif %}">
