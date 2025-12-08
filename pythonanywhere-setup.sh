@@ -56,23 +56,34 @@ printf "${GREEN}✓${NC} Dipendenze installate\n\n"
 # 3. Configurazione .env
 printf "${YELLOW}[3/6]${NC} Configurazione file .env...\n"
 if [ ! -f .env ]; then
-    if [ -f .env.pythonanywhere ]; then
-        cp .env.pythonanywhere .env
-        
-        # Genera SECRET_KEY casuale
-        SECRET_KEY=$(python3 -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())")
-        sed -i "s/SECRET_KEY=.*/SECRET_KEY=$SECRET_KEY/" .env
-        
-        # Sostituisci username
-        sed -i "s/your_username/$USER/g" .env
-        
-        printf "${GREEN}✓${NC} File .env creato\n"
-        printf "${YELLOW}⚠${NC}  IMPORTANTE: Modifica .env e aggiungi il tuo dominio in ALLOWED_HOSTS\n"
-        printf "   Es: ALLOWED_HOSTS=$USER.pythonanywhere.com\n\n"
-    else
-        printf "${RED}❌ File .env.pythonanywhere non trovato!${NC}\n"
-        exit 1
-    fi
+    # Genera SECRET_KEY casuale
+    SECRET_KEY=$(python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())")
+    
+    # Crea .env con i valori corretti
+    cat > .env << EOF
+# Django Settings
+DEBUG=False
+SECRET_KEY=$SECRET_KEY
+ALLOWED_HOSTS=$USER.pythonanywhere.com
+
+# Database
+# SQLite è usato di default, nessuna configurazione necessaria
+
+# Static & Media Files
+STATIC_ROOT=/home/$USER/sito_parco_verismo/staticfiles
+MEDIA_ROOT=/home/$USER/sito_parco_verismo/media
+
+# Email (opzionale - configura se necessario)
+# EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+# EMAIL_HOST=smtp.gmail.com
+# EMAIL_PORT=587
+# EMAIL_USE_TLS=True
+# EMAIL_HOST_USER=your-email@gmail.com
+# EMAIL_HOST_PASSWORD=your-app-password
+EOF
+    
+    printf "${GREEN}✓${NC} File .env creato con SECRET_KEY generata\n"
+    printf "${GREEN}✓${NC} ALLOWED_HOSTS configurato: $USER.pythonanywhere.com\n\n"
 else
     printf "${GREEN}✓${NC} File .env già esistente\n\n"
 fi
