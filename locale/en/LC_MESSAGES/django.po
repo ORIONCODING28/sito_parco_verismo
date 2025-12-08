@@ -1034,37 +1034,39 @@ msgstr "Read the Regulations"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:7
 msgid "Utilizzo dei Cookie"
-msgstr ""
+msgstr "Cookie Usage"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:9
 msgid ""
 "Questo sito utilizza cookie tecnici necessari e, previo consenso, cookie "
 "analytics per migliorare l'esperienza di navigazione."
 msgstr ""
+"This site uses necessary technical cookies and, with your consent, analytics "
+"cookies to improve your browsing experience."
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:10
 msgid "Informativa completa"
-msgstr ""
+msgstr "Full information"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:14
 msgid "Accetta Tutti"
-msgstr ""
+msgstr "Accept All"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:15
 msgid "Solo Necessari"
-msgstr ""
+msgstr "Only Necessary"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:16
 msgid "Personalizza"
-msgstr ""
+msgstr "Customize"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:27
 msgid "Gestione Preferenze Cookie"
-msgstr ""
+msgstr "Cookie Preferences Management"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:34
 msgid "Cookie Tecnici Necessari"
-msgstr ""
+msgstr "Necessary Technical Cookies"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:41
 msgid ""
@@ -1072,10 +1074,12 @@ msgid ""
 "Includono cookie di sessione, autenticazione e sicurezza. Non possono essere "
 "disattivati."
 msgstr ""
+"These cookies are essential for the proper functioning of the site. "
+"They include session, authentication and security cookies. They cannot be disabled."
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:48
 msgid "Cookie di Analisi"
-msgstr ""
+msgstr "Analytics Cookies"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:55
 msgid ""
@@ -1083,10 +1087,13 @@ msgid ""
 "sito raccogliendo e segnalando informazioni in forma anonima. Utilizziamo "
 "queste informazioni per migliorare il sito."
 msgstr ""
+"These cookies help us understand how visitors interact with the site by "
+"collecting and reporting information anonymously. We use this information "
+"to improve the site."
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:62
 msgid "Cookie di Marketing"
-msgstr ""
+msgstr "Marketing Cookies"
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:69
 msgid ""
@@ -1094,10 +1101,12 @@ msgid ""
 "siti web. L'intento è mostrare annunci pertinenti e coinvolgenti per il "
 "singolo utente."
 msgstr ""
+"These cookies are used to track visitors across websites. The intent is to "
+"display relevant and engaging ads for individual users."
 
 #: parco_verismo/templates/parco_verismo/components/cookie_banner.html:75
 msgid "Salva Preferenze"
-msgstr ""
+msgstr "Save Preferences"
 
 #: parco_verismo/templates/parco_verismo/components/documento_card.html:44
 msgid "Visualizza documento"

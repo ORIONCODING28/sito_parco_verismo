@@ -3,13 +3,15 @@
 Script completo per popolare e gestire il database del Parco Letterario del Verismo.
 Include:
 - Popolamento database (autori, opere, eventi, notizie, archivio foto, itinerari)
+- Creazione superuser
 - Aggiornamento coordinate itinerari per mappa interattiva
 - Verifica e controllo dati
 
 Esegui con: 
-  python populate_db_complete.py                # Popola database
-  python populate_db_complete.py --update-coords # Aggiorna coordinate itinerari
-  python populate_db_complete.py --check        # Verifica dati
+  python populate_db_complete.py                    # Popola database completo
+  python populate_db_complete.py --create-superuser # Crea solo superuser
+  python populate_db_complete.py --update-coords    # Aggiorna coordinate itinerari
+  python populate_db_complete.py --check            # Verifica dati
 """
 import os
 import django
@@ -1466,7 +1468,9 @@ def check_database():
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        if sys.argv[1] == '--update-coords':
+        if sys.argv[1] == '--create-superuser':
+            create_superuser()
+        elif sys.argv[1] == '--update-coords':
             update_itinerari_coordinates()
         elif sys.argv[1] == '--check':
             check_database()

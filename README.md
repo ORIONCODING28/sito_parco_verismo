@@ -1,304 +1,312 @@
-# Parco Letterario Verismo
+# 📚 Parco Letterario del Verismo
 
-Sito web del Parco Letterario del Verismo - piattaforma per la promozione della letteratura verista siciliana.
+Piattaforma web moderna per la promozione e valorizzazione del patrimonio letterario verista siciliano, con focus su Giovanni Verga e Luigi Capuana.
 
-## Stack Tecnologico
+## ✨ Caratteristiche
+
+- 🌍 **Multilingua** - Contenuti in Italiano e Inglese
+- 📖 **Biblioteca Digitale** - Opere, autori e analisi letterarie
+- 🗺️ **Itinerari Turistici** - Percorsi letterari interattivi
+- 📅 **Eventi e Notizie** - Calendario eventi e ultime notizie
+- 📄 **Archivio Documentale** - Studi, ricerche e documenti
+- 📝 **Sistema Prenotazioni** - Gestione prenotazioni itinerari guidati
+- 🎨 **Archivio Fotografico** - Galleria fotografica organizzata
+- ♿ **Accessibilità** - Conforme AGID e GDPR
+
+## 🚀 Stack Tecnologico
 
 - **Django 5.2.8** - Framework web Python
-- **Python 3.8+** - Linguaggio di programmazione
-- **Bootstrap 5.3.3** - Framework CSS
-- **django-parler** - Traduzioni multilingua
-- **SQLite** - Database (PostgreSQL ready per produzione)
+- **Python 3.8+** - Linguaggio backend
+- **Bootstrap 5.3.3** - Framework CSS responsive
+- **django-parler** - Sistema traduzioni multilingua
+- **SQLite/PostgreSQL** - Database
+- **python-decouple** - Gestione configurazioni
 
-## Requisiti
+## 📁 Struttura Progetto
 
-- Python 3.8 o superiore
-- Node.js e npm (per asset management)
-- pip (Python package manager)
+```
+parco_verismo/
+├── models/          # Modelli database organizzati per dominio
+│   ├── autori_opere.py, eventi.py, documenti.py
+│   ├── itinerari.py, prenotazioni.py
+├── views/           # Views organizzate per funzionalità
+├── admin/           # Admin Django separati per tipo
+├── forms/           # Forms con validazioni
+├── services/        # Business logic (email, ricerca, stats)
+├── utils/           # Utilities riutilizzabili
+├── templates/       # Template HTML
+├── static/          # File statici (CSS, JS, immagini)
+└── migrations/      # Migrazioni database
+```
 
-## Setup
-
-### Setup Automatico
+## 🛠️ Setup (Un Solo Comando!)
 
 **Linux/Mac:**
 ```bash
-chmod +x setup.sh
-./setup.sh
+git clone https://github.com/Triba14/sito_parco_verismo.git
+cd sito_parco_verismo
+./quick-start.sh
 ```
 
 **Windows:**
 ```powershell
-.\setup.ps1
+git clone https://github.com/Triba14/sito_parco_verismo.git
+cd sito_parco_verismo
+.\quick-start.ps1
 ```
 
-### Setup Manuale
+Lo script `quick-start` fa **tutto automaticamente**:
+- ✅ Virtual environment + dipendenze
+- ✅ Database + migrazioni
+- ✅ Traduzioni
+- ✅ Superuser (admin/admin123)
+- ✅ Dati demo
+- ✅ Avvia il server
 
+**Tempo:** ~3 minuti, poi apri http://127.0.0.1:8000
+
+---
+
+## 🔄 Avvio Quotidiano
+
+**Linux/Mac:**
 ```bash
-# Crea ambiente virtuale
-python3 -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-
-# Installa dipendenze Python
-pip install -r requirements.txt
-
-# Installa dipendenze Node.js
-npm install
-npm run setup
-
-# Database
-python manage.py migrate
-python manage.py createsuperuser
-
-# Compila traduzioni
-python manage.py compilemessages
-
-# Avvia server di sviluppo
+source .venv/bin/activate
 python manage.py runserver
 ```
 
-**URL**: http://127.0.0.1:8000/  
-**Admin**: http://127.0.0.1:8000/admin/
-
-## Struttura del Progetto
-
-### Modelli
-
-- **Autore**: Autori delle opere veriste (Verga, Capuana, ecc.)
-- **Opera**: Opere letterarie con traduzioni multilingua, link a Wikisource
-- **Evento**: Eventi e manifestazioni culturali con date, luoghi, descrizioni
-- **Notizia**: News e aggiornamenti del parco
-- **Documento**: Documenti e studi pubblicati (solo admin, upload PDF)
-- **FotoArchivio**: Archivio fotografico con carosello (solo admin)
-
-### Funzionalità
-
-- **Biblioteca Digitale**: Opere di Verga e Capuana con ricerca e link a Wikisource
-- **Calendario Eventi**: Visualizzazione calendario con export e condivisione
-- **Sistema Notizie**: News con immagini e contenuti multilingua
-- **Documenti e Studi**: Upload PDF, anteprime, categorie (Documento/Studio/Ricerca/Saggio)
-- **Archivio Fotografico**: Carosello automatico con modal fullscreen, thumbnails
-- **Traduzioni Multilingua**: Supporto IT/EN con django-parler
-- **Ricerca e Filtri**: Ricerca testuale e filtri per tipo/categoria
-
-### Pagine Principali
-
-- `/` - Homepage con hero video
-- `/biblioteca/` - Biblioteca digitale con ricerca
-- `/opere/<autore-slug>/` - Opere per autore
-- `/opera/<slug>/` - Dettaglio opera
-- `/eventi/` - Lista eventi
-- `/calendario/` - Calendario eventi
-- `/evento/<slug>/` - Dettaglio evento
-- `/notizie/` - Lista notizie
-- `/notizia/<slug>/` - Dettaglio notizia
-- `/documenti/` - Documenti e studi
-- `/documento/<slug>/` - Dettaglio documento
-- `/archivio/` - Archivio fotografico
-
-## Struttura Directory
-
-```
-parco_verismo/
-├── models.py          # Modelli del database
-├── views.py           # Viste e logica applicazione
-├── urls.py            # Routing URL
-├── admin.py           # Configurazione admin Django
-├── templates/         # Template HTML
-│   └── parco_verismo/
-│       ├── components/    # Componenti riutilizzabili
-│       ├── *.html         # Template pagine
-├── static/            # File statici
-│   ├── css/           # Fogli di stile
-│   ├── js/            # JavaScript
-│   ├── assets/        # Immagini, video
-│   └── fonts/         # Font personalizzati
-└── migrations/        # Migrazioni database
-
-mysite/
-├── settings.py        # Configurazione Django
-└── urls.py            # URL root
-
-locale/                # File traduzione
-├── it/LC_MESSAGES/   # Traduzioni italiano
-└── en/LC_MESSAGES/   # Traduzioni inglese
-
-media/                 # File caricati dagli utenti/admin
+**Windows:**
+```powershell
+.venv\Scripts\activate
+python manage.py runserver
 ```
 
-## Sviluppo
+**Credenziali Admin:** http://127.0.0.1:8000/admin/ (`admin` / `admin123`)
 
-### Creare un nuovo modello
+---
 
-```python
-# parco_verismo/models.py
-from parler.models import TranslatableModel, TranslatedFields
-from django.db import models
+## 🎯 Setup Manuale (Opzionale)
 
-class MioModello(TranslatableModel):
-    slug = models.SlugField(max_length=200, unique=True)
-    is_active = models.BooleanField(default=True)
-    
-    translations = TranslatedFields(
-        titolo=models.CharField(max_length=200),
-        descrizione=models.TextField(),
-    )
-    
-    class Meta:
-        ordering = ['-id']
-        verbose_name = "Mio Modello"
-        verbose_name_plural = "I Miei Modelli"
-```
+Solo se preferisci controllare ogni passaggio:
 
 ```bash
-python manage.py makemigrations
+# Ambiente virtuale
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Dipendenze
+pip install -r requirements.txt
+
+# Database
 python manage.py migrate
+python manage.py createsuperuser
+
+# Traduzioni (opzionale)
+python manage.py compilemessages
+
+# Dati demo (opzionale)
+python populate_db_complete.py
+
+# Avvia server
+python manage.py runserver
 ```
 
-### Aggiungere una view
+---
+
+## 🏗️ Architettura
+
+### Models (Dominio)
 
 ```python
-# parco_verismo/views.py
-from django.shortcuts import render
-from .models import MioModello
-
-def mia_view(request):
-    oggetti = MioModello.objects.filter(is_active=True)
-    context = {'oggetti': oggetti}
-    return render(request, 'parco_verismo/pagina.html', context)
+models/
+├── autori_opere.py    # Autore, Opera
+├── eventi.py          # Evento, Notizia
+├── documenti.py       # Documento, FotoArchivio
+├── itinerari.py       # Itinerario, TappaItinerario
+└── prenotazioni.py    # Prenotazione
 ```
 
-### Aggiungere URL
+### Views (Funzionalità)
 
 ```python
-# parco_verismo/urls.py
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('pagina/', views.mia_view, name='pagina'),
-]
+views/
+├── home.py            # Homepage
+├── biblioteca.py      # Opere e autori
+├── eventi.py          # Eventi e notizie
+├── documenti.py       # Documenti e archivio foto
+├── itinerari.py       # Itinerari letterari
+├── comuni.py          # Pagine comuni (Mineo, Licodia)
+└── istituzionale.py   # Chi siamo, contatti, privacy
 ```
 
-### Aggiungere Admin
+### Services (Business Logic)
 
 ```python
-# parco_verismo/admin.py
-from django.contrib import admin
-from parler.admin import TranslatableAdmin
-from .models import MioModello
-
-@admin.register(MioModello)
-class MioModelloAdmin(TranslatableAdmin):
-    list_display = ('__str__', 'is_active')
-    list_filter = ('is_active',)
-    search_fields = ('translations__titolo',)
+services/
+├── email_service.py   # Invio email prenotazioni
+├── search_service.py  # Ricerca full-text opere
+└── stats_service.py   # Statistiche admin
 ```
 
-### Stili CSS
+## 📖 Modelli Principali
 
-- `parco_verismo/static/css/styles.css` - Stili principali e tema
-- `parco_verismo/static/css/navbar.css` - Stili navbar
-- `parco_verismo/static/css/index.css` - Stili homepage
-- `parco_verismo/static/css/archivio.css` - Stili archivio fotografico
-- `parco_verismo/static/css/calendario.css` - Stili calendario
+### Biblioteca
+- **Autore** - Autori veristi (Verga, Capuana, etc.)
+- **Opera** - Opere letterarie con link Wikisource
 
-## Traduzioni
+### Eventi & News
+- **Evento** - Eventi culturali con calendario
+- **Notizia** - News e aggiornamenti
 
-Il progetto supporta traduzioni multilingua (IT/EN) tramite django-parler per i modelli e Django i18n per i template.
+### Documenti
+- **Documento** - Studi e ricerche (PDF upload)
+- **FotoArchivio** - Galleria fotografica
 
-### Aggiungere nuove stringhe da tradurre
+### Itinerari
+- **Itinerario** - Percorsi letterari interattivi
+- **TappaItinerario** - Punti di interesse
 
-1. Usa `{% trans 'Testo' %}` nei template
-2. Genera file traduzione: `python manage.py makemessages -l en`
-3. Traduci nel file `locale/en/LC_MESSAGES/django.po`
-4. Compila: `python manage.py compilemessages`
+### Sistema
+- **Prenotazione** - Gestione prenotazioni guidate
 
-### Traduzioni modelli
+## 🎯 Funzionalità
 
-I modelli che ereditano da `TranslatableModel` supportano automaticamente traduzioni multilingua tramite django-parler.
+### Biblioteca Digitale
+- Opere di Verga e Capuana
+- Ricerca full-text
+- Link diretti a Wikisource
+- Filtri per autore
 
-## Comandi Utili
+### Eventi & Calendario
+- Calendario interattivo
+- Export eventi (.ics)
+- Condivisione social
+- Filtri per data
+
+### Documenti
+- Upload PDF amministrativo
+- Categorie (Documento/Studio/Ricerca/Saggio)
+- Anteprime automatiche
+- Download tracking
+
+### Archivio Fotografico
+- Carosello automatico
+- Modal fullscreen
+- Thumbnails responsive
+- Gestione admin
+
+### Itinerari Letterari
+- Mappe interattive
+- Punti di interesse georeferenziati
+- Sistema prenotazioni
+- Link a mappe esterne
+
+### Sistema Prenotazioni
+- Form validazione completa
+- Email automatiche
+- Admin panel dedicato
+- Anti-spam integrato
+
+## 🔧 Comandi Utili
+
+### Script di Setup
 
 ```bash
-# Verifica configurazione
-python manage.py check
+# Setup completo automatico (consigliato per iniziare)
+./quick-start.sh          # Linux/Mac
+.\quick-start.ps1         # Windows
 
-# Shell Django interattiva
-python manage.py shell
+# Setup interattivo con opzioni
+./setup.sh                # Linux/Mac
+.\setup.ps1               # Windows
 
-# Esegui test
-python manage.py test
+# Verifica configurazione ambiente
+python check-setup.py     # Controlla che tutto sia OK
+```
 
-# Raccogli file statici (produzione)
-python manage.py collectstatic
+### Sviluppo
+python manage.py runserver              # Avvia server
+python manage.py makemigrations         # Crea migrazioni
+python manage.py migrate                # Applica migrazioni
+python manage.py createsuperuser        # Crea admin
 
 # Traduzioni
-python manage.py makemessages -l en    # Genera file traduzione
+python manage.py makemessages -l en     # Estrai stringhe EN
+python manage.py makemessages -l it     # Estrai stringhe IT
 python manage.py compilemessages        # Compila traduzioni
 
 # Database
-python manage.py makemigrations         # Crea migrazioni
-python manage.py migrate                # Applica migrazioni
-python manage.py showmigrations         # Mostra stato migrazioni
+python manage.py dbshell                # Shell database
+python manage.py dumpdata > backup.json # Backup dati
+python manage.py loaddata backup.json   # Ripristina backup
 
-# Creare superuser
-python manage.py createsuperuser
+# Testing
+python manage.py test                   # Esegui test
+python manage.py check                  # Verifica progetto
+
+# Produzione
+python manage.py collectstatic          # Raccogli file statici
+python manage.py check --deploy         # Check deploy
 ```
 
-## Admin
+## 📦 Deployment
 
-L'interfaccia admin Django (`/admin/`) permette di gestire:
-
-- **Autori**: Nome, slug
-- **Opere**: Titolo, trama, analisi, copertina, link Wikisource
-- **Eventi**: Titolo, descrizione, date, luogo, immagine
-- **Notizie**: Titolo, contenuto, immagine, data pubblicazione
-- **Documenti**: Titolo, descrizione, PDF, anteprima, tipo, autori
-- **Archivio Fotografico**: Immagini, titolo, descrizione, categoria, ordine
-
-Solo gli admin possono creare e modificare i contenuti. I visitatori possono solo visualizzare.
-
-## Media Files
-
-I file caricati vengono salvati in `media/`:
-
-- `media/copertine_opere/` - Copertine opere
-- `media/eventi/` - Immagini eventi
-- `media/notizie/` - Immagini notizie
-- `media/documenti/` - PDF documenti
-- `media/documenti/anteprime/` - Anteprime documenti
-- `media/archivio_fotografico/` - Foto archivio
-
-In produzione, configurare `MEDIA_ROOT` e `MEDIA_URL` in `settings.py`.
-
-## Produzione
-
-### Configurazione
-
-1. Impostare `DEBUG = False` in `settings.py`
-2. Configurare `ALLOWED_HOSTS`
-3. Configurare database PostgreSQL (opzionale)
-4. Configurare server web (Nginx/Apache)
-5. Configurare WSGI server (Gunicorn/uWSGI)
-
-### Variabili Ambiente
-
-Usa un file `.env` con:
-```
-SECRET_KEY=your-secret-key
-DEBUG=False
-ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
-DATABASE_URL=postgresql://user:password@localhost/dbname
-```
-
-### Static Files
+### Variabili d'Ambiente (.env)
 
 ```bash
-python manage.py collectstatic
+SECRET_KEY=your-secret-key-here
+DEBUG=False
+ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
+DATABASE_URL=postgresql://user:pass@localhost/dbname
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-app-password
 ```
 
-Configurare `STATIC_ROOT` e servire file statici tramite web server o CDN.
+### Produzione (PostgreSQL)
 
-## Licenza
+```bash
+# Installa dipendenze
+pip install psycopg2-binary gunicorn
 
-MIT License
+# settings.py aggiorna DATABASES
+# Esegui migrazioni
+python manage.py migrate
+
+# Raccogli file statici
+python manage.py collectstatic --noinput
+
+# Avvia con Gunicorn
+gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
+```
+
+## 🤝 Contribuire
+
+1. Fork il progetto
+2. Clone: `git clone https://github.com/TUO-USERNAME/sito_parco_verismo.git`
+3. Setup: `./quick-start.sh` (o `.ps1` su Windows)
+4. Branch: `git checkout -b feature/NomeFunzionalita`
+5. Commit: `git commit -m 'Descrizione chiara'`
+6. Push: `git push origin feature/NomeFunzionalita`
+7. Apri Pull Request su GitHub
+
+**Best Practices:**
+- ✅ Testa sempre: `python manage.py test`
+- ✅ Verifica: `python manage.py check`
+- ✅ Segui la struttura organizzata (models/, views/, admin/)
+- ✅ Commit message chiari e descrittivi
+
+## 📄 Licenza
+
+Progetto open-source per la promozione culturale del patrimonio letterario siciliano.
+
+## 👥 Contatti
+
+**Parco Letterario del Verismo**  
+Email: info@parcoletterarioverismo.it  
+Web: https://parcoletterarioverismo.it
+
+---
+
+*Realizzato con ❤️ per la cultura siciliana*
