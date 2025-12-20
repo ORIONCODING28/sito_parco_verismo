@@ -92,7 +92,7 @@
 
 .site-footer.compact-footer .social-links .footer-social-link:hover,
 .site-footer.compact-footer .social-links .footer-social-link:focus {
-    background: var(--color-success) !important;
+    background: var(--color-footer-action) !important;
     color: var(--color-text-inverse) !important;
 }
 
@@ -135,8 +135,8 @@
 }
 
 .footer-icon {
-    /* contact icons: use success green to match social icons */
-    color: var(--color-success, #28a745);
+    /* contact icons: use footer action color to match social icons */
+    color: var(--color-footer-action);
     margin-right: 0.4rem;
 }
 
@@ -180,14 +180,35 @@
 
 .footer-logo-large { max-height: 72px !important; }
 
+/* Cesta logo: increase size while keeping responsive caps */
+img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+    max-height: 110px !important;
+    max-width: 30% !important;
+    width: auto !important;
+}
+
+@media (max-width: 768px) {
+    img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+        max-height: 80px !important;
+        max-width: 40% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    img.footer-logo.footer-logo-large[alt="Logo Cesta"] {
+        max-height: 64px !important;
+        max-width: 48% !important;
+    }
+}
+
 /* For inline SVGs prefer original colors; don't override */
 .footer-logo svg { fill: inherit !important; color: inherit !important; }
 
-/* Make social icons use the site's success/green color */
+/* Make social icons use the footer action color (non-hardcoded) */
 .footer-social-link {
-    color: var(--color-success);
+    color: var(--color-footer-action);
     border-color: transparent;
-}
+} 
 
 .footer-social-link:focus,
 .footer-social-link:hover {
@@ -327,18 +348,18 @@
     max-width: 18% !important;
 }
 
-/* High-specificity enforcement: force contact icons and social icons to use the canonical --color-success token
-   and ensure icon elements inherit the color and switch to white on hover/focus. This overrides theme-level
-   rules that set social icons to inverse colors. */
+/* High-specificity enforcement: force contact icons and social icons to use the footer action color token
+   (maps to primary) and ensure icon elements inherit the color and switch to white on hover/focus.
+   This overrides theme-level rules that set social icons to inverse colors. */
 .site-footer.compact-footer .footer-icon,
 .site-footer.compact-footer .footer-icon .bi,
 .site-footer.compact-footer .footer-icon svg,
 .site-footer.compact-footer .social-links .footer-social-link,
 .site-footer.compact-footer .social-links .footer-social-link .bi,
 .site-footer.compact-footer .social-links .footer-social-link svg {
-    color: var(--color-success) !important;
+    color: var(--color-footer-action) !important;
     fill: currentColor !important;
-}
+} 
 
 .site-footer.compact-footer .social-links .footer-social-link:hover,
 .site-footer.compact-footer .social-links .footer-social-link:focus {
