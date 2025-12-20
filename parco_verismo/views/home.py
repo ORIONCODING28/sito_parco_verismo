@@ -33,7 +33,7 @@ def home_view(request):
                 from django.urls import reverse
                 from django.http import HttpResponseRedirect
 
-                return HttpResponseRedirect(reverse("home") + "#richiesta-itinerario")
+                return HttpResponseRedirect(reverse("home") + "#richiesta-contatto")
             except Exception:
                 logging.exception("Errore nel salvataggio della richiesta")
                 messages.error(request, "Errore nel salvataggio. Riprova più tardi.")
