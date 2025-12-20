@@ -139,7 +139,7 @@
 }
 
 .pages-value-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1rem;
@@ -206,7 +206,7 @@
 .pages-accordion .accordion-button {
     background: var(--color-surface);
     color: var(--color-text-primary);
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     font-size: 1rem;
     padding: 1.25rem 1.5rem;
@@ -268,7 +268,7 @@
     border: none;
     border-radius: var(--radius-md) var(--radius-md) 0 0;
     padding: 0.75rem 1.25rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -299,7 +299,7 @@
 }
 
 .chiese-tabs .tab-pane h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1.25rem;
@@ -356,7 +356,7 @@
 }
 
 .museo-card-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1.1rem;
@@ -432,7 +432,7 @@
 .cultura-card-badge {
     background: var(--color-primary-pale);
     color: var(--color-primary);
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -446,7 +446,7 @@
 }
 
 .cultura-card-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     color: var(--color-text-primary);
     font-size: 1.15rem;
@@ -523,7 +523,7 @@
 }
 
 .map-sidebar-header h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     font-size: 0.95rem;
     color: var(--color-text-primary);
@@ -719,12 +719,12 @@
 }
 
 .leaflet-popup-content {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
 }
 
 .leaflet-popup-content h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-primary);
     font-size: 1.1rem;
     font-weight: 600;

@@ -1,0 +1,23 @@
+/* TeX Gyre Termes - @font-face declarations */
+
+@font-face {
+  font-family: 'TeX Gyre Termes';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./TeXGyreTermes-Regular.woff2') format('woff2'), url('./TeXGyreTermes-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeX Gyre Termes';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./TeXGyreTermes-Italic.woff2') format('woff2'), url('./TeXGyreTermes-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'TeX Gyre Termes';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('./TeXGyreTermes-Bold.woff2') format('woff2'), url('./TeXGyreTermes-Bold.woff') format('woff');
+}

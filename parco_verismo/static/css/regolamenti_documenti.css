@@ -29,7 +29,7 @@ section.page-section:nth-of-type(even) {
 
 /* Page intro / title area mirrors index hero/title sizes */
 .page-intro .display-5 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-size: 2.5rem;
     font-weight: 400;
     color: var(--color-text-primary);
@@ -42,7 +42,7 @@ section.page-section:nth-of-type(even) {
 
 /* Section titles use the same treatment as hp-section titles */
 .page-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     font-size: 2rem;
     color: var(--color-text-primary);
@@ -88,7 +88,7 @@ section.page-section:nth-of-type(even) {
 }
 
 .reg-card h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     color: var(--color-text-primary);
     margin: 0;
@@ -313,7 +313,7 @@ section.page-section:nth-of-type(even) {
 
 /* SECTION TITLES */
 .page-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-primary);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -424,7 +424,7 @@ section.page-section:nth-of-type(even) {
 }
 
 .mv-hero-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;

@@ -63,7 +63,7 @@
 }
 
 .cts-hero-title, .mv-hero-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -165,7 +165,7 @@
 }
 
 .cts-section-title, .mv-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -220,7 +220,7 @@
 }
 
 .cts-info-box h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
@@ -247,7 +247,7 @@
 }
 
 .cts-group-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     color: var(--color-primary);
     font-size: 1.1rem;
@@ -317,7 +317,7 @@
 }
 
 .pages-member-card h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 0.95rem;
@@ -374,7 +374,7 @@
 }
 
 .cts-function-content h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-text-primary);
@@ -420,7 +420,7 @@
 }
 
 .cts-cta-buttons .btn {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     padding: 0.75rem 2rem;
     border-radius: 0.5rem;
@@ -625,7 +625,7 @@
 }
 
 .cts-hero-title, .mv-hero-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
@@ -676,7 +676,7 @@
 
 /* Section title compatibility */
 .cts-section-title, .mv-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
     letter-spacing: -0.01em;

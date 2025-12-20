@@ -102,7 +102,7 @@
 }
 
 .reg-header h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-primary);
     font-size: 1.5rem;
     letter-spacing: 0.05em;
@@ -134,7 +134,7 @@
 }
 
 .reg-article-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--color-primary);
@@ -240,7 +240,7 @@
 }
 
 .reg-actions .btn {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     padding: 0.75rem 2rem;
     border-radius: 0.5rem;

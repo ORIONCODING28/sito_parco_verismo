@@ -1,14 +1,17 @@
 /* Fonts CSS file - managed by npm scripts */
 
+/* TeX Gyre Termes - @font-face moved to /static/fonts/tex-gyre-termes/tex-gyre-termes.css */
+/* See: /static/fonts/tex-gyre-termes/tex-gyre-termes.css */
+
 /* Perandory solo per h1 (tutte le pagine) */
 h1 {
   font-family: "Perandory", sans-serif;
   font-weight: 400;
 }
 
-/* Inter per il corpo del testo e altri titoli (inclusi h2-h6) */
+/* TeX Gyre Termes per il corpo del testo e altri titoli (inclusi h2-h6) */
 body, p, a, li, span, div, h2, h3, h4, h5, h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "TeX Gyre Termes", serif;
   font-weight: 400;
 }
 

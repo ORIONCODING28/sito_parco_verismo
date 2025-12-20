@@ -1131,7 +1131,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-section-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -1209,7 +1209,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-point-content h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-text-primary);
@@ -1228,7 +1228,7 @@ svg feDropShadow[flood-color="#4a140d"] {
    ======================================================== */
 
 .pages-actions-list h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     text-transform: uppercase;
@@ -1293,7 +1293,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-recognition-card h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
 }
@@ -1351,7 +1351,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-value-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     font-size: 1rem;
@@ -1457,7 +1457,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-function-content h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-text-primary);
@@ -1484,7 +1484,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-cta-card h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     color: var(--color-text-primary);
     font-weight: 400;
     margin-bottom: 1rem;
@@ -1512,7 +1512,7 @@ svg feDropShadow[flood-color="#4a140d"] {
 }
 
 .pages-extra h5 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'TeX Gyre Termes', serif;
     font-weight: 600;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
