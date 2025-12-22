@@ -34,9 +34,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(ellipse at 20% 50%, 
-        rgba(199, 106, 82, 0.15) 0%,
-        transparent 50%);
+    background: radial-gradient(ellipse at 20% 50%,
+            rgba(199, 106, 82, 0.15) 0%,
+            transparent 50%);
     pointer-events: none;
 }
 
@@ -64,7 +64,7 @@
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
-} 
+}
 
 .reg-hero-subtitle {
     font-size: 1.25rem;
@@ -119,8 +119,8 @@
     margin-bottom: 2.5rem;
     padding: 1.5rem;
     background: linear-gradient(135deg,
-        rgba(250, 238, 231, 0.5) 0%,
-        rgba(255, 254, 253, 1) 100%);
+            rgba(250, 238, 231, 0.5) 0%,
+            rgba(255, 254, 253, 1) 100%);
     border-left: 4px solid var(--color-primary-light);
     border-radius: 0.5rem;
     transition: all 0.3s ease;
@@ -214,8 +214,8 @@
 
 .reg-placeholder .alert {
     background: linear-gradient(135deg,
-        rgba(199, 106, 82, 0.1) 0%,
-        rgba(192, 140, 59, 0.05) 100%);
+            rgba(199, 106, 82, 0.1) 0%,
+            rgba(192, 140, 59, 0.05) 100%);
     border: 1px solid var(--color-primary-light);
     color: var(--color-text-primary);
     font-size: 1.05rem;
@@ -271,19 +271,19 @@
     .reg-hero {
         min-height: 40vh;
     }
-    
+
     .reg-hero-title {
         font-size: 1.75rem;
     }
-    
+
     .reg-hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .reg-content {
         padding: 2rem 1.5rem;
     }
-    
+
     .reg-placeholder {
         min-height: 200px;
     }
@@ -298,11 +298,11 @@
         min-height: auto;
         background: var(--color-surface);
     }
-    
+
     .reg-badge {
         border: 1px solid var(--color-text-primary);
     }
-    
+
     .reg-actions {
         display: none;
     }

@@ -7,7 +7,8 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    max-height: 100vh; /* ensure header never exceeds viewport height */
+    max-height: 100vh;
+    /* ensure header never exceeds viewport height */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -65,7 +66,7 @@ header::after {
     margin-bottom: var(--space-lg);
     color: var(--color-text-inverse);
     line-height: 1.2;
-} 
+}
 
 .hero-subtitle {
     font-size: 1.5rem;
@@ -81,6 +82,7 @@ header::after {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -93,11 +95,11 @@ header::after {
         height: 60vh;
         min-height: 400px;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.25rem;
     }
@@ -108,15 +110,15 @@ header::after {
         height: 50vh;
         min-height: 350px;
     }
-    
+
     .hero-content {
         padding: var(--space-lg);
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
@@ -155,10 +157,10 @@ header::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-        rgba(74, 20, 13, 0.75) 0%,
-        rgba(131, 50, 40, 0.65) 50%,
-        rgba(192, 140, 59, 0.3) 100%);
+    background: linear-gradient(135deg,
+            rgba(74, 20, 13, 0.75) 0%,
+            rgba(131, 50, 40, 0.65) 50%,
+            rgba(192, 140, 59, 0.3) 100%);
     z-index: 1;
 }
 
@@ -175,7 +177,7 @@ header::after {
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
-} 
+}
 
 .homepage-hero .hero-subtitle {
     font-size: 1.5rem;
@@ -202,7 +204,7 @@ header::after {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-} 
+}
 
 .hero-cta .btn-primary {
     background: var(--color-gradient-primary);
@@ -228,8 +230,8 @@ header::after {
 
 .hp-parco {
     background: linear-gradient(to bottom,
-        var(--color-background) 0%,
-        color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-background)) 100%);
+            var(--color-background) 0%,
+            color-mix(in srgb, var(--color-primary-pale) 40%, var(--color-background)) 100%);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -237,7 +239,8 @@ header::after {
 #il-parco.hp-parco {
     position: relative;
     min-height: 100vh;
-    max-height: 100vh; /* cap section height to viewport */
+    max-height: 100vh;
+    /* cap section height to viewport */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,6 +313,7 @@ header::after {
         background-size: 70vw auto;
         opacity: 0.04;
     }
+
     #il-parco.hp-parco {
         min-height: 70vh;
         padding-top: 2rem;
@@ -319,21 +323,21 @@ header::after {
 
 .hp-luoghi {
     background: linear-gradient(to bottom,
-        color-mix(in srgb, var(--color-primary-pale) 30%, var(--color-background)) 0%,
-        var(--color-background) 100%);
+            color-mix(in srgb, var(--color-primary-pale) 30%, var(--color-background)) 0%,
+            var(--color-background) 100%);
 }
 
 .hp-biblioteca {
     background: linear-gradient(to bottom,
-        var(--color-background) 0%,
-        color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 100%);
+            var(--color-background) 0%,
+            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 100%);
     border-bottom: 1px solid var(--color-border);
 }
 
 .hp-eventi {
     background: linear-gradient(to bottom,
-        color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 0%,
-        var(--color-background) 100%);
+            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-background)) 0%,
+            var(--color-background) 100%);
 }
 
 .hp-archivi {
@@ -343,8 +347,8 @@ header::after {
 
 .hp-cta-final {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-background)) 0%,
-        color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-background)) 100%);
+            color-mix(in srgb, var(--color-primary-pale) 50%, var(--color-background)) 0%,
+            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-background)) 100%);
 }
 
 /* ========================================================
@@ -473,7 +477,7 @@ section.hp-section {
     border-radius: 0.5rem;
     transition: all 0.3s ease;
     text-decoration: none;
-} 
+}
 
 .hp-cta-buttons .btn-primary {
     background: var(--color-gradient-primary);
@@ -524,26 +528,26 @@ section.hp-section {
 
 .hp-card-primary {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 0%,
-        var(--color-surface) 100%);
+            color-mix(in srgb, var(--color-primary-pale) 60%, var(--color-surface)) 0%,
+            var(--color-surface) 100%);
 }
 
 .hp-card-primary:hover {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary-pale) 80%, var(--color-surface)) 0%,
-        color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-surface)) 100%);
+            color-mix(in srgb, var(--color-primary-pale) 80%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-secondary-light) 15%, var(--color-surface)) 100%);
 }
 
 .hp-card-secondary {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 0%,
-        var(--color-surface) 100%);
+            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 0%,
+            var(--color-surface) 100%);
 }
 
 .hp-card-secondary:hover {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-secondary-light) 30%, var(--color-surface)) 0%,
-        color-mix(in srgb, var(--color-accent) 10%, var(--color-surface)) 100%);
+            color-mix(in srgb, var(--color-secondary-light) 30%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-accent) 10%, var(--color-surface)) 100%);
 }
 
 .hp-card-icon {
@@ -572,7 +576,7 @@ section.hp-section {
     color: var(--color-text-primary);
     font-size: 1.3rem;
     margin: 0;
-} 
+}
 
 .hp-card p {
     color: var(--color-text-secondary);
@@ -585,13 +589,15 @@ section.hp-section {
 .hp-card-link {
     display: inline-flex;
     align-items: center;
-    justify-content: center; /* center the link text/icon inside the card */
+    justify-content: center;
+    /* center the link text/icon inside the card */
     gap: 0.5rem;
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    width: 100%; /* make the link take full width so centering is effective */
+    width: 100%;
+    /* make the link take full width so centering is effective */
 }
 
 .hp-card-link:hover {
@@ -618,9 +624,12 @@ section.hp-section {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -632,8 +641,8 @@ section.hp-section {
 
 .hp-cta-card {
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
-        color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 100%);
+            color-mix(in srgb, var(--color-primary-pale) 70%, var(--color-surface)) 0%,
+            color-mix(in srgb, var(--color-secondary-light) 20%, var(--color-surface)) 100%);
     border: 2px solid var(--color-primary-light);
     border-radius: 2rem;
     padding: 4rem 2rem;
@@ -659,24 +668,24 @@ section.hp-section {
     .hp-section-title {
         font-size: 2rem;
     }
-    
+
     .hp-hero-content {
         text-align: center;
     }
-    
+
     .homepage-hero .hero-title {
         font-size: 2rem;
     }
-    
+
     .homepage-hero .hero-description {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .hp-cta-buttons {
         justify-content: center;
     }
-    
+
     .hp-cta-card {
         padding: 3rem 1.5rem;
     }
@@ -686,36 +695,36 @@ section.hp-section {
     .hp-section {
         padding: 3rem 0;
     }
-    
+
     .hp-section-title {
         font-size: 1.75rem;
     }
-    
+
     .homepage-hero .hero-title {
         font-size: 1.75rem;
     }
-    
+
     .homepage-hero .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .homepage-hero .hero-description {
         font-size: 1rem;
     }
-    
+
     .hp-card {
         padding: 1.5rem;
     }
-    
+
     .hp-cta-buttons {
         flex-direction: column;
     }
-    
+
     .hp-cta-buttons .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .hp-card-icon {
         width: 60px;
         height: 60px;
@@ -728,6 +737,7 @@ section.hp-section {
    ======================================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
     .hp-illustration,
     .hp-card,
     .hp-card-icon {
@@ -748,12 +758,15 @@ section.hp-section {
    - Ensure predictable box-sizing
    - Prevent horizontal scrollbar caused by wide pseudo-elements
    ==================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 /* Defensive: if any element still overflows, hide horizontal overflow globally */
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -764,7 +777,8 @@ html, body {
 
 .hp-contact-center {
     display: grid;
-    grid-template-columns: 1fr; /* single column: form centered */
+    grid-template-columns: 1fr;
+    /* single column: form centered */
     gap: 2rem;
     align-items: start;
     width: 100%;
@@ -772,10 +786,13 @@ html, body {
     margin: 0 auto;
     justify-items: center;
 }
+
 .hp-contact-column {
-    min-width: 0; /* prevents grid children from forcing overflow */
+    min-width: 0;
+    /* prevents grid children from forcing overflow */
     width: 100%;
 }
+
 .hp-contact-card {
     background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface-elevated) 60%, var(--color-surface)) 0%, var(--color-surface) 100%);
     border: 1px solid var(--color-border);
@@ -783,7 +800,8 @@ html, body {
     padding: 1.5rem;
     box-shadow: var(--color-shadow-md);
     width: 100%;
-    max-width: 600px; /* constrain form width so it stays centered (narrower) */
+    max-width: 600px;
+    /* constrain form width so it stays centered (narrower) */
 }
 
 .hp-contact-form .form-label {
@@ -811,5 +829,5 @@ html, body {
 .hp-contact-form .form-control:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 6px 18px rgba(130,50,40,0.06);
+    box-shadow: 0 6px 18px rgba(130, 50, 40, 0.06);
 }
