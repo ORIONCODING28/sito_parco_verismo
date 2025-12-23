@@ -9,4 +9,6 @@ venv
 .vscode
 node_modules
 staticfiles
-media
+media/*
+!media/copertine
+!media/archivio_fotografico
