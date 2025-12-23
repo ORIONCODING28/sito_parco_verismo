@@ -1,6 +1,6 @@
 {% extends "parco_verismo/base.html" %}
 {% load static i18n %}
-{% block title %}{% trans 'Calendario Eventi - Parco Letterario Verismo' %}{% endblock %}
+{% block title %}{% trans 'Calendario Eventi - Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/calendario.css' %}">
 {% endblock %}
@@ -317,7 +317,7 @@
       const startStr = dataOraInizio.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
       const endStr = dataOraFine.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
       
-      const icsContent = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Parco Letterario Verismo//Calendar//IT\nBEGIN:VEVENT\nSUMMARY:${escapeICS(titolo)}\nDESCRIPTION:${escapeICS(descrizione)}\nLOCATION:${escapeICS(luogo)}\nDTSTART:${startStr}\nDTEND:${endStr}\nEND:VEVENT\nEND:VCALENDAR`;
+      const icsContent = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Parco Letterario Giovanni Verga Luigi Capuana//Calendar//IT\nBEGIN:VEVENT\nSUMMARY:${escapeICS(titolo)}\nDESCRIPTION:${escapeICS(descrizione)}\nLOCATION:${escapeICS(luogo)}\nDTSTART:${startStr}\nDTEND:${endStr}\nEND:VEVENT\nEND:VCALENDAR`;
       
       const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
       const url = window.URL.createObjectURL(blob);

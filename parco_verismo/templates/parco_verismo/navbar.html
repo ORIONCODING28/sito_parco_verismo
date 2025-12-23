@@ -10,13 +10,13 @@
         {% if request.path == '/' or is_homepage == '/it/' or is_homepage == '/en/' and request.path|length <= 4 %}
         <img
           src="{% static 'assets/img/logo-header-white.png' %}"
-          alt="{% trans 'Parco Letterario Verismo' %}"
+          alt="{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}"
           class="logo-header"
         />
         {% else %}
         <img
           src="{% static 'assets/img/logo-header.png' %}"
-          alt="{% trans 'Parco Letterario Verismo' %}"
+          alt="{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}"
           class="logo-header"
         />
         {% endif %}
