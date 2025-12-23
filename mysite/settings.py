@@ -48,6 +48,13 @@ if not DEBUG:
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
 
+# CSRF Trusted Origins (richiesto per Django 4+ con HTTPS)
+CSRF_TRUSTED_ORIGINS = config(
+    "CSRF_TRUSTED_ORIGINS",
+    default="https://parcovergacapuana.it,https://www.parcovergacapuana.it",
+    cast=Csv(),
+)
+
 
 # Application definition
 
