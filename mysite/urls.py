@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path, include
+from django.http import HttpResponse
 
 # Local imports
 
@@ -48,8 +49,13 @@ sitemaps = {
     "itinerari": ItinerarioSitemap,
 }
 
+# Health check endpoint per Docker
+def health_check(request):
+    return HttpResponse("ok", content_type="text/plain")
+
 urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
+    path("health/", health_check, name="health_check"),
 ]
 
 # URL con prefisso lingua (it/en)
