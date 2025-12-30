@@ -78,7 +78,7 @@
 
 .cookie-banner-buttons {
     display: flex;
-    gap: var(--space-4);
+    gap: var(--space-lg);
     flex-wrap: wrap;
 }
 
