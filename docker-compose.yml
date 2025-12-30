@@ -52,6 +52,7 @@ services:
     command: >
       sh -c "
         python manage.py migrate --noinput &&
+        python manage.py compilemessages &&
         python manage.py collectstatic --noinput &&
         echo 'Copying media files...' &&
         cp -r /app/media_source/archivio_fotografico /app/media/ 2>/dev/null || true &&

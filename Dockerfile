@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libpq-dev \
     curl \
+    gettext \
     && rm -rf /var/lib/apt/lists/*
 
 # 5. Creare utente non-root per sicurezza
