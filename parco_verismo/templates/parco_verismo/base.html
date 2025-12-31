@@ -53,19 +53,28 @@
       "@graph": [
         {
           "@type": "Organization",
+          "@id": "{{ request.scheme }}://{{ request.get_host }}/#organization",
           "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
-          "url": "{{ request.scheme }}://{{ request.get_host }}",
-          "logo": "{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}",
+          "url": "{{ request.scheme }}://{{ request.get_host }}/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ request.scheme }}://{{ request.get_host }}{% static 'assets/img/logo-header.png' %}",
+            "width": "2000",
+            "height": "2000"
+          },
           "sameAs": [
             "https://www.facebook.com/parcoletterariovergacapuana",
             "https://www.instagram.com/parcovergacapuana"
           ]
         },
         {
-          "@context": "https://schema.org",
           "@type": "WebSite",
+          "@id": "{{ request.scheme }}://{{ request.get_host }}/#website",
+          "url": "{{ request.scheme }}://{{ request.get_host }}/",
           "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
-          "url": "{{ request.scheme }}://{{ request.get_host }}",
+          "publisher": {
+            "@id": "{{ request.scheme }}://{{ request.get_host }}/#organization"
+          },
           "potentialAction": {
             "@type": "SearchAction",
             "target": "{{ request.scheme }}://{{ request.get_host }}/search/?q={search_term_string}",
@@ -73,7 +82,6 @@
           }
         },
         {
-          "@context": "https://schema.org",
           "@type": "{% block schema_type %}TouristAttraction{% endblock %}",
           "name": "Parco Letterario Giovanni Verga e Luigi Capuana",
           "description": "{% trans 'Parco letterario dedicato alla scoperta del Verismo siciliano attraverso i luoghi di Giovanni Verga e Luigi Capuana' %}",
