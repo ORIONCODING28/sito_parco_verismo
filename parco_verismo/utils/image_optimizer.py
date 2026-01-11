@@ -36,7 +36,7 @@ def optimize_image(image_field, max_width=1920, quality=85):
 
     # Salva in un buffer in memoria come WebP
     output = BytesIO()
-    img.save(output, format="WEBP", quality=quality, method=6) # method 6 is slowest/best compression
+    img.save(output, format="WEBP", quality=quality, method=4) # method 4 is faster, 6 is too slow for bulk
     output.seek(0)
 
     # Prepara il nuovo nome file (cambia estensione in .webp)
