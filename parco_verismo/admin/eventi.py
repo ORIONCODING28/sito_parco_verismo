@@ -9,7 +9,7 @@ from django.contrib import admin
 from parler.admin import TranslatableAdmin
 
 # Local imports
-from ..models import Evento, Notizia, EventoImage, NotiziaImage
+from ..models import Evento, Notizia, EventoImage, NotiziaImage, EventoDocumento, NotiziaDocumento
 from django import forms
 from parler.forms import TranslatableModelForm
 from .custom_fields import MultipleFileField, MultipleFileInput
@@ -20,9 +20,21 @@ class EventoImageInline(admin.TabularInline):
     extra = 1
 
 
+class EventoDocumentoInline(admin.TabularInline):
+    model = EventoDocumento
+    extra = 1
+    fields = ('titolo', 'file', 'ordine')
+
+
 class NotiziaImageInline(admin.TabularInline):
     model = NotiziaImage
     extra = 1
+
+
+class NotiziaDocumentoInline(admin.TabularInline):
+    model = NotiziaDocumento
+    extra = 1
+    fields = ('titolo', 'file', 'ordine')
 
 
 class EventoForm(TranslatableModelForm):
@@ -57,7 +69,7 @@ class EventoAdmin(TranslatableAdmin):
     date_hierarchy = "data_inizio"
     ordering = ("-data_inizio",)
     list_editable = ("is_active",)
-    inlines = [EventoImageInline]
+    inlines = [EventoImageInline, EventoDocumentoInline]
     
     # get_form rimosso perché usiamo form = EventoForm explicit definition
 
@@ -84,7 +96,7 @@ class NotiziaAdmin(TranslatableAdmin):
     date_hierarchy = "data_pubblicazione"
     ordering = ("-data_pubblicazione",)
     list_editable = ("is_active",)
-    inlines = [NotiziaImageInline]
+    inlines = [NotiziaImageInline, NotiziaDocumentoInline]
 
 
 

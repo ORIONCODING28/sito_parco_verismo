@@ -176,3 +176,33 @@ class NotiziaImage(models.Model):
             except NotiziaImage.DoesNotExist:
                 self.immagine = optimize_image(self.immagine)
         super().save(*args, **kwargs)
+
+
+class EventoDocumento(models.Model):
+    evento = models.ForeignKey(Evento, related_name='documenti', on_delete=models.CASCADE)
+    file = models.FileField(upload_to="eventi/documenti/")
+    titolo = models.CharField(max_length=200, help_text="Titolo descrittivo del documento")
+    ordine = models.PositiveIntegerField(default=0)
+    
+    class Meta:
+        ordering = ['ordine']
+        verbose_name = "Documento Evento"
+        verbose_name_plural = "Documenti Evento"
+
+    def __str__(self):
+        return self.titolo
+
+
+class NotiziaDocumento(models.Model):
+    notizia = models.ForeignKey(Notizia, related_name='documenti', on_delete=models.CASCADE)
+    file = models.FileField(upload_to="notizie/documenti/")
+    titolo = models.CharField(max_length=200, help_text="Titolo descrittivo del documento")
+    ordine = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['ordine']
+        verbose_name = "Documento Notizia"
+        verbose_name_plural = "Documenti Notizia"
+
+    def __str__(self):
+        return self.titolo
