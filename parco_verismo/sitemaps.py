@@ -27,7 +27,6 @@ class StaticViewSitemap(Sitemap):
             'comitato_tecnico_scientifico',
             'comitato_regolamento',
             'partner_rete_territoriale',
-            'accrediti_finanziamenti',
             'regolamenti_documenti',
             'vizzini',
             'licodia',
