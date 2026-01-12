@@ -14,8 +14,9 @@ Disallow: /admin/
 Allow: /media/
 
 # Disallow static files che non servono per SEO
-Disallow: /static/js/
-Disallow: /static/css/
+# Allow assets for better rendering/indexing
+Allow: /static/js/
+Allow: /static/css/
 Allow: /static/assets/img/
 
 # Disallow login/logout
