@@ -1,9 +1,9 @@
 -{% extends "parco_verismo/base.html" %}
 {% load static i18n %}
 
-{% block title %}Contatti - Parco Letterario Giovanni Verga Luigi Capuana{% endblock %}
+{% block title %}{% trans 'Contatti' %} - {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}{% endblock %}
 
-{% block meta_description %}Contatti del Parco Letterario Giovanni Verga e Luigi Capuana. Centro Studi C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattiche.{% endblock %}
+{% block meta_description %}{% trans 'Contatti del Parco Letterario® Giovanni Verga e Luigi Capuana. Centro Studi C.E.S.T.A., Comuni di Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattiche.' %}{% endblock %}
 
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/contatti.css' %}">
@@ -22,10 +22,10 @@
                 <div class="pages-hero-content">
                     <span class="pages-badge">{% trans 'Contatti' %}</span>
                     <h1 class="pages-hero-title display-3 fw-bold mb-4">
-                        {% trans 'Parco Letterario Giovanni Verga e Luigi Capuana' %}
+                        {% trans 'Parco Letterario® Giovanni Verga e Luigi Capuana' %}
                     </h1>
                     <p class="pages-hero-subtitle lead">
-                        {% trans 'Il Parco Letterario Giovanni Verga e Luigi Capuana è un progetto culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A.' %}
+                        {% trans 'Il Parco Letterario® Giovanni Verga e Luigi Capuana è un progetto culturale condiviso, promosso in collaborazione con i Comuni di Vizzini, Mineo e Licodia Eubea e coordinato dal Centro Studi C.E.S.T.A.' %}
                     </p>
                     <p class="pages-hero-subtitle">
                         {% trans 'Per informazioni, richieste di collaborazione, attività didattiche, eventi e itinerari è possibile fare riferimento ai contatti istituzionali riportati di seguito.' %}
@@ -124,7 +124,7 @@
                             <div class="contatti-info-label">{% trans 'Email:' %}</div>
                             <div class="contatti-info-value">
                                 <a href="mailto:segreteria@centrostudicesta.it">segreteria@centrostudicesta.it</a><br>
-                                <a href="mailto:info@centrostudicesta.it">info@centrostudicesta.it</a>
+                                <a href="mailto:info@parcovergacapuana.it">info@parcovergacapuana.it</a>
                             </div>
                         </div>
                         

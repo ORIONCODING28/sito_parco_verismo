@@ -50,6 +50,40 @@ def contatti_view(request):
         if form.is_valid():
             try:
                 richiesta = form.save()
+                
+                # Invia email di notifica
+                try:
+                    from django.core.mail import send_mail
+                    from django.conf import settings
+                    
+                    subject = f"Nuova richiesta dal sito: {richiesta.oggetto}"
+                    message = f"""
+Hai ricevuto una nuova richiesta di contatto dal sito web.
+
+Dettagli:
+Nome: {richiesta.nome} {richiesta.cognome}
+Email: {richiesta.email}
+Ente: {richiesta.ente or 'Non specificato'}
+Oggetto: {richiesta.oggetto}
+
+Messaggio:
+{richiesta.messaggio}
+
+Puoi gestire questa richiesta dal pannello di amministrazione:
+{request.scheme}://{request.get_host()}/richieste/dashboard/
+                    """
+                    
+                    send_mail(
+                        subject,
+                        message,
+                        settings.DEFAULT_FROM_EMAIL,  # Mittente (configurato in settings)
+                        ["info@parcovergacapuana.it"],  # Destinatario
+                        fail_silently=False,
+                    )
+                except Exception as e:
+                    logging.error(f"Errore invio email: {e}")
+                    # Non blocchiamo il flusso se l'email fallisce, ma logghiamo l'errore
+
                 logging.info(
                     "Richiesta contatto creata id=%s email=%s",
                     getattr(richiesta, "id", "unknown"),

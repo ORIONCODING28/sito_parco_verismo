@@ -43,7 +43,7 @@ def invia_email_richiesta_confermata(richiesta):
             (
                 settings.DEFAULT_FROM_EMAIL
                 if hasattr(settings, "DEFAULT_FROM_EMAIL")
-                else "noreply@parcolettverismo.it"
+                else "noreply@parcovergacapuana.it"
             ),
             [richiesta.email],
             fail_silently=False,
@@ -85,7 +85,7 @@ def invia_notifica_admin_nuova_richiesta(richiesta):
         """
 
         # TODO: Configurare ADMIN_EMAIL in settings
-        admin_email = getattr(settings, "ADMIN_EMAIL", "admin@parcolettverismo.it")
+        admin_email = getattr(settings, "ADMIN_EMAIL", "info@parcovergacapuana.it")
 
         send_mail(
             subject,
@@ -93,7 +93,7 @@ def invia_notifica_admin_nuova_richiesta(richiesta):
             (
                 settings.DEFAULT_FROM_EMAIL
                 if hasattr(settings, "DEFAULT_FROM_EMAIL")
-                else "noreply@parcolettverismo.it"
+                else "noreply@parcovergacapuana.it"
             ),
             [admin_email],
             fail_silently=False,
