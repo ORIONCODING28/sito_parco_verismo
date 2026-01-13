@@ -178,11 +178,23 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 }
 
 /* Fix active/open dropdown toggle background */
-#mainNav .navbar-nav .nav-link.show,
-#mainNav .navbar-nav .show>.nav-link {
+/* Fix active/open dropdown toggle background - Transparent State */
+#mainNav:not(.navbar-scrolled):not(.navbar-dark-pages) .navbar-nav .nav-link.show,
+#mainNav:not(.navbar-scrolled):not(.navbar-dark-pages) .navbar-nav .show>.nav-link {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: var(--radius-sm);
-    color: var(--color-text-inverse);
+    color: var(--color-text-inverse) !important;
+    box-shadow: none !important;
+}
+
+/* Fix active/open dropdown toggle background - Scrolled/Solid State */
+#mainNav.navbar-scrolled .navbar-nav .nav-link.show,
+#mainNav.navbar-scrolled .navbar-nav .show>.nav-link,
+#mainNav.navbar-dark-pages .navbar-nav .nav-link.show,
+#mainNav.navbar-dark-pages .navbar-nav .show>.nav-link {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-dark) !important;
     box-shadow: none !important;
 }
 
