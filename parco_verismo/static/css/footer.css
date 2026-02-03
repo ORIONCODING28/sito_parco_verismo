@@ -403,7 +403,7 @@
     border-color: transparent;
 }
 
-.footer-social-link:focus,
+.footer-social-link:focus-visible,
 .footer-social-link:hover {
     background: var(--color-primary);
     color: var(--color-text-inverse);
@@ -566,15 +566,15 @@
 }
 
 .site-footer.compact-footer .social-links .footer-social-link:hover,
-.site-footer.compact-footer .social-links .footer-social-link:focus {
+.site-footer.compact-footer .social-links .footer-social-link:focus-visible {
     background: var(--color-primary, #28a745) !important;
     color: var(--color-text-inverse, #ffffff) !important;
 }
 
 .site-footer.compact-footer .social-links .footer-social-link:hover .bi,
-.site-footer.compact-footer .social-links .footer-social-link:focus .bi,
+.site-footer.compact-footer .social-links .footer-social-link:focus-visible .bi,
 .site-footer.compact-footer .social-links .footer-social-link:hover svg,
-.site-footer.compact-footer .social-links .footer-social-link:focus svg,
+.site-footer.compact-footer .social-links .footer-social-link:focus-visible svg,
 .site-footer.compact-footer .footer-icon .bi,
 .site-footer.compact-footer .footer-icon svg {
     color: var(--color-text-inverse, #ffffff) !important;

@@ -23,7 +23,7 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
     <div class="pages-hero-overlay"></div>
     <div class="container-fluid h-100">
         <div class="row h-100 align-items-center">
-            <div class="col-lg-6 offset-lg-1 z-index-10 py-5 py-lg-0">
+            <div class="col-lg-8 offset-lg-2 z-index-10 text-center py-5 py-lg-0">
                 <div class="pages-hero-content">
                     <span class="pages-badge">{% trans 'Contatti' %}</span>
                     <h1 class="pages-hero-title display-3 fw-bold mb-4">
@@ -40,55 +40,10 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
                         possibile fare riferimento ai contatti istituzionali riportati di seguito.
                         {% endblocktrans %}
                     </p>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="pages-hero-image">
-                    <div class="placeholder-image">
-                        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" class="hero-svg-contatti">
-                            <defs>
-                                <linearGradient id="contattiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" class="svg-gradient-start" />
-                                    <stop offset="100%" class="svg-gradient-end" />
-                                </linearGradient>
-                            </defs>
-                            <!-- Background -->
-                            <rect width="600" height="700" fill="url(#contattiGradient)" />
-
-                            <!-- Decorative shapes -->
-                            <circle cx="150" cy="100" r="80" class="svg-circle-primary" opacity="0.2" />
-                            <circle cx="500" cy="600" r="120" class="svg-circle-dark" opacity="0.15" />
-
-                            <!-- Envelope icon (contatti) -->
-                            <g transform="translate(200, 250)">
-                                <rect x="0" y="20" width="200" height="150" fill="none" class="svg-stroke-primary"
-                                    stroke-width="3" rx="8" />
-                                <path d="M 0 20 L 100 120 L 200 20" fill="none" class="svg-stroke-primary"
-                                    stroke-width="3" stroke-linejoin="round" />
-                                <line x1="0" y1="170" x2="60" y2="110" class="svg-stroke-primary" stroke-width="3" />
-                                <line x1="200" y1="170" x2="140" y2="110" class="svg-stroke-primary" stroke-width="3" />
-                            </g>
-
-                            <!-- Location pins -->
-                            <g transform="translate(100, 480)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
-                                    opacity="0.7" />
-                            </g>
-                            <g transform="translate(180, 450)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
-                                    opacity="0.7" />
-                            </g>
-                            <g transform="translate(260, 490)">
-                                <path d="M 0 0 Q 0 -15 10 -25 Q 20 -15 20 0 Q 10 10 0 0 Z" class="svg-fill-secondary"
-                                    opacity="0.7" />
-                            </g>
-
-                            <!-- Text placeholder -->
-                            <text x="300" y="600" font-family="serif" font-size="28" font-weight="bold"
-                                class="svg-text-dark" opacity="0.4" text-anchor="middle">
-                                Vizzini • Mineo • Licodia
-                            </text>
-                        </svg>
+                    <div class="mt-5 d-flex flex-wrap justify-content-center gap-3 w-100">
+                        <a href="#coordinamento" class="btn btn-primary btn-lg px-4">{% trans 'Coordinamento' %}</a>
+                        <a href="#partner" class="btn btn-primary btn-lg px-4">{% trans 'Comuni e Partner' %}</a>
+                        <a href="#modulo-contatto" class="btn btn-primary btn-lg px-4">{% trans 'Scrivici' %}</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +52,7 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
 </section>
 
 <!-- Coordinamento del Parco – Centro Studi C.E.S.T.A. -->
-<section class="contatti-section contatti-cesta">
+<section id="coordinamento" class="contatti-section contatti-cesta">
     <div class="container-xl">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -168,7 +123,7 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
 </section>
 
 <!-- Comuni partner del Parco Letterario -->
-<section class="contatti-section contatti-comuni">
+<section id="partner" class="contatti-section contatti-comuni">
     <div class="container-xl">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -204,7 +159,7 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
                             </div>
                         </div>
                         <div class="comune-contatti mt-4">
-                            <h4 class="comune-contatti-title">Partner Territoriali</h4>
+                            <h4 class="comune-contatti-title">{% trans 'Partner Territoriali' %}</h4>
                             <div class="comune-info">
                                 <div class="mb-3">
                                     <h5 class="fw-bold mb-2 text-primary">Associazione Teatro Skenè APS</h5>
@@ -355,7 +310,7 @@ Vizzini, Mineo e Licodia Eubea. Informazioni, collaborazioni, attività didattic
 </section>
 
 <!-- Modulo di contatto -->
-<section class="contatti-section contatti-form-section">
+<section id="modulo-contatto" class="contatti-section contatti-form-section">
     <div class="container-xl">
         <div class="row justify-content-center">
             <div class="col-lg-10">

@@ -1129,6 +1129,8 @@ svg feDropShadow[flood-color="#4a140d"] {
     line-height: 1.6;
     color: var(--color-text-primary);
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mv-hero-image,
@@ -1147,7 +1149,6 @@ svg feDropShadow[flood-color="#4a140d"] {
     max-width: 100%;
     height: auto;
     filter: drop-shadow(0 20px 40px rgba(166, 132, 118, 0.25));
-    animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {

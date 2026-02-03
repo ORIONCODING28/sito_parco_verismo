@@ -18,6 +18,18 @@
   overflow: hidden;
 }
 
+.hero-tematici {
+  background-image: url("/static/assets/img/galleria/Sguardo_sul_Parco_Monti_Sicani-1.webp");
+}
+
+.hero-capuaniani {
+  background-image: url("/static/assets/img/mineo/mineo-background.jpg");
+}
+
+.hero-verghiani {
+  background-image: url("/static/assets/img/vizzini/Vizzini,_Catania,_Sicily,_Italy.webp");
+}
+
 /* green translucent overlay so image remains visible */
 .hero-verghiani::before,
 .hero-capuaniani::before,
@@ -456,6 +468,7 @@
 
 /* Desktop (992px - 1199px) */
 @media (max-width: 1199px) {
+
   .hero-verghiani h1,
   .hero-capuaniani h1,
   .hero-tematici h1 {
@@ -471,6 +484,7 @@
 
 /* Tablet (768px - 991px) */
 @media (max-width: 991px) {
+
   .hero-verghiani,
   .hero-capuaniani,
   .hero-tematici {
@@ -504,6 +518,7 @@
 
 /* Mobile Large (576px - 767px) */
 @media (max-width: 767px) {
+
   .hero-verghiani,
   .hero-capuaniani,
   .hero-tematici {
@@ -532,6 +547,7 @@
 
 /* Mobile Small (≤575px) */
 @media (max-width: 575px) {
+
   .hero-verghiani,
   .hero-capuaniani,
   .hero-tematici {
