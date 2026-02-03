@@ -264,11 +264,13 @@
 @media (max-width: 991px) {
     .map-layout {
         flex-direction: column;
+        height: auto;
     }
 
     .map-sidebar {
         width: 100%;
         max-height: none;
+        height: auto;
     }
 
     .map-sidebar-content {

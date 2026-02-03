@@ -207,7 +207,7 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 #mainNav .navbar-nav .dropdown-toggle::before {
     content: '';
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
     width: 6px;
@@ -230,7 +230,7 @@ body.transparent-nav #mainNav.navbar-scrolled .navbar-brand {
 
 /* Aggiunge spazio per il chevron */
 #mainNav .navbar-nav .dropdown-toggle {
-    padding-right: calc(var(--space-sm) + 10px) !important;
+    padding-right: 35px !important;
 }
 
 #mainNav .navbar-nav .dropdown-menu {
