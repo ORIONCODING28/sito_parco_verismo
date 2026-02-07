@@ -175,240 +175,67 @@
       <div class="text-center mb-5">
         <h2 class="pages-section-title h2 fw-bold">{% trans 'Patrimonio Storico' %}</h2>
         <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Scopri i monumenti e i luoghi simbolo di Licodia Eubea' %}
+          {% trans 'MONUMENTI E LUOGHI VERGHIANI' %}
         </p>
       </div>
 
-      <!-- Colle Castello - In evidenza -->
-      <div class="row g-5 align-items-center mb-5">
-        <div class="col-lg-6">
-          <div class="pages-highlight-text">
-            <span class="pages-badge mb-3">{% trans 'Sito Storico Principale' %}</span>
-            <h3 class="h4 fw-bold mb-3">{% trans 'Colle Castello' %}</h3>
-            <p class="lead">
-              {% blocktrans %}Identificato da <strong>Paolo Orsi</strong> come acropoli di un'antica borgata sicula, ospita diverse <strong>necropoli paleocristiane</strong>.{% endblocktrans %}
-            </p>
-            <p class="text-secondary">
-              {% blocktrans %}Il castello fu residenza dei <strong>Santapaola</strong> dal XIV secolo fino all'abolizione del feudalesimo. Gravemente danneggiato dal terremoto del 1693, conserva <strong>resti murari bizantini dell'VIII-IX secolo</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="pages-points">
-            <div class="pages-point">
-              <div class="pages-point-icon">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Piazza Margherita' %}</h4>
-                <p>
-                  {% blocktrans %}Centro nevralgico del paese con la <strong>vasca ovoidale e la statua dell'Immacolata</strong>.{% endblocktrans %}
-                </p>
-              </div>
-            </div>
-            <div class="pages-point">
-              <div class="pages-point-icon">
+      <div class="row g-4">
+        <!-- Chiese e Luoghi Religiosi -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
                 <i class="bi bi-building"></i>
               </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Palazzo Municipale' %}</h4>
-                <p>
-                  {% blocktrans %}Edificio <strong>ottocentesco</strong> con elementi eclettici, cortile decorato e <strong>stucchi policromi</strong>.{% endblocktrans %}
-                </p>
-              </div>
+              <span class="cultura-card-badge">{% trans 'Patrimonio Religioso' %}</span>
             </div>
-            <div class="pages-point">
-              <div class="pages-point-icon">
+            <div class="cultura-card-body">
+              <h3 class="cultura-card-title">{% trans 'Chiese e Luoghi Religiosi' %}</h3>
+              <ul class="cultura-card-list">
+                <li>{% trans 'Chiesa Matrice di Santa Margherita' %}</li>
+                <li>{% trans 'Ex chiesa di San Benedetto e Santa Chiara' %}</li>
+                <li>{% trans 'Chiesa del Carmine' %}</li>
+                <li>{% trans "Chiesa dell'Ospedale, detta del Crocifisso" %}</li>
+                <li>{% trans 'Chiesa di Santa Maria degli Angeli e convento dei padri Cappuccini' %}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palazzi e Architettura Civile -->
+        <div class="col-lg-4">
+          <div class="cultura-card h-100">
+            <div class="cultura-card-header">
+              <div class="cultura-card-icon">
                 <i class="bi bi-bank"></i>
               </div>
-              <div class="pages-point-content">
-                <h4>{% trans 'Palazzo Mugnos' %}</h4>
-                <p>
-                  {% blocktrans %}Unico esempio <strong>barocco</strong> della città, acquistato nel 1782 dal <strong>barone Vassallo</strong>.{% endblocktrans %}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Chiese e Luoghi di Culto -->
-  <section class="pages-section pages-chiese py-5 py-lg-6">
-    <div class="container-xl">
-      <div class="text-center mb-5">
-        <h2 class="pages-section-title h2 fw-bold">{% trans 'Chiese e Luoghi di Culto' %}</h2>
-        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Un patrimonio religioso ricco di storia e arte sacra' %}
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa di Santa Margherita' %}</h4>
-            <p>
-              {% blocktrans %}Cappella ampliata nel <strong>XVI secolo</strong>, ricostruita dopo il 1693. Custodisce la <strong>scultura lignea di Sant'Antonio Abate</strong> (1617).{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa di Santa Lucia' %}</h4>
-            <p>
-              {% blocktrans %}Nel Borgo, fu la <strong>chiesa di San Giovanni</strong> nel XIV secolo. Parrocchia dal <strong>1945</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa del Carmine' %}</h4>
-            <p>
-              {% blocktrans %}Sorta tra <strong>XVI e XVII secolo</strong>, conserva l'<strong>urna con l'Adorazione dei Santi Cosma e Damiano</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa del SS. Salvatore' %}</h4>
-            <p>
-              {% blocktrans %}Ricostruita tra il <strong>1713 e il 1721</strong> in stile barocco con <strong>stucchi novecenteschi</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Chiesa del SS. Rosario' %}</h4>
-            <p>
-              {% blocktrans %}Del <strong>Settecento</strong>, conserva un <strong>fonte battesimale seicentesco</strong> e un <strong>paliotto marmoreo del 1754</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="pages-value-card h-100">
-            <div class="pages-value-icon">
-              <i class="bi bi-building"></i>
-            </div>
-            <h4 class="pages-value-title">{% trans 'Madonna delle Grazie' %}</h4>
-            <p>
-              {% blocktrans %}Fondata nel <strong>1539</strong>, sorge su un'area archeologica oggi parte del <strong>Museo Civico</strong>.{% endblocktrans %}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Musei e Cultura -->
-  <section class="pages-section pages-musei py-5 py-lg-6">
-    <div class="container-xl">
-      <div class="text-center mb-5">
-        <span class="pages-badge mb-3">{% trans 'Cultura e Patrimonio' %}</span>
-        <h2 class="pages-section-title h2 fw-bold">{% trans 'Musei e Cultura' %}</h2>
-        <p class="lead text-secondary" style="max-width: 700px; margin: 0 auto;">
-          {% trans 'Testimonianze della storia millenaria del territorio' %}
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Museo Archeologico -->
-        <div class="col-lg-4">
-          <div class="cultura-card h-100">
-            <div class="cultura-card-header">
-              <div class="cultura-card-icon">
-                <i class="bi bi-columns-gap"></i>
-              </div>
-              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+              <span class="cultura-card-badge">{% trans 'Architettura Civile' %}</span>
             </div>
             <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Museo Archeologico' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}Ospita reperti dalle aree <strong>preistoriche, greche, romane e tardo antiche</strong> del territorio licodiano.{% endblocktrans %}
-              </p>
+              <h3 class="cultura-card-title">{% trans 'Palazzi e Architettura Civile' %}</h3>
               <ul class="cultura-card-list">
-                <li>
-                  <i class="bi bi-gem"></i> {% trans "Dolmen e vasi dell'età del Bronzo" %}
-                </li>
-                <li>
-                  <i class="bi bi-urn"></i> {% trans 'Ossuari a palmette IV-III a.C.' %}
-                </li>
-                <li>
-                  <i class="bi bi-cup"></i> {% trans 'Ceramiche e lucerne romane' %}
-                </li>
+                <li>{% trans 'Castello Santapau' %}</li>
+                <li>{% trans 'Palazzo Mugnos-Vassallo' %}</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- Museo Etnografico -->
+        <!-- Musei e Luoghi Culturali -->
         <div class="col-lg-4">
           <div class="cultura-card h-100">
             <div class="cultura-card-header">
               <div class="cultura-card-icon">
-                <i class="bi bi-house-heart"></i>
+                <i class="bi bi-book"></i>
               </div>
-              <span class="cultura-card-badge">{% trans 'Museo' %}</span>
+              <span class="cultura-card-badge">{% trans 'Luoghi Culturali' %}</span>
             </div>
             <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Museo Etnografico' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}Intitolato a <strong>"Padre A. Coniglione"</strong>, allestito nei locali dell'ex Ospedale Civico.{% endblocktrans %}
-              </p>
+              <h3 class="cultura-card-title">{% trans 'Musei e Luoghi Culturali' %}</h3>
               <ul class="cultura-card-list">
-                <li>
-                  <i class="bi bi-tools"></i> {% trans 'Strumenti del lavoro agricolo' %}
-                </li>
-                <li>
-                  <i class="bi bi-basket"></i> {% trans 'Oggetti artigianali tradizionali' %}
-                </li>
-                <li>
-                  <i class="bi bi-house"></i> {% trans 'Testimonianze vita rurale' %}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Monumento ai Caduti -->
-        <div class="col-lg-4">
-          <div class="cultura-card h-100">
-            <div class="cultura-card-header">
-              <div class="cultura-card-icon">
-                <i class="bi bi-award"></i>
-              </div>
-              <span class="cultura-card-badge">{% trans 'Monumento' %}</span>
-            </div>
-            <div class="cultura-card-body">
-              <h3 class="cultura-card-title">{% trans 'Monumento ai Caduti' %}</h3>
-              <p class="cultura-card-text">
-                {% blocktrans %}Opera commemorativa realizzata tra il <strong>1925-1926</strong> dallo scultore <em>Salvatore Juvara</em>.{% endblocktrans %}
-              </p>
-              <ul class="cultura-card-list">
-                <li>
-                  <i class="bi bi-geo-alt"></i> {% trans "Chianu cimientu" %}
-                </li>
-                <li>
-                  <i class="bi bi-people"></i> {% trans 'Cuore della vita cittadina' %}
-                </li>
-                <li>
-                  <i class="bi bi-star"></i> {% trans 'Scultura monumentale' %}
-                </li>
+                <li>{% trans 'Museo civico archeologico "Antonino Di Vita"' %}</li>
+                <li>{% trans 'Biblioteca dell\'Archeoclub d\'Italia "Mario Di Benedetto"' %}</li>
+                <li>{% trans 'Casale rupestre Grotte dei Santi (Contrada Alia)' %}</li>
               </ul>
             </div>
           </div>
@@ -416,6 +243,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Mappa Interattiva -->
   <section id="map-section" class="pages-section pages-mappa py-5 py-lg-6">
