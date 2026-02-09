@@ -8630,3 +8630,40 @@ msgstr "Explore Vizzini"
  m s g s t r   " I n s t i t u t i o n a l   c o n t a c t s " 
  
  
+# Categorie opere
+msgid "Romanzi"
+msgstr "Novels"
+
+msgid "Novelle"
+msgstr "Short Stories"
+
+msgid "Teatro"
+msgstr "Theatre"
+
+msgid "Fiabe"
+msgstr "Fairy Tales"
+
+# Fonti testo
+msgid "WikiSource"
+msgstr "WikiSource"
+
+msgid "Internet Archive"
+msgstr "Internet Archive"
+
+msgid "The Project Gutenberg"
+msgstr "The Project Gutenberg"
+
+msgid "Altro"
+msgstr "Other"
+
+msgid "Leggi l'opera su WikiSource"
+msgstr "Read on WikiSource"
+
+msgid "Leggi l'opera su Internet Archive"
+msgstr "Read on Internet Archive"
+
+msgid "Leggi l'opera su The Project Gutenberg"
+msgstr "Read on The Project Gutenberg"
+
+msgid "Leggi l'opera"
+msgstr "Read the work"
