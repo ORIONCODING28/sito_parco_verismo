@@ -3,11 +3,12 @@ Views per la Biblioteca e le Opere letterarie.
 """
 
 # Django imports
-from django.db.models import Q
+from django.db.models import Q, Prefetch
 from django.shortcuts import render, get_object_or_404
+from collections import defaultdict
 
 # Local imports
-from ..models import Opera, Autore
+from ..models import Opera, Autore, LuogoLetterario, OperaInLuogo
 
 
 def biblioteca_view(request):
@@ -29,12 +30,33 @@ def biblioteca_view(request):
 
 
 def opere_per_autore_view(request, autore_slug):
-    """Pagina di presentazione delle opere di un singolo autore."""
+    """Pagina di presentazione delle opere di un singolo autore organizzate per luogo e categoria."""
     autore = get_object_or_404(Autore, slug=autore_slug)
-    opere_autore = Opera.objects.filter(autore=autore)
+    
+    # Recupera tutte le relazioni OperaInLuogo per questo autore
+    opere_in_luoghi = OperaInLuogo.objects.filter(
+        opera__autore=autore
+    ).select_related('opera', 'luogo').order_by('luogo__ordine', 'categoria', 'ordine')
+    
+    # Organizza le opere per luogo e categoria
+    luoghi_dict = defaultdict(lambda: {
+        'romanzi': [],
+        'novelle': [],
+        'teatro': [],
+        'fiabe': []
+    })
+    
+    for opera_in_luogo in opere_in_luoghi:
+        luogo_nome = opera_in_luogo.luogo.nome
+        categoria = opera_in_luogo.categoria
+        luoghi_dict[luogo_nome][categoria].append(opera_in_luogo.opera)
+    
+    # Converti defaultdict in dict normale per il template
+    luoghi_data = dict(luoghi_dict)
+    
     context = {
         "autore": autore,
-        "opere": opere_autore,
+        "luoghi": luoghi_data,
     }
     return render(request, "parco_verismo/opere_per_autore.html", context)
 

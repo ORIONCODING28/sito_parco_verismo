@@ -4,7 +4,7 @@ Organizzati per funzionalità e dominio.
 """
 
 # Import tutti i modelli per renderli disponibili
-from .autori_opere import Autore, Opera
+from .autori_opere import Autore, Opera, LuogoLetterario, OperaInLuogo
 from .eventi import Evento, Notizia, EventoImage, NotiziaImage, EventoDocumento, NotiziaDocumento
 from .documenti import Documento, FotoArchivio
 from .itinerari import Itinerario, ItinerarioImmagine
@@ -15,6 +15,8 @@ __all__ = [
     # Biblioteca
     "Autore",
     "Opera",
+    "LuogoLetterario",
+    "OperaInLuogo",
     # Eventi e Notizie
     "Evento",
     "EventoImage",

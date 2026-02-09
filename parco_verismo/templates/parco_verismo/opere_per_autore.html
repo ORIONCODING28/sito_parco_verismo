@@ -1,53 +1,161 @@
-{% extends "parco_verismo/base.html" %}
+{% extends 'parco_verismo/base.html' %}
 {% load static i18n %}
 
-{% block title %}{% blocktrans with autore=autore.nome %}Opere di {{ autore }}{% endblocktrans %} - {% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}{% endblock %}
+{% block title %}
+  {% blocktrans with autore=autore.nome %}Opere di {{ autore }}{% endblocktrans %}-{% trans 'Parco Letterario Giovanni Verga Luigi Capuana' %}
+{% endblock %}
 
-{% block hero_section %}{% endblock %}
+{% block hero_section %}
+{% endblock %}
 
 {% block content %}
-<section class="container my-5 pt-5">
-  {% blocktrans with autore=autore.nome %}
-  <h1 class="text-center mb-4">Opere di {{ autore }}</h1>
-  {% endblocktrans %}
-  
-  <div class="row">
-    {% for opera in opere %}
-      <div class="col-md-12 mb-4">
-        <div class="card">
-          <div class="row g-0 align-items-center">
-            {% if opera.copertina %}
-              <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
-                <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="{% trans 'Copertina di' %} {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
-              </div>
-            {% endif %}
-            <div class="col-md-10">
-              <div class="card-body py-2">
-                <h3 class="card-title h5 mb-1">
-                  <a href="{{ opera.get_absolute_url }}" class="text-decoration-none">{{ opera.titolo }}</a>
-                </h3>
-                {% if opera.anno_pubblicazione %}
-                  <p class="text-muted small mb-1"><strong>{% trans 'Anno:' %}</strong> {{ opera.anno_pubblicazione }}</p>
-                {% endif %}
-                
-                {% if opera.breve_descrizione %}
-                  <p class="card-text mb-0"><em>{{ opera.breve_descrizione }}</em></p>
-                {% endif %}
-                
-                <div class="mt-2">
-                  <a href="{{ opera.get_absolute_url }}" class="btn btn-sm btn-primary">{% trans 'Scopri di più' %}</a>
+  <section class="container my-5 pt-5">
+    {% blocktrans with autore=autore.nome %}
+    <h1 class="text-center mb-5">Opere di {{ autore }}</h1>
+    {% endblocktrans %}
+
+    {% for luogo_nome, categorie in luoghi.items %}
+      <!-- Titolo Luogo Centrato -->
+      <h2 class="text-center text-uppercase text-secondary mb-4 mt-5">{{ luogo_nome }}</h2>
+      
+      {% if categorie.romanzi %}
+        <!-- Categoria con separatore -->
+        <div class="mb-4">
+          <h3 class="h4 text-secondary mb-2">{% trans 'Romanzi' %}</h3>
+          <hr class="border-2 border-primary mb-3" style="width: 200px; opacity: 1;">
+        </div>
+        <div class="row">
+          {% for opera in categorie.romanzi %}
+            <div class="col-md-12 mb-4">
+              <div class="card">
+                <div class="row g-0 align-items-center">
+                  {% if opera.copertina %}
+                    <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
+                      <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="{% trans 'Copertina di' %} {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                    </div>
+                  {% endif %}
+                  <div class="col-md-10">
+                    <div class="card-body py-2">
+                      <h4 class="card-title h5 mb-1">{{ opera.titolo }}</h4>
+                      <div class="mt-2">
+                        <a href="{{ opera.get_link_esterno }}" target="_blank" class="btn btn-sm btn-primary">
+                          <i class="bi bi-book me-1"></i>{{ opera.get_fonte_display_text }}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
-      </div>
+      {% endif %}
+
+      {% if categorie.novelle %}
+        <!-- Categoria con separatore -->
+        <div class="mb-4">
+          <h3 class="h4 text-secondary mb-2">{% trans 'Novelle' %}</h3>
+          <hr class="border-2 border-primary mb-3" style="width: 200px; opacity: 1;">
+        </div>
+        <div class="row">
+          {% for opera in categorie.novelle %}
+            <div class="col-md-12 mb-4">
+              <div class="card">
+                <div class="row g-0 align-items-center">
+                  {% if opera.copertina %}
+                    <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
+                      <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="{% trans 'Copertina di' %} {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                    </div>
+                  {% endif %}
+                  <div class="col-md-10">
+                    <div class="card-body py-2">
+                      <h4 class="card-title h5 mb-1">{{ opera.titolo }}</h4>
+                      <div class="mt-2">
+                        <a href="{{ opera.get_link_esterno }}" target="_blank" class="btn btn-sm btn-primary">
+                          <i class="bi bi-book me-1"></i>{{ opera.get_fonte_display_text }}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if categorie.teatro %}
+        <!-- Categoria con separatore -->
+        <div class="mb-4">
+          <h3 class="h4 text-secondary mb-2">{% trans 'Teatro' %}</h3>
+          <hr class="border-2 border-primary mb-3" style="width: 200px; opacity: 1;">
+        </div>
+        <div class="row">
+          {% for opera in categorie.teatro %}
+            <div class="col-md-12 mb-4">
+              <div class="card">
+                <div class="row g-0 align-items-center">
+                  {% if opera.copertina %}
+                    <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
+                      <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="{% trans 'Copertina di' %} {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                    </div>
+                  {% endif %}
+                  <div class="col-md-10">
+                    <div class="card-body py-2">
+                      <h4 class="card-title h5 mb-1">{{ opera.titolo }}</h4>
+                      <div class="mt-2">
+                        <a href="{{ opera.get_link_esterno }}" target="_blank" class="btn btn-sm btn-primary">
+                          <i class="bi bi-book me-1"></i>{{ opera.get_fonte_display_text }}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if categorie.fiabe %}
+        <!-- Categoria con separatore -->
+        <div class="mb-4">
+          <h3 class="h4 text-secondary mb-2">{% trans 'Fiabe' %}</h3>
+          <hr class="border-2 border-primary mb-3" style="width: 200px; opacity: 1;">
+        </div>
+        <div class="row">
+          {% for opera in categorie.fiabe %}
+            <div class="col-md-12 mb-4">
+              <div class="card">
+                <div class="row g-0 align-items-center">
+                  {% if opera.copertina %}
+                    <div class="col-md-2 text-center bg-light d-flex align-items-center justify-content-center" style="height: 150px;">
+                      <img src="{{ opera.copertina.url }}" class="img-fluid rounded-start" alt="{% trans 'Copertina di' %} {{ opera.titolo }}" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                    </div>
+                  {% endif %}
+                  <div class="col-md-10">
+                    <div class="card-body py-2">
+                      <h4 class="card-title h5 mb-1">{{ opera.titolo }}</h4>
+                      <div class="mt-2">
+                        <a href="{{ opera.get_link_esterno }}" target="_blank" class="btn btn-sm btn-primary">
+                          <i class="bi bi-book me-1"></i>{{ opera.get_fonte_display_text }}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
     {% empty %}
       <div class="col-12">
-        <p class="text-center text-muted">{% trans 'Nessuna opera disponibile per questo autore.' %}</p>
+        <p class="text-center text-muted">
+          {% trans 'Nessuna opera disponibile per questo autore.' %}
+        </p>
       </div>
     {% endfor %}
-  </div>
-</section>
+  </section>
 {% endblock %}
-
