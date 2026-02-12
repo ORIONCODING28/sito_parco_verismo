@@ -3237,7 +3237,7 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:150
 msgid "La Cunziria: luogo iconico della tragedia"
-msgstr "La Cunziria: iconic place of tragedy"
+msgstr "The Cunziria: iconic place of tragedy"
 
 #: parco_verismo/templates/parco_verismo/luoghi_opere.html:152
 msgid ""
@@ -6992,7 +6992,7 @@ msgid ""
 "visivo integrato con gli itinerari letterari del territorio."
 msgstr ""
 "The photographs in the Giovanni Verga and Luigi Capuana Literary Park "
-"archive have been kindly provided by Casa Museo Luigi Capuana in Mineo and "
+"archive have been kindly provided by House Museum Luigi Capuana in Mineo and "
 "Fondazione 3M, which made possible the creation of a visual path integrated "
 "with the literary itineraries of the territory."
 
@@ -7388,7 +7388,7 @@ msgid ""
 "Capuana stesso, nel suo \"Catalogo delle negative fotografiche di L.C.\", "
 "riferiva di oltre 353 negativi e 100 positivi."
 msgstr ""
-"Capuana's photographic archive, preserved in the Casa Museo Luigi Capuana "
+"Capuana's photographic archive, preserved in the House Museum Luigi Capuana "
 "and in the Municipal Library of Mineo, includes 184 positive photographs and "
 "3 plates, of which about half are certainly attributable to the writer. "
 "However, many autograph photographs are dispersed in private collections. "
@@ -7897,21 +7897,21 @@ msgstr ""
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:331
 msgid "Casa Museo Luigi Capuana - Mineo"
-msgstr "Casa Museo Luigi Capuana - Mineo"
+msgstr "House Museum Luigi Capuana - Mineo"
 
 #: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:332
 msgid ""
 "La Casa Museo Luigi Capuana, situata nell'imponente palazzo nobiliare "
 "ottocentesco che fu abitazione dello scrittore in Via Romano 16 a Mineo, "
 "custodisce l'archivio fotografico originale di Capuana. Il museo conserva "
-"184 fotografie positive e 3 lastre, di cui circa la metà attribuibili con "
+"184 fotografie positive e oltre 200 lastre, di cui circa la metà attribuibili con "
 "certezza all'autore, insieme ai manoscritti, alle opere a stampa, alla "
 "biblioteca personale, ai mobili e ai cimeli dello scrittore."
 msgstr ""
-"The Casa Museo Luigi Capuana, located in the imposing nineteenth-century "
+"The House Museum Luigi Capuana, located in the imposing nineteenth-century "
 "noble palace that was the writer's home at Via Romano 16 in Mineo, houses "
 "Capuana's original photographic archive. The museum preserves 184 positive "
-"photographs and 3 plates, of which about half can be attributed with "
+"photographs and over 200 plates, of which about half can be attributed with "
 "certainty to the author, along with manuscripts, printed works, personal "
 "library, furniture and mementos of the writer."
 
@@ -9198,3 +9198,791 @@ msgstr " <small>Source: Mineo. A town to discover through Art, Culture and Tradi
 
 #~ msgid "Fotografi"
 #~ msgstr "Photographers"
+
+
+#: parco_verismo/templates/parco_verismo/licodia.html:43
+msgid ""
+"Licodia Eubea è un borgo antico e ricco di stratificazioni culturali, "
+"situato sulle colline fra Vizzini e Mineo. La sua identità agricola, il "
+"rapporto profondo con il paesaggio, la forte coesione comunitaria e la "
+"ricchezza delle tradizioni popolari ne fanno uno dei luoghi più "
+"rappresentativi per comprendere il contesto umano e sociale da cui nasce il "
+"Verismo."
+msgstr ""
+"Licodia Eubea is an ancient village rich in cultural stratifications, "
+"located on the hills between Vizzini and Mineo. Its agricultural identity, "
+"deep relationship with the landscape, strong community cohesion and richness "
+"of popular traditions make it one of the most representative places for "
+"understanding the human and social context from which Verismo was born."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:62
+msgid ""
+"Le campagne licodiane, le vie del centro storico, la pietra bianca delle "
+"case, i ritmi del lavoro e della vita comunitaria sono elementi che evocano "
+"da vicino le atmosfere della narrativa verista. In questo territorio "
+"prendono forma molte delle dinamiche sociali raccontate da Verga e Capuana: "
+"la famiglia, il ruolo delle donne, la fede religiosa, la dimensione del "
+"lavoro agricolo, la fragilità e la forza delle comunità rurali. Licodia "
+"viene citata esplicitamente nelle opere verghiane, ne incarna pienamente lo "
+"spirito: è un luogo in cui i meccanismi narrativi del Verismo si "
+"percepiscono nella realtà quotidiana."
+msgstr ""
+"The Licodian countryside, the streets of the historic center, the white "
+"stone of the houses, the rhythms of work and community life are elements "
+"that evoke closely the atmospheres of Verismo narrative. In this territory "
+"take shape many of the social dynamics told by Verga and Capuana: the "
+"family, the role of women, religious faith, the dimension of agricultural "
+"work, the fragility and strength of rural communities. Licodia is explicitly "
+"cited in Verga's works, it fully embodies its spirit: it is a place where the "
+"narrative mechanisms of Verismo are perceived in everyday life."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:95
+msgid ""
+"La Settimana Santa costituisce l'evento religioso più sentito dalla "
+"comunità. Le celebrazioni si aprono con il <strong>Settenario "
+"dell'Addolorata</strong> e culminano con la <strong>Crocifissione e la "
+"deposizione del Cristo nell'urna</strong>, i canti tradizionali dedicati "
+"alla passione di Cristo. La <strong>Domenica di Pasqua</strong> si conclude "
+"con la tradizionale \"Giunta\"."
+msgstr ""
+"Holy Week is the most deeply felt religious event by the community. The "
+"celebrations open with the <strong>Septenary of Our Lady of Sorrows</strong> "
+"and culminate with the <strong>Crucifixion and deposition of Christ in the "
+"urn</strong>, traditional songs dedicated to the passion of Christ. "
+"<strong>Easter Sunday</strong> concludes with the traditional \"Giunta\"."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:110
+msgid ""
+"Vetrina per uno dei prodotti più importanti per l'economia locale, "
+"l'<strong>uva da tavola</strong>, coltivata nel territorio in diverse "
+"varietà garantite dal marchio <strong>I.G.P</strong>."
+msgstr ""
+"Showcase for one of the most important products for the local economy, "
+"<strong>table grapes</strong>, grown in the territory in different varieties "
+"guaranteed by the <strong>P.G.I.</strong> mark."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:120
+msgid "Festival del Cinema e della Comunicazione Archeologica"
+msgstr "Cinema and Archaeological Communication Festival"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:140
+msgid ""
+"Evento dedicato alla <strong>farina di cicerchia</strong>, pietanza "
+"tradizionale licodiana, nato per valorizzare un prodotto storico poco "
+"conosciuto."
+msgstr ""
+"Event dedicated to <strong>chickling vetch flour</strong>, a traditional "
+"Licodian dish, born to enhance a little-known historical product."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:158
+msgid ""
+"Con una delibera del <strong>1872</strong> il Consiglio Comunale decise di "
+"aggiungere il nome di <strong>Eubea</strong> a quello di Licodia, ritenendo "
+"che il luogo fosse da identificare con la subcolonia fondata dai Calcidesi "
+"di Lentini nel <strong>650 a.C.</strong>, sulla scorta della testimonianza "
+"tramandata da numerosi storici come il Cluverio, il Maurolico ed altri. Le "
+"indagini archeologiche di <strong>Paolo Orsi</strong> e <strong>Vincenzo "
+"Cannizzo</strong> smentirono tali considerazioni identificando l'abitato col "
+"sito di una grossa borgata sicula. Secondo l'Amico, durante la dominazione "
+"saracena nell'isola il Monte di Licodia assunse la funzione di presidio "
+"militare strategico fortificato, evolutosi in periodo normanno nel "
+"<strong>Castello di Licodia</strong>, la cui esistenza è storicamente "
+"attestata a partire dal <strong>1272</strong>."
+msgstr ""
+"With a resolution of <strong>1872</strong> the City Council decided to add "
+"the name of <strong>Eubea</strong> to that of Licodia, believing that the "
+"place was to be identified with the sub-colony founded by the Chalcidians of "
+"Leontini in <strong>650 BC</strong>, based on the testimony handed down by "
+"numerous historians such as Cluverio, Maurolico and others. The archaeological "
+"investigations of <strong>Paolo Orsi</strong> and <strong>Vincenzo Cannizzo</strong> "
+"disproved these considerations identifying the settlement with the site of a "
+"large Sicel village. According to Amico, during the Saracen domination in the "
+"island the Monte di Licodia assumed the function of a fortified strategic "
+"military garrison, evolved in the Norman period into the <strong>Castle of "
+"Licodia</strong>, whose existence is historically attested starting from "
+"<strong>1272</strong>."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:162
+msgid ""
+"L'area, che restituisce anche interessanti testimonianze tardo-antiche, "
+"visse, a partire dal <strong>XV secolo</strong>, un periodo di particolare "
+"splendore, legato all'antico Castello e al governo dei signori catalani di "
+"<strong>Santapau</strong>. L'odierna città è attraversata da un'ampia "
+"arteria che mette in relazione la porzione più antica dell'abitato, il "
+"Borgo, con le aree riorganizzate e accresciute dopo il sisma del "
+"<strong>1693</strong>. Il vasto territorio, in cui veniva estratto e "
+"lavorato il gesso e coltivato un ottimo tabacco, basa oggi la sua economia "
+"sulla produzione dell'uva da tavola."
+msgstr ""
+"The area, which also returns interesting late-antique testimonies, lived, "
+"starting from the <strong>15th century</strong>, a period of particular "
+"splendor, linked to the ancient Castle and the government of the Catalan "
+"lords of <strong>Santapau</strong>. The modern city is crossed by a wide "
+"artery that connects the oldest portion of the town, the Borgo, with the "
+"areas reorganized and increased after the earthquake of <strong>1693</strong>. "
+"The vast territory, where gypsum was extracted and processed and excellent "
+"tobacco was cultivated, bases its economy today on the production of table "
+"grapes."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:166
+msgid ""
+"Il periodo di maggiore lustro Licodia l'ebbe dal <strong>XIV al XVI "
+"secolo</strong> quando i Santapau lo tennero in feudo. Agli inizi del '600 "
+"il borgo ed il castello passarono ai <strong>Ruffo</strong> tramite Muzio "
+"Ruffo, Principe di Scilla. Il terremoto del <strong>1693</strong> causò la "
+"pressoché totale distruzione del castello. A seguito della soppressione "
+"feudale del 1812 e delle riforme amministrative borboniche del 1816-1819 il "
+"Comune di Licodia divenne parte del circondario di Vizzini e, nel 1844, fu "
+"elevato a capoluogo."
+msgstr ""
+"Licodia had its period of greatest luster from the <strong>14th to the 16th "
+"century</strong> when the Santapau held it in fief. At the beginning of the "
+"1600s the village and the castle passed to the <strong>Ruffo</strong> family "
+"through Muzio Ruffo, Prince of Scilla. The earthquake of <strong>1693</strong> "
+"caused the almost total destruction of the castle. Following the feudal "
+"suppression of 1812 and the Bourbon administrative reforms of 1816-1819, "
+"the Municipality of Licodia became part of the district of Vizzini and, in "
+"1844, was raised to the chief town."
+
+#: parco_verismo/templates/parco_verismo/licodia.html:170
+msgid ""
+"Fonte: <a href=\"https://www.buonastrada.eu/\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Buonastrada.eu</a> e Licodia Eubea (itinerario "
+"turistico a cura del Servizio Civile Universale - Progetto \"Poseidone\")"
+msgstr ""
+"Source: <a href=\"https://www.buonastrada.eu/\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Buonastrada.eu</a> and Licodia Eubea (tourist "
+"itinerary by the Universal Civil Service - Project \"Poseidone\")"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:201
+msgid "Chiesa Matrice di Santa Margherita"
+msgstr "Mother Church of Santa Margherita"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:202
+msgid "Ex chiesa di San Benedetto e Santa Chiara"
+msgstr "Former Church of San Benedetto and Santa Chiara"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:204
+msgid "Chiesa dell'Ospedale, detta del Crocifisso"
+msgstr "Church of the Hospital, known as the Crucifix"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:205
+msgid "Chiesa di Santa Maria degli Angeli e convento dei padri Cappuccini"
+msgstr ""
+"Church of Santa Maria degli Angeli and Convent of the Capuchin Fathers"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:223
+msgid "Castello Santapau"
+msgstr "Santapau Castle"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:224
+msgid "Palazzo Mugnos-Vassallo"
+msgstr "Mugnos-Vassallo Palace"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:237
+msgid "Luoghi Culturali"
+msgstr "Cultural Sites"
+
+#: parco_verismo/templates/parco_verismo/licodia.html:242
+msgid "Museo civico archeologico \"Antonino Di Vita\""
+msgstr "Civic Archaeological Museum \"Antonino Di Vita\""
+
+#: parco_verismo/templates/parco_verismo/licodia.html:243
+msgid "Biblioteca dell'Archeoclub d'Italia \"Mario Di Benedetto\""
+msgstr "Library of the Archeoclub of Italy \"Mario Di Benedetto\""
+
+#: parco_verismo/templates/parco_verismo/licodia.html:244
+msgid "Casale rupestre Grotte dei Santi (Contrada Alia)"
+msgstr "Rock Settlement Grotte dei Santi (Contrada Alia)"
+
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:5
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:24
+#: parco_verismo/templates/parco_verismo/navbar.html:89
+msgid "Cammino del Verismo"
+msgstr "Path of Verismo"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:9
+msgid ""
+"Scopri i luoghi letterari attraverso il Cammino del Verismo. Percorsi "
+"guidati dedicati a temi specifici del\nverismo siciliano."
+msgstr ""
+"Discover the literary places through the Path of Verismo. Guided tours "
+"dedicated to specific themes of\nSicilian Verismo."
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:25
+msgid "Percorsi dedicati a temi specifici del verismo siciliano"
+msgstr "Routes dedicated to specific themes of Sicilian Verismo"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:39
+msgid "Luoghi di interesse e percorsi del Verismo"
+msgstr "Places of interest and routes of Verismo"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:48
+msgid "Visualizza a schermo intero"
+msgstr "View full screen"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:67
+msgid "Seleziona un itinerario per visualizzarlo sulla mappa"
+msgstr "Select an itinerary to view it on the map"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:81
+msgid "tappe"
+msgstr "stops"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:107
+msgid "Mostra sulla mappa"
+msgstr "Show on map"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:111
+msgid "Info"
+msgstr "Info"
+
+#: parco_verismo/templates/parco_verismo/cammino_del_verismo.html:122
+msgid "Reset vista mappa"
+msgstr "Reset map view"
+
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:5
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:15
+#, python-format
+msgid "Opere di %(autore)s"
+msgstr "Works by %(autore)s"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:5
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:15
+msgid "Opere di {{ autore }}"
+msgstr "Works by {{ autore }}"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:24
+msgid "Romanzi"
+msgstr "Novels"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:57
+msgid "Novelle"
+msgstr "Short Stories"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:90
+msgid "Teatro"
+msgstr "Theater"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:123
+msgid "Fiabe"
+msgstr "Fairy Tales"
+
+#: parco_verismo/templates/parco_verismo/opere_per_autore.html:155
+msgid "Nessuna opera disponibile per questo autore."
+msgstr "No works available for this author."
+
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:240
+msgid "L'ambiente fisico"
+msgstr "The physical environment"
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:308
+msgid "Interni dell'inquietudine"
+msgstr "Interiors of restlessness"
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:525
+msgid "Il paese dell'analisi psicologica"
+msgstr "The town of psychological analysis"
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:112
+msgid ""
+"Vizzini è uno dei luoghi simbolo del Verismo italiano, il paese dove la "
+"tragedia nasce dalla vita quotidiana. Arroccato sui monti Iblei, a 586 metri "
+"sul livello del mare, domina un paesaggio di colline brulle, vallate profonde "
+"e campi di grano che si estendono fino all'orizzonte. È un paese di pietra "
+"bianca e nera, di luce accecante d'estate, di vicoli che si arrampicano verso "
+"la chiesa madre e la piazza centrale."
+msgstr ""
+"Vizzini is one of the symbolic places of Italian Verismo, the town where "
+"tragedy rises from daily life. Perched on the Hyblaean Mountains, at 586 "
+"meters above sea level, it dominates a landscape of barren hills, deep "
+"valleys, and wheat fields extending to the horizon. It is a town of white "
+"and black stone, blinding light in summer, alleys climbing towards the "
+"mother church and the central square."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:123
+msgid ""
+"Vizzini è strutturato come un organismo compatto, dove ogni quartiere ha una "
+"sua identità sociale precisa. I quartieri popolari - le \"vanelle\" strette e "
+"ombrose - sono il cuore pulsante della narrazione verghiana: qui vivono "
+"contadini, braccianti, artigiani, donne che tessono e cuciono nelle case "
+"basse. Qui nascono le storie di Cavalleria rusticana e di Mastro-don "
+"Gesualdo, storie dove il codice dell'onore e della roba regola ogni gesto, "
+"dove l'amore si intreccia alla gelosia, dove il sangue lava l'offesa, dove "
+"gli affetti vengono sacrificati sull’altare dell’ascesa sociale."
+msgstr ""
+"Vizzini is structured like a compact organism, where every neighborhood has "
+"its precise social identity. The popular districts - the narrow and shady "
+"\"vanelle\" - are the beating heart of Verga's narration: peasants, laborers, "
+"artisans, women weaving and sewing in low houses live here. Here the stories "
+"of Cavalleria Rusticana and Mastro-don Gesualdo are born, stories where the "
+"code of honor and property rules every gesture, where love intertwines with "
+"jealousy, where blood washes the offense, where affections are sacrificed on "
+"the altar of social ascent."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:133
+msgid ""
+"Intorno al centro abitato si estendono le campagne che Verga descrive nelle "
+"sue opere: distese di grano duro che ondeggiano al vento, mandrie che "
+"pascolano nelle vallate, masserie isolate dove i contadini vivono per "
+"settimane durante i raccolti. È un paesaggio aspro, assolato, dove il lavoro "
+"consuma i corpi e le distanze sono enormi."
+msgstr ""
+"Around the inhabited center extend the countrysides that Verga describes in "
+"his works: expanses of durum wheat waving in the wind, herds grazing in the "
+"valleys, isolated farms where peasants live for weeks during harvests. It is "
+"a harsh, sunny landscape, where work consumes bodies and distances are "
+"enormous."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:137
+msgid ""
+"Ancora oggi, camminando per Vizzini, è possibile riconoscere i luoghi "
+"verghiani. La chiesa di Santa Teresa, dove Santuzza sente l'ultima messa "
+"prima del duello. La discesa verso la chiesetta del Pericolo percorsa da "
+"Lola. I vicoli della città vecchia, dove le donne si affacciano dalle "
+"finestre. Il paese conserva anche la memoria materiale del mondo rurale: gli "
+"antichi palmenti, i cortili interni, le fontane pubbliche alle porte del "
+"paese."
+msgstr ""
+"Even today, walking through Vizzini, it is possible to recognize Verga's "
+"places. The church of Santa Teresa, where Santuzza hears the last mass "
+"before the duel. The descent towards the church of Pericolo walked by Lola. "
+"The alleys of the old city, where women look out from windows. The town also "
+"preserves the material memory of the rural world: ancient millstones, inner "
+"courtyards, public fountains at the town gates."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:245
+msgid ""
+"La cava di sabbia rossa dove lavora Malpelo è uno dei luoghi più potenti e "
+"inquietanti del Verismo italiano. È un luogo preciso geograficamente - la "
+"Carvana, oggi inglobata nel quartiere Monserrato di Catania - e uno spazio "
+"archetipico: chiuso, oscuro, senza tempo, letteralmente sotterraneo."
+msgstr ""
+"The red sand quarry where Malpelo works is one of the most powerful and "
+"disturbing places of Italian Verismo. It is a geographically precise place - "
+"the Carvana, today incorporated in the Monserrato district of Catania - and "
+"an archetypal space: closed, dark, timeless, literally underground."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:279
+msgid ""
+"Mineo è il centro geografico e immaginativo dell'opera capuaniana, il paese "
+"che Capuana conosce dall'infanzia e che trasforma in laboratorio narrativo. "
+"Situato a 510 metri sul livello del mare, nell'entroterra calatino, Mineo "
+"domina una valle fertile circondata da colline. È un paese molto simile a "
+"Vizzini, con una struttura urbana più articolata e una stratificazione "
+"sociale più complessa."
+msgstr ""
+"Mineo is the geographical and imaginative center of Capuana's work, the town "
+"Capuana has known since childhood and transforms into a narrative "
+"laboratory. Located at 510 meters above sea level, in the Calatino "
+"hinterland, Mineo dominates a fertile valley surrounded by hills. It is a "
+"town very similar to Vizzini, with a more articulated urban structure and a "
+"more complex social stratification."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:284
+msgid ""
+"Mineo ha origini antichissime (si identifica con l'antica Mene, città "
+"sicula), e questo passato è visibile nella struttura del paese. Il centro "
+"storico si sviluppa intorno al castello e alla chiesa madre, con vicoli "
+"medievali, palazzi nobiliari, conventi e chiese. I quartieri popolari si "
+"estendono verso valle, con case più modeste, cortili comuni, spazi condivisi."
+msgstr ""
+"Mineo has very ancient origins (identified with ancient Mene, a Sicel city), "
+"and this past is visible in the town's structure. The historic center "
+"develops around the castle and the mother church, with medieval alleys, "
+"noble palaces, convents, and churches. Popular districts extend towards the "
+"valley, with more modest houses, common courtyards, shared spaces."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:289
+msgid ""
+"In modo non diverso da Vizzini - centro prevalentemente contadino e "
+"pastorale - Mineo ha una società stratificata. C'è una borghesia terriera "
+"che gestisce i feudi dell'entroterra ma vive in paese. C'è una borghesia "
+"professionale che legge giornali, discute di politica, segue i dibattiti "
+"culturali. C'è un'aristocrazia in declino economico ma ancora potente "
+"simbolicamente."
+msgstr ""
+"Not unlike Vizzini - a predominantly peasant and pastoral center - Mineo has "
+"a stratified society. There is a landed bourgeoisie managing hinterland "
+"fiefs but living in town. There is a professional bourgeoisie reading "
+"newspapers, discussing politics, following cultural debates. There is an "
+"aristocracy in economic decline but still symbolically powerful."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:294
+msgid ""
+"Intorno a Mineo si estendono le campagne del Calatino: terre fertili "
+"coltivate a grano, mandorleti, vigneti, oliveti. È un paesaggio più dolce "
+"rispetto alle aspre colline vizzinesi, con una maggiore presenza d'acqua e "
+"una vegetazione più ricca. Nelle novelle de Le paesane, Capuana segue le "
+"donne che vanno a lavorare nei campi durante i raccolti."
+msgstr ""
+"Around Mineo extend the Calatino countrysides: fertile lands cultivated with "
+"wheat, almond orchards, vineyards, olive groves. It is a gentler landscape "
+"compared to the harsh Vizzini hills, with greater water presence and richer "
+"vegetation. In the short stories of Le Paesane, Capuana follows women going "
+"to work in the fields during harvests."
+
+#: parco_verismo/templates/parco_verismo/luoghi_opere.html:410
+msgid ""
+"Licodia Eubea rappresenta l'archetipo del paese agricolo dell'interno, "
+"quello descritto nelle novelle verghiane ambientate \"nelle campagne\" con "
+"indicazioni geografiche molto precise. È il paese di Jeli e di molti altri "
+"protagonisti umili della narrativa di Verga."
+msgstr ""
+"Licodia Eubea represents the archetype of the inland agricultural village, "
+"the one described in Verga's novellas set \"in the countryside\" with very "
+"precise geographical indications. It is the town of Jeli and many other "
+"humble protagonists of Verga's narrative."
+
+
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:62
+msgid "L'occhio del Verismo: quando la letteratura guarda attraverso l'obiettivo"
+msgstr "The eye of Verismo: when literature looks through the lens"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:65
+msgid ""
+"La fotografia non fu per Giovanni Verga e Luigi Capuana un semplice "
+"passatempo, ma una vera e propria forma di indagine sulla realtà. Entrambi, "
+"pur con approcci e intensità diverse, esplorarono attraverso l'obiettivo la "
+"vita quotidiana, i paesaggi e le persone che animavano la Sicilia del Verismo."
+msgstr ""
+"Photography was not for Giovanni Verga and Luigi Capuana a simple pastime, "
+"but a real form of investigation into reality. Both, albeit with different "
+"approaches and intensities, explored through the lens daily life, landscapes, "
+"and people animating Verismo Sicily."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:70
+msgid "L'archivio fotografico del Parco"
+msgstr "The Park's photographic archive"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:71
+msgid ""
+"Le fotografie presenti nell'archivio del Parco Letterario Giovanni Verga e "
+"Luigi Capuana sono state gentilmente concesse da Casa Museo Luigi Capuana di "
+"Mineo e Fondazione 3M, che hanno reso possibile la creazione di un percorso "
+"visivo integrato con gli itinerari letterari del territorio."
+msgstr ""
+"The photographs in the archive of the Giovanni Verga and Luigi Capuana "
+"Literary Park were kindly granted by House Museum Luigi Capuana of Mineo and "
+"Fondazione 3M, making possible the creation of a visual path integrated with "
+"the territory's literary itineraries."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:72
+msgid ""
+"Questa collaborazione permette ai visitatori di accedere a un patrimonio "
+"altrimenti disperso o custodito in sedi diverse, creando un'esperienza "
+"unitaria dove le immagini di entrambi gli autori dialogano con i luoghi "
+"reali, con i testi letterari, con la memoria storica del territorio. "
+"L'archivio fotografico del Parco diventa così memoria viva, strumento di "
+"conoscenza, ponte tra passato e presente, tra l'occhio che ha guardato e "
+"l'occhio che guarda, tra la Sicilia narrata e la Sicilia vissuta."
+msgstr ""
+"This collaboration allows visitors to access a heritage otherwise dispersed "
+"or kept in different locations, creating a unitary experience where images "
+"from both authors dialogue with real places, literary texts, and the "
+"historical memory of the territory. The Park's photographic archive thus "
+"becomes living memory, a tool of knowledge, a bridge between past and "
+"present, between the eye that looked and the eye that looks, between narrated "
+"Sicily and lived Sicily."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:92
+msgid ""
+"Come la maggior parte degli intellettuali del suo tempo, Verga viene rapito "
+"dalla nuova tecnica. Durante i suoi soggiorni a Milano e Firenze - città "
+"all'avanguardia per la fotografia italiana - entra in contatto con modelli "
+"sempre più sofisticati di apparecchi fotografici e perfeziona la sua tecnica. "
+"Ma è l'amicizia con Luigi Capuana a trasformare un interesse giovanile in "
+"passione matura: Capuana gli insegna il procedimento di sviluppo dei "
+"negativi e lo incoraggia a sperimentare."
+msgstr ""
+"Like most intellectuals of his time, Verga is captivated by the new "
+"technique. During his stays in Milan and Florence - avant-garde cities for "
+"Italian photography - he comes into contact with increasingly sophisticated "
+"camera models and perfects his technique. But it is the friendship with Luigi "
+"Capuana that transforms a youthful interest into a mature passion: Capuana "
+"teaches him the negative development process and encourages him to experiment."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:101
+msgid "2. L'ambiente rusticano"
+msgstr "2. The rustic environment"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:103
+msgid ""
+"Qui emergono le fotografie più riuscite e significative: fattori, contadini, "
+"massari, cani da caccia, cavalli e muli nelle campagne di Vizzini e Tegola. "
+"Sono immagini che sembrano studi preparatori per i personaggi dei suoi "
+"romanzi."
+msgstr ""
+"Here emerge the most successful and significant photographs: stewards, "
+"peasants, farmers, hunting dogs, horses, and mules in the countryside of "
+"Vizzini and Tegola. These appear to be preparatory studies for the characters "
+"of his novels."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:125
+msgid "Tuttavia, le analogie sono profonde. La tecnica dell'<strong>impersonalità</strong> che caratterizza la narrativa verghiana - lo scrittore che sembra scomparire dietro la storia, che mostra senza giudicare - ha molto a che fare con l'atto fotografico: immortalare la realtà in modo oggettivo, senza fini morali espliciti, senza interventi soggettivi evidenti."
+msgstr "However, the analogies are profound. The technique of <strong>impersonality</strong> characterizing Verga's narrative - the writer seeming to disappear behind the story, showing without judging - has much to do with the photographic act: immortalizing reality objectively, without explicit moral ends, without evident subjective interventions."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:135
+msgid "Luigi Capuana fotografo: il Grande Atelier e la ricerca dell'invisibile"
+msgstr "Luigi Capuana photographer: the Grand Atelier and the search for the invisible"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:142
+msgid ""
+"L'Atelier diventa il suo rifugio, il luogo dove può sperimentare lontano "
+"dalle tensioni letterarie. Qui sviluppa lastre, stampa immagini, cataloga le "
+"fotografie con grande accuratezza annotando dati sul retro e in registri. "
+"Questa meticolosità rivela l'importance che attribuisce alla pratica "
+"fotografica, considerata non semplice hobby ma attività seria, quasi "
+"scientifica."
+msgstr ""
+"The Atelier becomes his refuge, the place where he can experiment away from "
+"literary tensions. Here he develops plates, prints images, catalogs "
+"photographs with great accuracy, noting data on the back and in registers. "
+"This meticulousness reveals the importance he attributes to photographic "
+"practice, considered not a simple hobby but a serious, almost scientific "
+"activity."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:160
+msgid ""
+"Capuana eccelleva nella ritrattistica. I suoi ritratti femminili sono "
+"particolarmente intensi, spesso caratterizzati da pose studiate e un uso "
+"sapiente della luce. Ritrae amiche, contadine, nobildonne, cercando sempre "
+"di catturare l'anima oltre il volto."
+msgstr ""
+"Capuana excelled in portraiture. His female portraits are particularly "
+"intense, often characterized by studied poses and skillful use of light. He "
+"portrays friends, peasants, noblewomen, always trying to capture the soul "
+"beyond the face."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:164
+msgid ""
+"Ma il capolavoro è il ritratto del giovane <strong>Luigi Pirandello</strong>, "
+"che considera Capuana il suo maestro. In questa foto iconica, Pirandello "
+"appare in posa riflessiva, quasi profetica."
+msgstr ""
+"But the masterpiece is the portrait of young <strong>Luigi Pirandello</strong>, "
+"who considers Capuana his master. In this iconic photo, Pirandello appears in "
+"a reflective, almost prophetic pose."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:165
+msgid ""
+"Straordinario anche il ritratto della madre sul letto di morte: il viso della "
+"defunta spicca tra i pizzi del lenzuolo, in un'immagine di potente doloroso "
+"realismo."
+msgstr ""
+"Extraordinary also is the portrait of his mother on her deathbed: the "
+"deceased's face stands out among the sheet's lace, in an image of powerful "
+"painful realism."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:172
+msgid ""
+"Capuana fotografa sistematicamente il suo paese natale: il campanile di "
+"Santa Agrippina, le vie del centro, il castello. Queste foto costituiscono "
+"oggi un documento storico prezioso della Mineo di fine Ottocento."
+msgstr ""
+"Capuana systematically photographs his hometown: the bell tower of Santa "
+"Agrippina, downtown streets, the castle. These photos today constitute a "
+"precious historical document of late 19th-century Mineo."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:173
+msgid ""
+"Importanti sono le fotografie realizzate nel 1902 nell'agro romano, che "
+"documentano la vita dei contadini laziali con uno sguardo quasi etnografico."
+msgstr ""
+"Important are the photographs taken in 1902 in the Roman countryside, "
+"documenting the life of Lazio peasants with an almost ethnographic gaze."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:179
+msgid "Fotografia e spiritismo: alla ricerca dell'invisibile"
+msgstr "Photography and spiritualism: searching for the invisible"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:180
+msgid ""
+"Un aspetto peculiare e affascinante della fotografia capuaniana è il legame "
+"con l'occulto e lo <strong>spiritismo</strong>. Capuana non si limitava a "
+"fotografare il visibile: cercava di catturare l'invisibile."
+msgstr ""
+"A peculiar and fascinating aspect of Capuana's photography is the link with "
+"the occult and <strong>spiritualism</strong>. Capuana did not limit himself "
+"to photographing the visible: he sought to capture the invisible."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:181
+msgid ""
+"Produceva fotografie di defunti, compresa quella della madre, probabilmente "
+"con l'intento di cogliere qualche indizio del mondo invisibile che si celava "
+"oltre la morte. In camera oscura metteva a punto procedimenti attraverso i "
+"quali stampava strane forme in cui credeva di ravvisare immagini di spiriti o "
+"fantasmi. Fotografò una giovane posseduta, cercando di documentare i fenomeni "
+"paranormali."
+msgstr ""
+"He produced photographs of the deceased, including his mother, probably "
+"intending to catch some clue of the invisible world hidden beyond death. In "
+"the darkroom, he developed procedures through which he printed strange shapes "
+"in which he believed he recognized images of spirits or ghosts. He "
+"photographed a possessed young woman, trying to document paranormal phenomena."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:188
+msgid "Gli scherzi fotografici: l'autoritratto da morto"
+msgstr "Photographic pranks: the self-portrait as a dead man"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:190
+msgid ""
+"Giovanni Verga, nel 1877, cascò in pieno nello scherzo e corse in casa "
+"Capuana a porgere le condoglianze, che si trasformarono in un'allegra "
+"chiacchierata non appena fu smascherato l'inganno. Gabriele D'Annunzio "
+"rispose con versi ironici:"
+msgstr ""
+"Giovanni Verga, in 1877, fell completely for the prank and rushed to "
+"Capuana's house to offer condolences, which turned into a cheerful chat as "
+"soon as the deception was unmasked. Gabriele D'Annunzio replied with ironic "
+"verses:"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:199
+msgid ""
+"Questi scherzi rivelano il carattere complesso di Capuana: serietà "
+"sperimentale e ironia, ricerca scientifica e gioco teatrale, documentazione "
+"realistica e fascinazione per l'illusione."
+msgstr ""
+"These pranks reveal Capuana's complex character: experimental seriousness "
+"and irony, scientific research and theatrical play, realistic documentation "
+"and fascination for illusion."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:208
+msgid ""
+"La pratica fotografica di Capuana era di tipo più artistico rispetto a quella "
+"di Verga. Capuana studiava le pose, le luci, i fondali. I suoi ritratti non "
+"sono mai casuali, ma costruiti per restituire un'idea del soggetto."
+msgstr ""
+"Capuana's photographic practice was more artistic than Verga's. Capuana "
+"studied poses, lights, backgrounds. His portraits are never casual, but built "
+"to return an idea of the subject."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:212
+msgid ""
+"Il 4 dicembre 1887 è una data significativa. Nella casa catanese di Verga, "
+"in via Sant'Anna, Capuana organizza una sessione fotografica memorabile. "
+"Fotografa Verga insieme alla famiglia, documentando un momento di intimità "
+"domestica che resterà nella storia della letteratura."
+msgstr ""
+"December 4, 1887, is a significant date. In Verga's Catania house, in Via "
+"Sant'Anna, Capuana organizes a memorable photo session. He photographs Verga "
+"together with the family, documenting a moment of domestic intimacy that will "
+"remain in the history of literature."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:219
+msgid "Fotografia e Verismo: un'eredità visiva"
+msgstr "Photography and Verismo: a visual legacy"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:220
+msgid ""
+"Come scrive uno studioso, mostre e ricerche recenti mostrano come la "
+"fotografia abbia agito da \"inconscio tecnologico\" nella scrittura di Verga "
+"e Capuana."
+msgstr ""
+"As a scholar writes, recent exhibitions and research show how photography "
+"acted as a \"technological unconscious\" in the writing of Verga and Capuana."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:221
+msgid ""
+"Oggi, nell'archivio fotografico del Parco Letterario, queste immagini non "
+"sono solo cimeli, ma chiavi di lettura ancora attuali per comprendere il "
+"mondo poetico dei due maestri siciliani."
+msgstr ""
+"Today, in the Literary Park's photographic archive, these images are not "
+"just relics, but still current keys to understanding the poetic world of the "
+"two Sicilian masters."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:226
+msgid "L'eredità fotografica"
+msgstr "The photographic legacy"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:227
+msgid ""
+"Il Parco Letterario Giovanni Verga e Luigi Capuana valorizza questo "
+"patrimonio attraverso mostre e percorsi dedicati. Le fotografie sono esposte "
+"nei luoghi stessi dove furono scattate."
+msgstr ""
+"The Giovanni Verga and Luigi Capuana Literary Park enhances this heritage "
+"through exhibitions and dedicated paths. Photographs are exhibited in the "
+"places where they were taken."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:228
+msgid ""
+"Documentano un'epoca scomparsa ma conservano intatta la potenza evocativa "
+"dei luoghi verghiani e capuaniani, offrendo al visitatore moderno la "
+"possibilità di vedere con gli occhi degli scrittori."
+msgstr ""
+"They document a vanished era but keep intact the evocative power of "
+"Verga's and Capuana's places, offering the modern visitor the chance to see "
+"with the writers' eyes."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:229
+msgid ""
+"Nelle installazioni del Parco, fotografie e testi dialogano, creando un "
+"cortocircuito temporale che rende l'esperienza della visita unica e immersiva."
+msgstr ""
+"In the Park's installations, photographs and texts dialogue, creating a time "
+"loop that makes the visit experience unique and immersive."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:232
+msgid "L'archivio digitale"
+msgstr "The digital archive"
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:234
+msgid ""
+"La Casa Museo Luigi Capuana, situata nell'antico Palazzo Comunale di Mineo, "
+"custodisce il nucleo principale delle lastre fotografiche dello scrittore."
+msgstr ""
+"The House Museum Luigi Capuana, located in the ancient Town Hall of Mineo, "
+"preserves the main core of the writer's photographic plates."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:235
+msgid ""
+"Particolarmente significativo è l'apporto della Fondazione 3M, il cui "
+"archivio storico conserva un importante fondo fotografico, contribuendo alla "
+"salvaguardia della cultura dell'immagine."
+msgstr ""
+"Particularly significant is the contribution of Fondazione 3M, whose "
+"historical archive preserves an important photographic fund, contributing to "
+"safeguarding image culture."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:236
+msgid ""
+"Fondazione 3M - ETS è un'istituzione culturale che valorizza la ricerca "
+"scientifica e tecnologica, ma anche l'arte e la fotografia, promuovendo "
+"attività sociali e culturali."
+msgstr ""
+"Fondazione 3M - ETS is a cultural institution enhancing scientific and "
+"technological research, but also art and photography, promoting social and "
+"cultural activities."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:237
+msgid ""
+"Le immagini originali di Verga - 327 negativi su lastre di vetro e 121 "
+"pellicole - sono invece conservate in diversi fondi e collezioni, tra cui "
+"quello degli Eredi Verga."
+msgstr ""
+"Verga's original images - 327 negatives on glass plates and 121 films - are "
+"instead preserved in various funds and collections, including that of the "
+"Verga Heirs."
+
+#: parco_verismo/templates/parco_verismo/verga_capuana_fotografi.html:230
+msgid ""
+"L'archivio fotografico di Capuana, conservato nella Casa Museo Luigi Capuana "
+"di Mineo, comprende 184 fotografie positive e oltre 200 lastre, di cui circa "
+"la metà attribuibili con certezza allo scrittore. Tuttavia, molte fotografie "
+"autografe sono disperse in collezioni private. Capuana stesso, nel suo "
+"\"Catalogo delle negative fotografiche di L.C.\", riferiva di oltre 353 "
+"negativi e 100 positivi."
+msgstr ""
+"Capuana's photographic archive, kept in the House Museum Luigi Capuana in "
+"Mineo, includes 184 positive photographs and over 200 plates, of which about "
+"half are certainly attributable to the writer. However, many autographed "
+"photographs are dispersed in private collections. Capuana himself, in his "
+"\"Catalogue of photographic negatives by L.C.\", reported over 353 negatives "
+"and 100 positives."
+
